@@ -44,7 +44,7 @@ export default function Footer() {
               <a
                 href="https://www.instagram.com/oisselbadminton/"
                 target="_blank"
-                className="flex  gap-2 text-pink-800 items-center font-weight-bold"
+                className="flex  gap-2 text-pink-600 items-center font-weight-bold"
               >
                 <SiInstagram />
                 Instagram

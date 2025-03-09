@@ -22,7 +22,41 @@ export default function InfosPratiques() {
           </p>
         </div>
 
-        <div className="flex "></div>
+        <div className="flex ">
+          <table className="table-fixed">
+            <caption>Horaires des séances</caption>
+            <thead cellpa>
+              <tr>
+                <th scope="col" className="w-32">
+                  Jour
+                </th>
+                <th scope="col" className="w-32">
+                  Horaire
+                </th>
+                <th scope="col" className="w-72">
+                  Lieu
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">Lundi</td>
+                <td scope="row">19h - 21h</td>
+                <td scope="row">Gymnase Pierre de Coubertin</td>
+              </tr>
+              <tr>
+                <td scope="row">Mercredi</td>
+                <td scope="row">19h - 21h</td>
+                <td scope="row">Gymnase Pierre de Coubertin</td>
+              </tr>
+              <tr>
+                <td scope="row">Vendredi</td>
+                <td scope="row">19h - 21h</td>
+                <td scope="row">Gymnase Pierre de Coubertin</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </main>
       <Footer />
     </div>
