@@ -49,7 +49,7 @@ export default function Header() {
               >
                 Infos pratiques
               </Link>
-              <span className="flex flex-row items-center">
+              <span className="flex flex-row items-center pl-1">
                 {dropdownOpen ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
               </span>
               {dropdownOpen && (
@@ -62,6 +62,10 @@ export default function Header() {
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100">
                     <Link href="/infos/contact">Contact</Link>
+                  </li>
+
+                  <li className="px-4 py-2 hover:bg-gray-100">
+                    <Link href="/infos/bureau">Le bureau</Link>
                   </li>
                 </ul>
               )}

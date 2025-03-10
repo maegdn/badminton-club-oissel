@@ -17,16 +17,26 @@ export default function Contact() {
     const { name, value } = e.target;
     setFormData((previousState) => ({ ...previousState, [name]: value }));
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Data Submitted:", formData);
-    setSubmitted(true);
-    setFormData({
-      name: "",
-      firstname: "",
-      email: "",
-      message: "",
-    });
+
+    try {
+      const response = await fetch("https://formspree.io/f/xrbpgplg", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log("Formulaire envoyé !");
+        setSubmitted(true);
+        setFormData({ name: "", firstname: "", email: "", message: "" });
+      } else {
+        console.error("Erreur côté serveur :", response.status);
+      }
+    } catch (error) {
+      console.error("Erreur réseau ou autre problème :", error);
+    }
   };
 
   return (
@@ -72,7 +82,7 @@ export default function Contact() {
                 className="bg-blue-100 rounded-md h-10 pl-3"
                 onChange={handleChange}
               ></input>
-              <input
+              <textarea
                 type="text"
                 value={formData.message}
                 required
@@ -80,7 +90,7 @@ export default function Contact() {
                 placeholder="Veuillez développer votre demande"
                 className="bg-gray-200 rounded-md h-20 pl-3"
                 onChange={handleChange}
-              ></input>
+              ></textarea>
             </div>
             <div className="flex justify-center items-center">
               <button
