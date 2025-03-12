@@ -7,7 +7,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col h-72 bg-gray-300 w-full p-4 justify-center items-center">
+    <footer className="flex flex-col h-72 bg-gray-300 w-full p-4 justify-center items-center mt-12">
       <div className="flex justify-evenly pb-2 w-full pt-2">
         <div className="flex flex-row">
           <Image
@@ -19,7 +19,7 @@ export default function Footer() {
           />
         </div>
         <div className="flex flex-col">
-          <h4 className="font-extrabold pb-2">LIENS UTILES</h4>
+          <h4 className="font-extrabold pb-2 font-[Gabarito]">LIENS UTILES</h4>
 
           <ul>
             <li>Notre histoire</li>
@@ -35,7 +35,7 @@ export default function Footer() {
               <a
                 href="https://www.facebook.com/profile.php?id=100057404591482&locale=fr_FR"
                 target="_blank"
-                className="flex items-center gap-2 text-blue-700 font-weight-bold"
+                className="flex items-center gap-2 text-blue-700 font-bold"
               >
                 <FaFacebook /> Facebook
               </a>
@@ -44,13 +44,13 @@ export default function Footer() {
               <a
                 href="https://www.instagram.com/oisselbadminton/"
                 target="_blank"
-                className="flex  gap-2 text-pink-600 items-center font-weight-bold"
+                className="flex  gap-2 text-pink-600 items-center font-bold"
               >
                 <SiInstagram />
                 Instagram
               </a>
             </li>
-            <li>Partenaires</li>
+            <li className=" font-bold">Partenaires</li>
           </ul>
         </div>
       </div>

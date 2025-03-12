@@ -11,14 +11,14 @@ export default function Header() {
   const [activeNav, setActiveNav] = useState(false);
 
   return (
-    <header className="flex flex-row bg-gray-300 w-full justify-evenly">
+    <header className="flex flex-row bg-gray-300 w-full justify-evenly mb-12">
       <div className="flex flex-row items-center">
         <Image
           className="logo"
           src="/images/OBADLOGO.png"
           alt="Obad Logo"
-          width={150}
-          height={150}
+          width={120}
+          height={120}
         />
       </div>
       <div className="flex flex-row items-center font-bold">
@@ -53,7 +53,7 @@ export default function Header() {
                 {dropdownOpen ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
               </span>
               {dropdownOpen && (
-                <ul className="absolute left-0 top-full bg-white shadow-lg rounded-lg py-2 w-40 border border-gray-200">
+                <ul className="absolute left-0 top-18 bg-gray-300 shadow-lg py-2 w-40 border border-gray-300">
                   <li className="px-4 py-2 hover:bg-gray-100">
                     <Link href="/infos/horaires">Horaires</Link>
                   </li>

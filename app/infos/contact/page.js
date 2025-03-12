@@ -58,19 +58,19 @@ export default function Contact() {
               <div className="flex flex-row gap-6">
                 <input
                   type="text"
-                  name="name"
-                  value={formData.name}
-                  placeholder="Nom"
-                  className="bg-blue-100 rounded-md h-10 pl-3 w-2/4"
-                  onChange={handleChange}
-                ></input>
-                <input
-                  type="text"
                   name="firstname"
                   value={formData.firstname}
                   placeholder="Prénom"
                   onChange={handleChange}
                   className="bg-blue-100 rounded-md h-10 pl-3 w-2/4"
+                ></input>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  placeholder="Nom"
+                  className="bg-blue-100 rounded-md h-10 pl-3 w-2/4"
+                  onChange={handleChange}
                 ></input>
               </div>
               <input
