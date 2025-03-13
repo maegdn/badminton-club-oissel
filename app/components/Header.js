@@ -11,7 +11,7 @@ export default function Header() {
   const [activeNav, setActiveNav] = useState(false);
 
   return (
-    <header className="flex flex-row bg-gray-300 w-full justify-evenly mb-12">
+    <header className="relative flex flex-row bg-black w-full justify-evenly mb-12 text-white">
       <div className="flex flex-row items-center">
         <Image
           className="logo"
@@ -24,6 +24,7 @@ export default function Header() {
       <div className="flex flex-row items-center font-bold">
         <h1>CLUB DE BADMINTON DE OISSEL</h1>
       </div>
+
       <div className="flex flex-row items-center">
         <nav className="flex flex-row">
           <ul className="flex flex-row gap-8">
@@ -32,8 +33,9 @@ export default function Header() {
                 Le club
               </Link>
             </li>
+            <div></div>
             <li
-              className="flex relative items-center cursor-pointer"
+              className="relative"
               onMouseEnter={(e) => {
                 setDropdownOpen(true);
                 setActiveNav(true);
@@ -43,31 +45,38 @@ export default function Header() {
                 setActiveNav(false);
               }}
             >
-              <Link
-                href="/infos"
-                className={`${activeNav ? "text-red-600" : ""}`}
-              >
-                Infos pratiques
-              </Link>
-              <span className="flex flex-row items-center pl-1">
-                {dropdownOpen ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
-              </span>
+              <div className="flex flex-row items-center">
+                <Link
+                  href="/infos"
+                  className={`${activeNav ? "text-red-600" : ""}`}
+                >
+                  Infos pratiques
+                </Link>
+                <span className="flex flex-row items-center pl-1">
+                  {dropdownOpen ? (
+                    <MdKeyboardArrowUp />
+                  ) : (
+                    <MdKeyboardArrowDown />
+                  )}
+                </span>
+              </div>
               {dropdownOpen && (
-                <ul className="absolute left-0 top-18 bg-gray-300 shadow-lg py-2 w-40 border border-gray-300">
-                  <li className="px-4 py-2 hover:bg-gray-100">
-                    <Link href="/infos/horaires">Horaires</Link>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
-                    <Link href="/infos/tarifs">Tarifs</Link>
-                  </li>
-                  <li className="px-4 py-2 hover:bg-gray-100">
-                    <Link href="/infos/contact">Contact</Link>
-                  </li>
-
-                  <li className="px-4 py-2 hover:bg-gray-100">
-                    <Link href="/infos/bureau">Le bureau</Link>
-                  </li>
-                </ul>
+                <div className="absolute top-full bg-white shadow-black py-2 w-40 border text-black border-black ">
+                  <ul>
+                    <li className="px-4 py-2 hover:bg-gray-100">
+                      <Link href="/infos/horaires">Horaires</Link>
+                    </li>
+                    <li className="px-4 py-2 hover:bg-gray-100">
+                      <Link href="/infos/tarifs">Tarifs</Link>
+                    </li>
+                    <li className="px-4 py-2 hover:bg-gray-100">
+                      <Link href="/infos/contact">Contact</Link>
+                    </li>
+                    <li className="px-4 py-2 hover:bg-gray-100">
+                      <Link href="/infos/bureau">Le bureau</Link>
+                    </li>
+                  </ul>
+                </div>
               )}
             </li>
             <li>

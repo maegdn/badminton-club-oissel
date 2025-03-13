@@ -5,7 +5,7 @@ export default function InfosPratiques() {
   return (
     <div className="flex flex-col w-full min-h-screen">
       <Header />
-      <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center">
+      <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center gap-16">
         <div className="">
           <h1>Infos pratiques</h1>
           <p>
@@ -62,7 +62,6 @@ export default function InfosPratiques() {
               width="100%"
               height="400"
               frameborder="0"
-              scrolling="no"
               marginheight="0"
               marginwidth="0"
               src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Complexe%20sportif%20germinal+(Club%20Badminton%20Oissel)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
