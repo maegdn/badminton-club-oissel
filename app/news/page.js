@@ -35,6 +35,8 @@ export default function News() {
             <div key={post._id}>
               <h2>{post.title}</h2>
               {post.imageUrl && <img src={post.imageUrl} alt={post.title} />}
+              <PortableText value={post.content} />
+
               <p>{new Date(post.publishedAt).toLocaleDateString()}</p>
             </div>
           ))}

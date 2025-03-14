@@ -12,7 +12,11 @@
     "@formspree/react": "^2.5.4",
     "@portabletext/react": "^3.2.1",
     "@sanity/client": "^6.28.3",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/preview-kit": "^6.0.2",
+    "dotenv": "^16.4.7",
     "next": "15.2.1",
+    "next-sanity": "^9.9.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.5.0"
