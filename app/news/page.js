@@ -27,17 +27,30 @@ export default function News() {
   }, []);
 
   return (
-    <div className="flex flex-col w-full min-h-screen">
+    <div className="flex flex-col items-center justify-items-center min-h-screen">
       <Header />
-      <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center ">
-        <div>
+      <main className="flex flex-col w-full min-h-full grow justify-center items-center">
+        <div className="flex flex-col w-full md:w-4/5 lg:w-3/5 gap-10 justify-center items-center p-4 text-white">
           {posts.map((post) => (
-            <div key={post._id}>
-              <h2>{post.title}</h2>
-              {post.imageUrl && <img src={post.imageUrl} alt={post.title} />}
-              <PortableText value={post.content} />
+            <div
+              key={post._id}
+              className="flex flex-col md:flex-row bg-black shadow-lg  overflow-hidden w-full"
+            >
+              {post.imageUrl && (
+                <img
+                  src={post.imageUrl}
+                  alt={post.title}
+                  className="w-full md:w-2/5 h-[250px] object-cover"
+                />
+              )}
+              <div className="flex flex-col w-full md:w-3/5 p-4 justify-between">
+                <h2>{post.title}</h2>
 
-              <p>{new Date(post.publishedAt).toLocaleDateString()}</p>
+                <PortableText value={post.content} />
+                <p className="text-sm text-gray-500 mt-4">
+                  {new Date(post.publishedAt).toLocaleDateString()}
+                </p>
+              </div>
             </div>
           ))}
         </div>
