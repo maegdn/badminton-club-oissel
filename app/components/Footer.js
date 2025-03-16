@@ -7,9 +7,9 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col h-72 bg-black w-full p-4 justify-center items-center mt-12 text-white">
-      <div className="flex justify-evenly pb-2 w-full pt-2">
-        <div className="flex flex-row">
+    <footer className="flex flex-col bg-black w-full p-6 justify-center items-center mt-12 text-white">
+      <div className="flex flex-col md:flex-row justify-evenly w-full max-w-6xl gap-8 pb-8">
+        <div className="flex justify-center md:justify-start">
           <Image
             src="/images/OBADLOGO.png"
             alt="logo"
@@ -18,24 +18,32 @@ export default function Footer() {
             className=""
           />
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col text-center md:text-left">
+          <h4 className="font-extrabold pb-2 font-[Gabarito]">À PROPOS </h4>
+
+          <ul className="space-y-1">
+            <li>Notre histoire</li>
+            <li>Le bureau</li>
+            <li>Horaires / Tarifs</li>
+          </ul>
+        </div>
+        <div className="flex flex-col text-center md:text-left">
           <h4 className="font-extrabold pb-2 font-[Gabarito]">LIENS UTILES</h4>
 
-          <ul>
-            <li>Notre histoire</li>
+          <ul className="space-y-1">
             <li>Inscription</li>
             <li>Événements</li>
             <li>Partenaires</li>
           </ul>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col text-center md:text-left">
           <h4 className="font-extrabold pb-2">OÙ NOUS TROUVER ?</h4>
-          <ul>
+          <ul className="space-y-1">
             <li>
               <a
                 href="https://www.facebook.com/profile.php?id=100057404591482&locale=fr_FR"
                 target="_blank"
-                className="flex items-center gap-2 text-blue-700 font-bold"
+                className="flex justify-center md:justify-start items-center gap-2 text-blue-700 font-bold"
               >
                 <FaFacebook /> Facebook
               </a>
@@ -44,7 +52,7 @@ export default function Footer() {
               <a
                 href="https://www.instagram.com/oisselbadminton/"
                 target="_blank"
-                className="flex  gap-2 text-pink-600 items-center font-bold"
+                className="flex justify-center md:justify-start items-center gap-2 text-pink-700 font-bold"
               >
                 <SiInstagram />
                 Instagram
@@ -56,17 +64,19 @@ export default function Footer() {
       </div>
 
       <div className="flex flex-col items-center">
-        <div className="flex flex-col justify-center items-center">
-          <p>© 2025 Oissel Badminton Club. Tous droits réservés.</p>
+        <div className="flex flex-col items-center gap-4 border-t border-gray-600 w-full pt-4 pb-4">
+          <p className="text-center text-sm">
+            © 2025 Oissel Badminton Club. Tous droits réservés.
+          </p>
 
-          <div className="flex gap-6 flex-row pb-6">
+          <div className="flex gap-6">
             <SiInstagram />
             <FaFacebook />
             <FaXTwitter />
           </div>
         </div>
 
-        <p>
+        <p className="text-sm">
           Made with 🖤 by <span className="font-bold">maegdn</span>.
         </p>
       </div>

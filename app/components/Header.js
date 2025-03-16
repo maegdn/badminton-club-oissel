@@ -5,14 +5,16 @@ import Link from "next/link";
 import { useState } from "react";
 
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [activeNav, setActiveNav] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="relative flex flex-row bg-black w-full justify-evenly mb-12 text-white">
-      <div className="flex flex-row items-center">
+    <header className="relative flex flex-row bg-black w-full justify-evenly mb-12 text-white shadow-md">
+      <div className="flex items-center">
         <Image
           className="logo"
           src="/images/OBADLOGO.png"
@@ -21,8 +23,18 @@ export default function Header() {
           height={120}
         />
       </div>
-      <div className="flex flex-row items-center font-bold">
+      <div className="hidden md:block font-bold text-center">
         <h1>CLUB DE BADMINTON DE OISSEL</h1>
+      </div>
+
+      <div className="md:hidden">
+        <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          {mobileMenuOpen ? (
+            <GiHamburgerMenu size={30} />
+          ) : (
+            <GiHamburgerMenu size={30} />
+          )}
+        </button>
       </div>
 
       <div className="flex flex-row items-center">
