@@ -11,38 +11,32 @@ export default function Bureau() {
           <div>
             <img
               src="/images/profile-pic.jpg"
-              width={150}
-              height={195}
-              className="mb-3 rounded-md"
+              className="h-52 w-52 mb-3 rounded-md object-cover"
             ></img>
             <div className="flex flex-col w-150px justify-center items-center bg-blue-200 rounded-md h-16">
               <p>Marko Luka</p>
-              <p>Trésorier</p>
+              <p className="font-bold">Trésorier</p>
             </div>
           </div>
 
           <div>
             <img
               src="/images/profile-pic.jpg"
-              width={150}
-              height={195}
-              className="mb-3 rounded-md"
+              className="h-52 w-52 mb-3 rounded-md object-cover"
             ></img>
             <div className="flex flex-col w-150px justify-center items-center bg-blue-200 rounded-md h-16">
               <p>Marko Luka</p>
-              <p>Trésorier</p>
+              <p className="font-bold">Trésorier</p>
             </div>
           </div>
           <div>
             <img
               src="/images/profile-pic.jpg"
-              width={150}
-              height={195}
-              className="mb-3 rounded-md"
+              className="h-52 w-52 mb-3 rounded-md object-cover"
             ></img>
             <div className="flex flex-col w-150px justify-center items-center bg-blue-200 rounded-md h-16">
               <p>Marko Luka</p>
-              <p>Trésorier</p>
+              <p className="font-bold">Trésorier</p>
             </div>
           </div>
         </div>

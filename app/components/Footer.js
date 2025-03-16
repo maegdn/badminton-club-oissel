@@ -58,7 +58,7 @@ export default function Footer() {
                 Instagram
               </a>
             </li>
-            <li className=" font-bold">Partenaires</li>
+            <li className="">Partenaires</li>
           </ul>
         </div>
       </div>
@@ -77,7 +77,7 @@ export default function Footer() {
         </div>
 
         <p className="text-sm">
-          Made with 🖤 by <span className="font-bold">maegdn</span>.
+          Made with 🤍 by <span className="font-bold">maegdn</span>.
         </p>
       </div>
     </footer>
