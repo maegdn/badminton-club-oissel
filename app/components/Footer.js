@@ -25,6 +25,11 @@ export default function Footer() {
             <li>Notre histoire</li>
             <li>Le bureau</li>
             <li>Horaires / Tarifs</li>
+            <li>
+              <Link href="/infos/legal" className=" hover:text-red-600">
+                Mentions légales
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="flex flex-col text-center md:text-left">

@@ -44,6 +44,12 @@ export default function Home() {
               Lorem Ipsum.
             </p>
           </div>
+
+          <div>
+            <a href="">
+              <button>Adhérer</button>
+            </a>
+          </div>
         </div>
       </main>
       <Footer />
