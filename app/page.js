@@ -6,11 +6,11 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-items-center min-h-screen">
       <Header />
-      <main className="flex flex-col gap-8  items-center  grow">
-        <div className="flex flex-row items-center justify-center text-justify w-2/3 gap-22">
-          <div className="flex flex-col">
-            <h3>Un club familial</h3>
-            <p>
+      <main className="flex flex-col gap-8  items-center   grow px-4 md:px-12">
+        <div className="flex flex-col md:flex-row items-center justify-center text-justify md:w-2/3 gap-22 ">
+          <div className="flex flex-col w-full md:w-1/2">
+            <h3 className="text-lg md:text-xl font-bold">Un club familial</h3>
+            <p className="text-sm md:text-justify">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -24,14 +24,14 @@ export default function Home() {
             </p>
           </div>
 
-          <img src="/images/club-bad1.jpg" width={2048 / 4} height={1536 / 4} />
+          <img src="/images/club-bad1.jpg" className="md:w-1/2" />
         </div>
-        <div className="flex flex-row items-center justify-center text-justify w-2/3 gap-22">
-          <img src="/images/club-bad1.jpg" width={2048 / 4} height={1536 / 4} />
+        <div className="flex flex-col md:flex-row items-center justify-center text-justify md:w-2/3 gap-22 ">
+          <img src="/images/club-bad1.jpg" className="md:w-1/2" />
 
-          <div className="flex flex-col">
-            <h3>Un club familial</h3>
-            <p>
+          <div className="flex flex-col w-full md:w-1/2">
+            <h3 className="text-lg md:text-xl font-bold">Un club familial</h3>
+            <p className="text-sm md:text-justify">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -43,12 +43,6 @@ export default function Home() {
               publishing software like Aldus PageMaker including versions of
               Lorem Ipsum.
             </p>
-          </div>
-
-          <div>
-            <a href="">
-              <button>Adhérer</button>
-            </a>
           </div>
         </div>
       </main>

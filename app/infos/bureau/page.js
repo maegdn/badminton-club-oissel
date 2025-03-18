@@ -6,7 +6,7 @@ export default function Bureau() {
     <div className="flex flex-col w-full min-h-screen">
       <Header />
       <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center ">
-        <h1 className="font-[Gabarito]">Les membres du bureau</h1>
+        <h1 className="font-bold mt-5 mb-5">LES MEMBRES DU BUREAU</h1>
         <div className="flex flex-row flex-wrap justify-center items-center w-2/4 m-12 gap-16  ">
           <div>
             <img

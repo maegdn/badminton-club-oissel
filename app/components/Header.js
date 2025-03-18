@@ -136,15 +136,20 @@ export default function Header() {
                 </Link>
                 {dropdownOpen ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
               </div>
+
               {dropdownOpen && (
                 <ul className="ml-4 mt-2 space-y-2">
-                  {["horaires", "tarifs", "contact", "bureau"].map((item) => (
-                    <li key={item} className="hover:text-red-600">
+                  {[
+                    { label: "Horaires / Tarifs", slug: "horairestarifs" },
+                    { label: "Contact", slug: "contact" },
+                    { label: "Bureau", slug: "bureau" },
+                  ].map(({ label, slug }) => (
+                    <li key={slug} className="hover:text-red-600">
                       <Link
-                        href={`/infos/${item}`}
+                        href={`/infos/${slug}`}
                         onClick={() => setMobileMenuOpen(false)}
                       >
-                        {item.charAt(0).toUpperCase() + item.slice(1)}
+                        {label}
                       </Link>
                     </li>
                   ))}

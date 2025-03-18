@@ -42,17 +42,17 @@ export default function Contact() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex flex-col min-h-full flex-grow justify-center items-center">
-        <div className="flex flex-col w-3/5">
-          <div className="mb-10">
-            <h1 className="font-bold mt-5 mb-5">CONTACT</h1>
-            <p>
-              Pour nous contacter, vous pouvez nous envoyer un email à
-              <span className="font-bold"> obadoissel@gmail.com</span> ou bien
-              remplir le formulaire de contact ci-dessous.
-            </p>
-          </div>
+      <main className="flex flex-col min-h-full flex-grow justify-center items-center px-8 md:px-4">
+        <div className="flex flex-col items-center text-justify  md:w-3/5 mb-10">
+          <h1 className="font-bold mt-5 mb-5 justify-center">CONTACT</h1>
+          <p>
+            Pour nous contacter, vous pouvez nous envoyer un email à
+            <span className="font-bold"> obadoissel@gmail.com</span> ou bien
+            remplir le formulaire de contact ci-dessous.
+          </p>
+        </div>
 
+        <div className="flex flex-col md:w-3/5">
           <form className="" onSubmit={handleSubmit}>
             <div className="flex flex-col w-full gap-5 mb-6">
               <div className="flex flex-row gap-6">
@@ -88,7 +88,7 @@ export default function Contact() {
                 required
                 name="message"
                 placeholder="Veuillez développer votre demande"
-                className="bg-gray-200 rounded-md h-20 pl-3"
+                className="bg-gray-200 rounded-md h-20 p-3"
                 onChange={handleChange}
               ></textarea>
             </div>

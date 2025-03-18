@@ -23,8 +23,19 @@ export default function Footer() {
 
           <ul className="space-y-1">
             <li>Notre histoire</li>
-            <li>Le bureau</li>
-            <li>Horaires / Tarifs</li>
+            <li>
+              <Link href="/infos/bureau" className=" hover:text-red-600">
+                Le Bureau
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/infos/horairestarifs"
+                className=" hover:text-red-600"
+              >
+                Horaires / Tarifs
+              </Link>
+            </li>
             <li>
               <Link href="/infos/legal" className=" hover:text-red-600">
                 Mentions légales
@@ -36,7 +47,11 @@ export default function Footer() {
           <h4 className="font-extrabold pb-2 font-[Gabarito]">LIENS UTILES</h4>
 
           <ul className="space-y-1">
-            <li>Inscription</li>
+            <li>
+              <Link href="/inscription" className=" hover:text-red-600">
+                Inscription{" "}
+              </Link>
+            </li>
             <li>Événements</li>
             <li>Partenaires</li>
           </ul>

@@ -45,10 +45,10 @@ export default function News() {
                   />
                 </div>
               )}
-              <div className="flex flex-col w-full md:w-1/2 p-4 justify-between">
+              <div className="flex flex-col w-full md:w-1/2 p-4 justify-between text-justify">
                 <h2 className="text-xl font-semibold mb-2">{post.title}</h2>
                 <PortableText value={post.content} />
-                <p className="text-sm text-gray-500 mt-4">
+                <p className="text-sm text-gray-500 mt-4 text-justify">
                   {new Date(post.publishedAt).toLocaleDateString()}
                 </p>
               </div>
