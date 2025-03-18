@@ -5,17 +5,18 @@ export default function Legal() {
   return (
     <>
       <Header />
-      <main className="flex flex-col w-full min-h-screen grow justify-center items-center">
-        <h1>Mentions légales</h1>
+      <main className="flex flex-col w-full min-h-screen grow items-center">
+        <div className="flex flex-col w-2/4 justify-start text-justify">
+          <h1 className="flex justify-center">Mentions légales</h1>
 
-        <div className="flex flex-col w-3/5 justify-start">
-          <section className="mb-6">
+          <section className="mt-12 mb-6">
             <h2 className="text-xl font-semibold">Éditeur du site</h2>
             <p>Nom de l'éditeur : O'Bad - Badminton Oissel Club</p>
             <p>Adresse : 1441 Av. du Général de Gaulle, 76350 OISSEL</p>
             <p>Email : contact@obad-oissel.fr</p>
             <p>Téléphone : 02.32.91.13.41</p>
             <p>SIRET : 499437093</p>
+            <p>RNA : W763010968</p>
           </section>
 
           {/* <section className="mb-6">
@@ -33,8 +34,8 @@ export default function Legal() {
               Le site a été conçu et développé par :<br />
               Maëlys Guardini - Développeuse web indépendante
             </p>
-            <p>📧 Email : [contact@mguardini.pro]</p>
-            <p> 🗒 Portfolio : [www.maguardini.pro]</p>
+            <p>📧 Email : contact@mguardini.pro</p>
+            <p> 🗒 Portfolio : www.maguardini.pro</p>
           </section>
 
           <section className="mb-6">
@@ -48,19 +49,19 @@ export default function Legal() {
             </p>
           </section>
 
-          <section className="mb-6">
+          {/* <section className="mb-6">
             <h2 className="text-xl font-semibold">Données personnelles</h2>
             <p>
               Les données collectées sont utilisées conformément au RGPD. Voir
-              notre
+              notre{" "}
               <a href="/politique-confidentialite" className="text-blue-600">
                 politique de confidentialité
               </a>
               .
             </p>
-          </section>
+          </section> */}
 
-          <section className="mb-6">
+          {/* <section className="mb-6">
             <h2 className="text-xl font-semibold">Cookies</h2>
             <p>
               Ce site utilise des cookies. En continuant, vous acceptez leur
@@ -70,7 +71,7 @@ export default function Legal() {
               </a>
               .
             </p>
-          </section>
+          </section> */}
 
           <section className="mb-6">
             <h2 className="text-xl font-semibold">Responsabilité</h2>
@@ -86,6 +87,11 @@ export default function Legal() {
               Les présentes mentions légales sont soumises au droit français.
             </p>
           </section>
+        </div>
+        <div>
+          <p className="mt-22 justify-center font-bold">
+            Bonne visite sur notre site ! 🏸
+          </p>
         </div>
       </main>
       <Footer />
