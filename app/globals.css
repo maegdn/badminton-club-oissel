@@ -33,6 +33,9 @@
     --foreground: #ededed;
   }
 }
+html, body {
+  overscroll-behavior: none;
+}
 
 body {
   background: rgb(255, 255, 255);

@@ -18,13 +18,13 @@ export default function HorairesTarifs() {
             <table className="table-fixed w-full justify-center items-center mt-6">
               <thead>
                 <tr>
-                  <th scope="col" className="w-32 border border-gray-300 p-2">
+                  <th scope="col" className="w-auto border border-gray-300 p-2">
                     Jour
                   </th>
-                  <th scope="col" className="w-32 border border-gray-300 p-2">
+                  <th scope="col" className="w-auto border border-gray-300 p-2">
                     Horaire
                   </th>
-                  <th scope="col" className="w-72 border border-gray-300 p-2">
+                  <th scope="col" className="w-auto border border-gray-300 p-2">
                     Lieu
                   </th>
                 </tr>

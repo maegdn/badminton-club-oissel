@@ -17,7 +17,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="relative flex flex-row bg-black w-full justify-evenly mb-12 text-white shadow-md">
+    <header className="relative flex flex-row bg-black w-full mb-12 text-white shadow-md justify-center">
       <div className="flex justify-evenly items-center w-4/5">
         <div className="flex items-center">
           <Image
@@ -32,21 +32,25 @@ export default function Header() {
           <h1>CLUB DE BADMINTON DE OISSEL</h1>
         </div>
 
-        <div className="md:hidden">
-          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+        <div className="md:hidden flex flex-row gap-2 ml-4 items-center justify-center">
+          <h3 className="text-lg font-bold">Menu</h3>
+
+          <button
+            className="flex justify-center items-center pb-2"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
             {mobileMenuOpen ? <MdClose size={30} /> : <MdMenu size={30} />}
           </button>
         </div>
 
-        <div className="flex flex-row items-center">
+        <div className="flex flex-row items-center justify-evenly">
           <nav className="hidden md:flex">
-            <ul className="flex flex-row gap-8">
+            <ul className="flex flex-row gap-6">
               <li>
-                <Link href="/" className="px-4 py-2 hover:text-red-600">
+                <Link href="/" className=" hover:text-red-600">
                   Le club
                 </Link>
               </li>
-              <div></div>
               <li
                 className="relative"
                 onMouseEnter={(e) => {
@@ -74,7 +78,7 @@ export default function Header() {
                   </span>
                 </div>
                 {dropdownOpen && (
-                  <div className="absolute top-full bg-white shadow-black w-40 border text-black border-black ">
+                  <div className="absolute top-full bg-white shadow-black w-40 border text-black border-black lg:px-4">
                     <ul>
                       <li className="px-4 py-2 hover:bg-gray-200">
                         <Link href="/infos/horairestarifs">
@@ -121,8 +125,6 @@ export default function Header() {
                 Le club
               </Link>
             </li>
-
-            {/* Infos pratiques collapsible submenu on mobile */}
             <li>
               <div
                 className="flex justify-between items-center cursor-pointer"

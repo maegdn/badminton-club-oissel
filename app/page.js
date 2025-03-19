@@ -1,10 +1,38 @@
 import Image from "next/image";
+import Head from "next/head";
+
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-items-center min-h-screen">
+      <Head>
+        <title>O'bad - Badminton à Oissel</title>
+        <meta
+          name="description"
+          content="Rejoignez notre club de badminton à Oissel, en Normandie"
+        />
+        <meta
+          name="keywords"
+          content="badminton, club, sports, tournois, inscription, raquette, sport, association"
+        />
+        <meta name="author" content="Oissel Badminton" />
+        <meta
+          property="og:title"
+          content="Site du Club de Badminton de Oissel "
+        />
+        <meta
+          property="og:description"
+          content="Venez rejoindre le club de badminton de Oissel"
+        />
+        {/* <meta property="og:image" content="https://yourwebsite.com/og-image.jpg" /> */}
+        <meta
+          property="og:url"
+          content="https://badminton-club-oissel.vercel.app"
+        />
+        <meta name="robots" content="index, follow" />
+      </Head>
       <Header />
       <main className="flex flex-col gap-8  items-center   grow px-4 md:px-12">
         <div className="flex flex-col md:flex-row items-center justify-center text-justify md:w-2/3 gap-22 ">

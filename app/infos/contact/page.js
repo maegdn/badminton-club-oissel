@@ -12,13 +12,16 @@ export default function Contact() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((previousState) => ({ ...previousState, [name]: value }));
   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     try {
       const response = await fetch("https://formspree.io/f/xrbpgplg", {
@@ -31,11 +34,14 @@ export default function Contact() {
         console.log("Formulaire envoyé !");
         setSubmitted(true);
         setFormData({ name: "", firstname: "", email: "", message: "" });
+        setTimeout(() => setSubmitted(false), 5000);
       } else {
         console.error("Erreur côté serveur :", response.status);
       }
     } catch (error) {
       console.error("Erreur réseau ou autre problème :", error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -54,7 +60,7 @@ export default function Contact() {
 
         <div className="flex flex-col md:w-3/5">
           <form className="" onSubmit={handleSubmit}>
-            <div className="flex flex-col w-full gap-5 mb-6">
+            <div className="flex flex-col w-full gap-5 mb-10">
               <div className="flex flex-row gap-6">
                 <input
                   type="text"
@@ -92,12 +98,27 @@ export default function Contact() {
                 onChange={handleChange}
               ></textarea>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="flex flex-col justify-center items-center gap-4">
+              {submitted && (
+                <p className="text-green-500 font-bold">
+                  Formulaire envoyé ! Merci ! On revient vers vous très vite !
+                </p>
+              )}
+
               <button
                 type="submit"
-                className="bg-blue-200 rounded-md h-12 p-3 font-bold"
+                className={`rounded-md h-12 p-3 font-bold ${
+                  submitted
+                    ? "bg-green-300 cursor-not-allowed"
+                    : "bg-blue-200 hover:bg-blue-300"
+                }`}
+                disabled={loading || submitted}
               >
-                Envoyer
+                {loading
+                  ? "Envoi en cours..."
+                  : submitted
+                    ? "Formulaire envoyé !"
+                    : "Envoyer"}
               </button>
             </div>
           </form>
