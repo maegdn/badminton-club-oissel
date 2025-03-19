@@ -13,7 +13,7 @@ export default function Legal() {
             <h2 className="text-xl font-semibold">Éditeur du site</h2>
             <p>Nom de l'éditeur : O'Bad - Badminton Oissel Club</p>
             <p>Adresse : 1441 Av. du Général de Gaulle, 76350 OISSEL</p>
-            <p>Email : contact@obad-oissel.fr</p>
+            <p>Email : obadoissel@gmail.com</p>
             <p>Téléphone : 02.32.91.13.41</p>
             <p>SIRET : 499437093</p>
             <p>RNA : W763010968</p>
