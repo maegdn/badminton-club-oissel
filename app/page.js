@@ -35,6 +35,10 @@ export default function Home() {
       </Head>
       <Header />
       <main className="flex flex-col gap-8  items-center   grow px-4 md:px-12">
+        <h1 className="font-bold mt-5 mb-5">
+          BIENVENUE AU CLUB DE BADMINTON DE OISSEL
+        </h1>
+
         <div className="flex flex-col md:flex-row items-center justify-center text-justify md:w-2/3 gap-22 ">
           <div className="flex flex-col w-full md:w-1/2">
             <h3 className="text-lg md:text-xl font-bold">Un club familial</h3>

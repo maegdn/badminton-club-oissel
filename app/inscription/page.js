@@ -22,7 +22,7 @@ export default function Inscription() {
     <div className="flex flex-col w-full min-h-screen">
       <Header />
       <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center">
-        <h1 className="font-[Gabarito]">Inscription</h1>
+        <h1 className="font-[Gabarito]">INSCRIPTION</h1>
         <div className="flex flex-row flex-wrap justify-center items-center w-3/4 md:2/4 gap-16 my-12 text-justify">
           <div className="flex w-auto">
             <p>

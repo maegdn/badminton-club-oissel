@@ -30,11 +30,12 @@ export default function News() {
     <div className="flex flex-col items-center justify-items-center min-h-screen">
       <Header />
       <main className="flex flex-col w-full min-h-full grow justify-center items-center">
+        <h1 className="font-bold mt-5 mb-9">LES ACTUALITÉS DU CLUB</h1>
         <div className="flex flex-col w-full md:w-4/5 lg:w-3/5 gap-10 justify-center items-center p-4 text-black">
           {posts.map((post) => (
             <div
               key={post._id}
-              className="flex flex-col md:flex-row shadow-lg overflow-hidden w-full items-stretch"
+              className="flex flex-col md:flex-row  shadow-lg overflow-hidden w-full items-stretch"
             >
               {post.imageUrl && (
                 <div className="w-full md:w-1/2 h-full">

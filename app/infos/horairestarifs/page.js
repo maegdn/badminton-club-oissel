@@ -9,7 +9,7 @@ export default function HorairesTarifs() {
       <Header />
       <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center">
         <h1 className="font-[Gabarito] text-3xl my-8">
-          Horaires, tarifs et lieux
+          HORAIRES, TARIFS, LIEUX DE PRATIQUE
         </h1>
 
         <div className="flex flex-col justify-center items-center w-3/4 gap-8">
