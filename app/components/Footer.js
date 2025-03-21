@@ -7,7 +7,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col bg-black w-full p-6 justify-center items-center mt-12 text-white">
+    <footer className="flex flex-col bg-neutral-800 w-full p-6 justify-center items-center mt-12 text-white">
       <div className="flex flex-col md:flex-row justify-evenly w-full max-w-6xl gap-8 pb-8">
         <div className="flex justify-center md:justify-start">
           <Image
@@ -63,7 +63,7 @@ export default function Footer() {
               <a
                 href="https://www.facebook.com/profile.php?id=100057404591482&locale=fr_FR"
                 target="_blank"
-                className="flex justify-center md:justify-start items-center gap-2 text-blue-700 font-bold"
+                className="flex justify-center md:justify-start items-center gap-2 text-blue-500 font-bold"
               >
                 <FaFacebook /> Facebook
               </a>
@@ -72,7 +72,7 @@ export default function Footer() {
               <a
                 href="https://www.instagram.com/oisselbadminton/"
                 target="_blank"
-                className="flex justify-center md:justify-start items-center gap-2 text-pink-700 font-bold"
+                className="flex justify-center md:justify-start items-center gap-2 text-pink-500 font-bold"
               >
                 <SiInstagram />
                 Instagram

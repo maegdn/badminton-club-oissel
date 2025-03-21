@@ -17,7 +17,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="relative flex flex-row bg-black w-full mb-12 text-white shadow-md justify-center">
+    <header className="relative flex flex-row bg-neutral-800 w-full mb-12 text-white shadow-md justify-center">
       <div className="flex justify-evenly items-center w-4/5">
         <div className="flex items-center">
           <Image
@@ -78,18 +78,18 @@ export default function Header() {
                   </span>
                 </div>
                 {dropdownOpen && (
-                  <div className="absolute top-full bg-white shadow-black w-40 border text-black border-black lg:px-4">
+                  <div className="absolute top-full bg-white shadow-black min-w-full border text-black border-black">
                     <ul>
-                      <li className="px-4 py-2 hover:bg-gray-200">
+                      <li className="py-2 px-4 hover:bg-gray-200 w-full whitespace-nowrap">
                         <Link href="/infos/horairestarifs">
                           Horaires / Tarifs
                         </Link>
                       </li>
 
-                      <li className="px-4 py-2 hover:bg-gray-200">
+                      <li className="py-2 px-4 hover:bg-gray-200 w-full whitespace-nowrap">
                         <Link href="/infos/bureau">Le bureau</Link>
                       </li>
-                      <li className="px-4 py-2 hover:bg-gray-200">
+                      <li className="py-2 px-4 hover:bg-gray-200 w-full whitespace-nowrap">
                         <Link href="/infos/contact">Contact</Link>
                       </li>
                     </ul>
@@ -114,8 +114,8 @@ export default function Header() {
       </div>
 
       {mobileMenuOpen && (
-        <nav className="md:hidden bg-black w-full px-4 pb-4">
-          <ul className="flex flex-col gap-4 font-bold">
+        <nav className="md:hidden bg-neutral-800 w-full px-4 py-6">
+          <ul className="flex flex-col gap-2 font-bold">
             <li>
               <Link
                 href="/"
@@ -140,7 +140,7 @@ export default function Header() {
               </div>
 
               {dropdownOpen && (
-                <ul className="ml-4 mt-2 space-y-2">
+                <ul className="ml-4 mt-2 space-y-1 border-l-2 border-gray-600 pl-4">
                   {[
                     { label: "Horaires / Tarifs", slug: "horairestarifs" },
                     { label: "Contact", slug: "contact" },

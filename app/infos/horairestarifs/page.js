@@ -12,45 +12,62 @@ export default function HorairesTarifs() {
           Horaires, tarifs et lieux
         </h1>
 
-        <div className="flex flex-col justify-center items-center w-2/4 m-12 gap-16">
-          <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center w-3/4 gap-8">
+          <div className="flex flex-col justify-center items-center w-full">
             <h3 className="text-xl font-bold">Créneaux des séances</h3>
-            <table className="table-fixed w-full justify-center items-center mt-6">
+            <table className="table-fixed w-full sm:w-2/3 md:w-full min-w-max border border-gray-300 mt-6">
               <thead>
                 <tr>
-                  <th scope="col" className="w-auto border border-gray-300 p-2">
+                  <th
+                    scope="col"
+                    className="w-[30%] border border-gray-300 p-2"
+                  >
                     Jour
                   </th>
-                  <th scope="col" className="w-auto border border-gray-300 p-2">
+                  <th
+                    scope="col"
+                    className="w-[30%]  border border-gray-300 p-2"
+                  >
                     Horaire
                   </th>
-                  <th scope="col" className="w-auto border border-gray-300 p-2">
+                  <th
+                    scope="col"
+                    className="w-[40%]  border border-gray-300 p-2"
+                  >
                     Lieu
                   </th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td className="border border-gray-300 p-2">Lundi</td>
-                  <td className="border border-gray-300 p-2">19h - 21h</td>
-                  <td className="border border-gray-300 p-2">
-                    Gymnase Pierre de Coubertin
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 p-2">Mercredi</td>
-                  <td className="border border-gray-300 p-2">19h - 21h</td>
-                  <td className="border border-gray-300 p-2">
-                    Gymnase Pierre de Coubertin
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 p-2">Vendredi</td>
-                  <td className="border border-gray-300 p-2">19h - 21h</td>
-                  <td className="border border-gray-300 p-2">
-                    Gymnase Pierre de Coubertin
-                  </td>
-                </tr>
+                {[
+                  {
+                    jour: "Lundi",
+                    horaire: "19h - 21h",
+                    lieu: "Gymnase Pierre de Coubertin",
+                  },
+                  {
+                    jour: "Mercredi",
+                    horaire: "19h - 21h",
+                    lieu: "Gymnase Pierre de Coubertin",
+                  },
+                  {
+                    jour: "Vendredi",
+                    horaire: "19h - 21h",
+                    lieu: "Gymnase Pierre de Coubertin",
+                  },
+                ].map((item, i) => (
+                  <tr key={i} className="hover:bg-gray-50">
+                    <td className="w-[30%] border border-gray-300 p-2 text-center">
+                      {item.jour}
+                    </td>
+                    <td className="w-[30%] border border-gray-300 p-2 text-center">
+                      {item.horaire}
+                    </td>
+                    <td className="w-[40%] border border-gray-300 p-2 text-center">
+                      {item.lieu}
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>

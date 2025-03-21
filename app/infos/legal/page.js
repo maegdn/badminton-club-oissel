@@ -6,10 +6,10 @@ export default function Legal() {
     <>
       <Header />
       <main className="flex flex-col w-full min-h-screen grow items-center">
-        <div className="flex flex-col w-2/4 justify-start text-justify">
+        <div className="flex flex-col justify-start text-justify lg:w-3/4 px-10 py-10">
           <h1 className="flex justify-center">Mentions légales</h1>
 
-          <section className="mt-12 mb-6">
+          <section className="mt-12 mb-6 justify-start text-start">
             <h2 className="text-xl font-semibold">Éditeur du site</h2>
             <p>Nom de l'éditeur : O'Bad - Badminton Oissel Club</p>
             <p>Adresse : 1441 Av. du Général de Gaulle, 76350 OISSEL</p>
@@ -26,7 +26,7 @@ export default function Legal() {
             <p>Contact : [Email ou Téléphone]</p>
           </section> */}
 
-          <section className="mb-6">
+          <section className="mb-6 justify-start text-start">
             <h2 className="text-xl font-semibold">
               Conception et développement
             </h2>
@@ -38,7 +38,7 @@ export default function Legal() {
             <p> 🗒 Portfolio : www.maguardini.pro</p>
           </section>
 
-          <section className="mb-6">
+          <section className="mb-6 justify-start">
             <h2 className="text-xl font-semibold">Propriété intellectuelle</h2>
             <p>
               L’ensemble des contenus présents sur le site (textes, images,
