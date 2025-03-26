@@ -26,6 +26,10 @@ export default function Home() {
           property="og:description"
           content="Venez rejoindre le club de badminton de Oissel"
         />
+        <meta
+          name="google-site-verification"
+          content="LJFzKAQH4-jY1N0mlxV3gF-gKpsWPos2NuNdUtT5-Cs"
+        />
         {/* <meta property="og:image" content="https://yourwebsite.com/og-image.jpg" /> */}
         <meta
           property="og:url"
