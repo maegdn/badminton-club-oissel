@@ -14,6 +14,26 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Club de Badminton d'Oissel",
   description: "Rejoins le club de badminton de Oissel",
+  keywords: [
+    "badminton",
+    "club",
+    "sports",
+    "tournois",
+    "inscription",
+    "raquette",
+    "sport",
+    "association",
+  ],
+  authors: [{ name: "Oissel Badminton" }],
+  openGraph: {
+    title: "Site du Club de Badminton de Oissel",
+    description: "Venez rejoindre le club de badminton de Oissel",
+    url: "https://badminton-club-oissel.vercel.app",
+  },
+  robots: "index, follow",
+  other: {
+    "google-site-verification": "LJFzKAQH4-jY1N0mlxV3gF-gKpsWPos2NuNdUtT5-Cs",
+  },
 };
 
 export default function RootLayout({ children }) {
