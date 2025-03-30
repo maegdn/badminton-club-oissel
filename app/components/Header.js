@@ -8,7 +8,7 @@ import {
   MdKeyboardArrowDown,
   MdKeyboardArrowUp,
   MdMenu,
-  MdClose,
+  MdClose
 } from "react-icons/md";
 
 export default function Header() {
@@ -17,7 +17,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="relative flex flex-row bg-neutral-800 w-full  text-white shadow-md justify-center bg-[url('/images/header.png')] md:bg-cover bg-center">
+    <header className="relative flex flex-row bg-neutral-800 w-full  text-white shadow-md justify-center bg-[url('/images/bn.png')] md:bg-cover bg-center">
       <div className="flex justify-between items-center w-4/5">
         <div className="flex items-center">
           <Image
@@ -157,7 +157,7 @@ export default function Header() {
                   {[
                     { label: "Horaires / Tarifs", slug: "horairestarifs" },
                     { label: "Contact", slug: "contact" },
-                    { label: "Bureau", slug: "bureau" },
+                    { label: "Bureau", slug: "bureau" }
                   ].map(({ label, slug }) => (
                     <li
                       key={slug}

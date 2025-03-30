@@ -7,25 +7,26 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col bg-neutral-800 w-full p-6 justify-center items-center text-white pt-12">
-      <div className="flex flex-col md:flex-row justify-evenly w-full max-w-6xl gap-8 pb-8">
+    <footer className="flex flex-col bg-neutral-800 w-full p-8 justify-center items-center text-white md:bg-[url('/images/footer.png')] bg-repeat md:bg-no-repeat md:bg-cover bg-center bg-gradient-to-b from-black/10 via-black/20 to-black/80">
+      <div className="flex flex-col md:flex-row justify-evenly w-full max-w-6xl gap-8 pb-8 ">
         <div className="flex justify-center md:justify-start">
           <Image
-            src="/images/OBADLOGO.png"
+            src="/images/obadlogo2.png"
             alt="logo"
-            width={160}
-            height={160}
+            width={250}
+            height={200}
             className=""
           />
         </div>
         <div className="flex flex-col text-center md:text-left">
-          <h4 className="font-extrabold pb-2 font-[Gabarito]">À PROPOS </h4>
-
+          <h4 className="font-extrabold pb-2 font-[Gabarito] border-b mb-4 w-fit text-center md:text-left">
+            À PROPOS
+          </h4>
           <ul className="space-y-1">
             <li>Notre histoire</li>
             <li>
               <Link href="/infos/bureau" className=" hover:text-red-600">
-                Le Bureau
+                Le bureau
               </Link>
             </li>
             <li>
@@ -44,7 +45,9 @@ export default function Footer() {
           </ul>
         </div>
         <div className="flex flex-col text-center md:text-left">
-          <h4 className="font-extrabold pb-2 font-[Gabarito]">LIENS UTILES</h4>
+          <h4 className="font-extrabold pb-2 font-[Gabarito] border-b mb-4 w-fit text-center md:text-left">
+            LIENS UTILES
+          </h4>
 
           <ul className="space-y-1">
             <li>
@@ -57,7 +60,9 @@ export default function Footer() {
           </ul>
         </div>
         <div className="flex flex-col text-center md:text-left">
-          <h4 className="font-extrabold pb-2">OÙ NOUS TROUVER ?</h4>
+          <h4 className="font-extrabold pb-2 border-b mb-4 w-fit text-center md:text-left">
+            OÙ NOUS TROUVER ?
+          </h4>
           <ul className="space-y-1">
             <li>
               <a

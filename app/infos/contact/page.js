@@ -9,7 +9,7 @@ export default function Contact() {
     name: "",
     firstname: "",
     email: "",
-    message: "",
+    message: ""
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -27,7 +27,7 @@ export default function Contact() {
       const response = await fetch("https://formspree.io/f/xrbpgplg", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(formData)
       });
 
       if (response.ok) {
@@ -110,7 +110,7 @@ export default function Contact() {
                 className={`rounded-md h-12 p-3 font-bold ${
                   submitted
                     ? "bg-green-300 cursor-not-allowed"
-                    : "bg-blue-200 hover:bg-blue-300"
+                    : "bg-red-100 hover:bg-red-300"
                 }`}
                 disabled={loading || submitted}
               >

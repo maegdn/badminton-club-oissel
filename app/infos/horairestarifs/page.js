@@ -8,7 +8,7 @@ export default function HorairesTarifs() {
     <div className="flex flex-col w-full min-h-screen">
       <Header />
       <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center">
-        <h1 className="font-[Gabarito] text-3xl my-8">
+        <h1 className="font-[Gabarito] text-3xl mb-12">
           HORAIRES, TARIFS, LIEUX DE PRATIQUE
         </h1>
 
@@ -43,18 +43,18 @@ export default function HorairesTarifs() {
                   {
                     jour: "Lundi",
                     horaire: "19h - 21h",
-                    lieu: "Gymnase Pierre de Coubertin",
+                    lieu: "Gymnase Pierre de Coubertin"
                   },
                   {
                     jour: "Mercredi",
                     horaire: "19h - 21h",
-                    lieu: "Gymnase Pierre de Coubertin",
+                    lieu: "Gymnase Pierre de Coubertin"
                   },
                   {
                     jour: "Vendredi",
                     horaire: "19h - 21h",
-                    lieu: "Gymnase Pierre de Coubertin",
-                  },
+                    lieu: "Gymnase Pierre de Coubertin"
+                  }
                 ].map((item, i) => (
                   <tr key={i} className="hover:bg-gray-50">
                     <td className="w-[30%] border border-gray-300 p-2 text-center">
