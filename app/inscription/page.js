@@ -47,7 +47,7 @@ export default function Inscription() {
           </div>
           <div className="flex justify-center w-full">
             <button
-              className="bg-green-500 hover:bg-green-700 text-white font-bold  px-6 py-3 rounded"
+              className="bg-red-700 hover:bg-red-500 text-white font-bold  px-6 py-3 rounded"
               onClick={downloadForm}
             >
               Télécharger le formulaire d'inscription

@@ -17,18 +17,18 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="relative flex flex-row bg-neutral-800 w-full mb-12 text-white shadow-md justify-center">
-      <div className="flex justify-evenly items-center w-4/5">
+    <header className="relative flex flex-row bg-neutral-800 w-full  text-white shadow-md justify-center bg-[url('/images/header.png')] md:bg-cover bg-center">
+      <div className="flex justify-between items-center w-4/5">
         <div className="flex items-center">
           <Image
             className="logo"
-            src="/images/OBADLOGO.png"
+            src="/images/obadnotext.png"
             alt="Obad Logo"
-            width={120}
-            height={120}
+            width={200}
+            height={300}
           />
         </div>
-        <div className="hidden md:flex font-bold text-center items-center">
+        <div className="hidden md:flex font-bold text-center items-center p-5">
           <h1>CLUB DE BADMINTON DE OISSEL</h1>
         </div>
 
@@ -47,7 +47,10 @@ export default function Header() {
           <nav className="hidden md:flex">
             <ul className="flex flex-row gap-6">
               <li>
-                <Link href="/" className=" hover:text-red-600">
+                <Link
+                  href="/"
+                  className="pb-1.5 border-b-2 border-transparent hover:border-b-white"
+                >
                   Le club
                 </Link>
               </li>
@@ -97,13 +100,19 @@ export default function Header() {
                 )}
               </li>
               <li>
-                <Link href="/news" className="hover:text-red-500">
+                <Link
+                  href="/news"
+                  className="pb-1.5 border-b-2 border-transparent hover:border-b-white"
+                >
                   Actualités
                 </Link>
               </li>
               <li className="flex flex-row">
                 <div>
-                  <Link href="/inscription" className="hover:text-red-600">
+                  <Link
+                    href="/inscription"
+                    className="pb-1.5 border-b-2 border-transparent hover:border-b-white"
+                  >
                     Inscription
                   </Link>
                 </div>
@@ -114,7 +123,7 @@ export default function Header() {
       </div>
 
       {mobileMenuOpen && (
-        <nav className="md:hidden bg-neutral-800 w-full px-4 py-6">
+        <nav className="md:hidden bg-none px-6 py-6 w-4/5 flex ">
           <ul className="flex flex-col gap-2 font-bold">
             <li>
               <Link
@@ -127,12 +136,16 @@ export default function Header() {
             </li>
             <li>
               <div
-                className="flex justify-between items-center cursor-pointer"
+                className="flex gap-3 items-center cursor-pointer"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
                 <Link
                   href="/infos"
-                  className={`${dropdownOpen ? "text-red-600" : ""}`}
+                  className={`border-b-2 transition-all duration-200 ${
+                    dropdownOpen
+                      ? "border-red-600 text-red-600"
+                      : "border-transparent hover:border-red-400"
+                  }`}
                 >
                   Infos pratiques
                 </Link>
@@ -146,7 +159,10 @@ export default function Header() {
                     { label: "Contact", slug: "contact" },
                     { label: "Bureau", slug: "bureau" },
                   ].map(({ label, slug }) => (
-                    <li key={slug} className="hover:text-red-600">
+                    <li
+                      key={slug}
+                      className="pb-1.5 border-b-2 border-transparent hover:border-b-white"
+                    >
                       <Link
                         href={`/infos/${slug}`}
                         onClick={() => setMobileMenuOpen(false)}

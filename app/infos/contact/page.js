@@ -68,14 +68,14 @@ export default function Contact() {
                   value={formData.firstname}
                   placeholder="Prénom"
                   onChange={handleChange}
-                  className="bg-blue-100 rounded-md h-10 pl-3 w-2/4"
+                  className="bg-red-100 rounded-md h-10 pl-3 w-2/4"
                 ></input>
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   placeholder="Nom"
-                  className="bg-blue-100 rounded-md h-10 pl-3 w-2/4"
+                  className="bg-red-100 rounded-md h-10 pl-3 w-2/4"
                   onChange={handleChange}
                 ></input>
               </div>
@@ -85,7 +85,7 @@ export default function Contact() {
                 name="email"
                 value={formData.email}
                 placeholder="Adresse e-mail"
-                className="bg-blue-100 rounded-md h-10 pl-3"
+                className="bg-red-100 rounded-md h-10 pl-3"
                 onChange={handleChange}
               ></input>
               <textarea

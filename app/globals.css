@@ -35,6 +35,10 @@
 }
 html, body {
   overscroll-behavior: none;
+  height: 100%;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 body {

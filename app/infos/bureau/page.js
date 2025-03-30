@@ -13,7 +13,7 @@ export default function Bureau() {
               src="/images/profile-pic.jpg"
               className="h-52 w-52 mb-3 rounded-md object-cover"
             ></img>
-            <div className="flex flex-col w-150px justify-center items-center bg-blue-200 rounded-md h-16">
+            <div className="flex flex-col w-150px justify-center items-center bg-red-200 rounded-md h-16">
               <p>Marko Luka</p>
               <p className="font-bold">Trésorier</p>
             </div>
@@ -24,7 +24,7 @@ export default function Bureau() {
               src="/images/profile-pic.jpg"
               className="h-52 w-52 mb-3 rounded-md object-cover"
             ></img>
-            <div className="flex flex-col w-150px justify-center items-center bg-blue-200 rounded-md h-16">
+            <div className="flex flex-col w-150px justify-center items-center bg-red-200 rounded-md h-16">
               <p>Marko Luka</p>
               <p className="font-bold">Trésorier</p>
             </div>
@@ -34,7 +34,7 @@ export default function Bureau() {
               src="/images/profile-pic.jpg"
               className="h-52 w-52 mb-3 rounded-md object-cover"
             ></img>
-            <div className="flex flex-col w-150px justify-center items-center bg-blue-200 rounded-md h-16">
+            <div className="flex flex-col w-150px justify-center items-center bg-red-200 rounded-md h-16">
               <p>Marko Luka</p>
               <p className="font-bold">Trésorier</p>
             </div>
