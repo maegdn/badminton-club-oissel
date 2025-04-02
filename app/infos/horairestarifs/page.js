@@ -2,12 +2,18 @@
 
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import SEO from "../../components/SEO";
 
 export default function HorairesTarifs() {
   return (
     <div className="flex flex-col w-full min-h-screen">
       <Header />
       <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center">
+        <SEO
+          title="Horaires, tarifs et lieux de pratique"
+          url="https://badminton-club-oissel.vercel.app/infos/horairestarifs"
+          description="Découvrez les horaires, tarifs et lieux de pratique du club de badminton de Oissel."
+        />
         <h1 className="font-[Gabarito] text-3xl mb-12">
           HORAIRES, TARIFS, LIEUX DE PRATIQUE
         </h1>

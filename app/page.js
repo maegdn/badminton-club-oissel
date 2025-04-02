@@ -2,10 +2,16 @@ import Image from "next/image";
 
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import SEO from "./components/SEO";
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title="Badminton Club de Oissel"
+        url="https://badminton-club-oissel.vercel.app/"
+        description="Le Badminton Club de Oissel vous accueille pour des moments de sport et de bonne humeur. Découvrez le badminton en mixte dans une ambiance conviviale aux gymnases de Oissel."
+      />
       <header className="sticky top-0 z-50 bg-white shadow">
         <Header />
       </header>

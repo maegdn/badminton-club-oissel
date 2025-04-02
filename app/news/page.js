@@ -2,9 +2,9 @@
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import SEO from "../components/SEO";
 
 import { useEffect, useState } from "react";
-
 import { client } from "../../lib/sanity";
 import { PortableText } from "@portabletext/react";
 
@@ -29,6 +29,11 @@ export default function News() {
   return (
     <div className="flex flex-col items-center justify-items-center min-h-screen">
       <Header />
+      <SEO
+        title="Actualités du club"
+        url="https://badminton-club-oissel.vercel.app/news/"
+        description="Retrouvez les dernières actualités du club de badminton de Oissel."
+      />
       <main className="flex flex-col w-full min-h-full grow justify-center items-center">
         <h1 className="font-bold mt-5 mb-9">LES ACTUALITÉS DU CLUB</h1>
         <div className="flex flex-col w-full md:w-4/5 lg:w-3/5 gap-10 justify-center items-center p-4 text-black">

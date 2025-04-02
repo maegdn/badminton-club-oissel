@@ -1,9 +1,15 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import SEO from "../../components/SEO";
 
 export default function Bureau() {
   return (
     <div className="flex flex-col w-full min-h-screen">
+      <SEO
+        title="Bureau du club"
+        url="https://badminton-club-oissel.vercel.app/infos/bureau"
+        description="Voici les membres du bureau du club de badminton de Oissel. N'hésitez pas à les contacter pour toute question."
+      />
       <Header />
       <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center ">
         <h1 className="font-bold mt-5 mb-5">LES MEMBRES DU BUREAU</h1>
