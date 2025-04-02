@@ -17,15 +17,25 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="relative flex flex-row bg-neutral-800 w-full  text-white shadow-md justify-center bg-[url('/images/bn.png')] md:bg-cover bg-center">
+    <header className="relative flex flex-row bg-neutral-800 w-full  text-white shadow-md justify-center bg-[url('/images/banner3.png')] md:bg-cover bg-center">
       <div className="flex justify-between items-center w-4/5">
         <div className="flex items-center">
           <Image
-            className="logo"
+            className="block md:hidden p-2"
+            src="/images/obadlogo2.png"
+            alt="Logo mobile"
+            width={200}
+            height={250}
+            priority
+          />
+
+          <Image
+            className="hidden md:block logo"
             src="/images/obadnotext.png"
-            alt="Obad Logo"
+            alt="Logo desktop"
             width={200}
             height={300}
+            priority
           />
         </div>
         <div className="hidden md:flex font-bold text-center items-center p-5">
@@ -81,7 +91,7 @@ export default function Header() {
                   </span>
                 </div>
                 {dropdownOpen && (
-                  <div className="absolute top-full bg-white shadow-black min-w-full border text-black border-black">
+                  <div className="absolute top-full bg-white shadow-black min-w-full border text-black border-red">
                     <ul>
                       <li className="py-2 px-4 hover:bg-gray-200 w-full whitespace-nowrap">
                         <Link href="/infos/horairestarifs">
@@ -128,7 +138,7 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="hover:text-red-600"
+                className="hover:border-b-2 "
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Le club
@@ -143,7 +153,7 @@ export default function Header() {
                   href="/infos"
                   className={`border-b-2 transition-all duration-200 ${
                     dropdownOpen
-                      ? "border-red-600 text-red-600"
+                      ? "border-white"
                       : "border-transparent hover:border-red-400"
                   }`}
                 >
@@ -153,7 +163,7 @@ export default function Header() {
               </div>
 
               {dropdownOpen && (
-                <ul className="ml-4 mt-2 space-y-1 border-l-2 border-gray-600 pl-4">
+                <ul className="ml-4 mt-2 space-y-1 border-l-2 border-white pl-4">
                   {[
                     { label: "Horaires / Tarifs", slug: "horairestarifs" },
                     { label: "Contact", slug: "contact" },

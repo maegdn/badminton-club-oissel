@@ -21,9 +21,9 @@ export default function Inscription() {
   return (
     <div className="flex flex-col w-full min-h-screen">
       <Header />
-      <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center">
+      <main className="flex-1 flex flex-col items-center justify-center w-full">
         <h1 className="font-[Gabarito]">INSCRIPTION</h1>
-        <div className="flex flex-row flex-wrap justify-center items-center w-3/4 md:2/4 gap-16 my-12 text-justify">
+        <div className="flex flex-col md:flex-row flex-wrap justify-center items-center w-3/4 md:w-2/4 gap-8 my-12 text-justify">
           <div className="flex w-auto">
             <p>
               Vous souhaitez pratiquer le badminton dans une ambiance
@@ -47,7 +47,7 @@ export default function Inscription() {
           </div>
           <div className="flex justify-center w-full">
             <button
-              className="bg-red-700 hover:bg-red-500 text-white font-bold  px-6 py-3 rounded"
+              className="bg-red-700 hover:bg-red-500 transition duration-300 ease-in-out text-white font-bold px-6 py-3 rounded"
               onClick={downloadForm}
             >
               Télécharger le formulaire d'inscription

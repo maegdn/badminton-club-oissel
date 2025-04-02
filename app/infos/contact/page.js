@@ -1,7 +1,7 @@
 "use client";
 import Footer from "@/app/components/Footer";
 import Header from "../../components/Header";
-
+import Head from "next/head";
 import { useState } from "react";
 
 export default function Contact() {
@@ -47,8 +47,20 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <Head>
+        <title>Le bureau | Oissel Badminton</title>
+        <meta
+          name="Bureau O'Bad"
+          content="Membres du bureau du club de badminton de Oissel."
+        />
+        <meta property="og:title" content="Le bureau | Oissel Badminton" />
+        <link
+          rel="canonical"
+          content="https://oissel-badminton-club.vercel.app/infos/bureau"
+        />
+      </Head>
       <Header />
-      <main className="flex flex-col min-h-full flex-grow justify-center items-center px-8 md:px-4">
+      <main className="flex flex-col min-h-full flex-grow justify-center items-center px-8 md:px-4 h-screen">
         <div className="flex flex-col items-center text-justify  md:w-3/5 mb-10">
           <h1 className="font-bold mt-5 mb-5 justify-center">CONTACT</h1>
           <p>
