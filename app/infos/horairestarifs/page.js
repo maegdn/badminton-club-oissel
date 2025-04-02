@@ -8,7 +8,7 @@ export default function HorairesTarifs() {
   return (
     <div className="flex flex-col w-full min-h-screen">
       <Header />
-      <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center">
+      <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center pt-16 pb-22">
         <SEO
           title="Horaires, tarifs et lieux de pratique"
           url="https://badminton-club-oissel.vercel.app/infos/horairestarifs"
