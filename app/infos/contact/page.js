@@ -9,6 +9,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     firstname: "",
+    subject: "",
     email: "",
     message: ""
   });
@@ -34,7 +35,13 @@ export default function Contact() {
       if (response.ok) {
         console.log("Formulaire envoyé !");
         setSubmitted(true);
-        setFormData({ name: "", firstname: "", email: "", message: "" });
+        setFormData({
+          name: "",
+          firstname: "",
+          subject: "",
+          email: "",
+          message: ""
+        });
         setTimeout(() => setSubmitted(false), 5000);
       } else {
         console.error("Erreur côté serveur :", response.status);
@@ -75,6 +82,7 @@ export default function Contact() {
                   placeholder="Prénom"
                   onChange={handleChange}
                   className="bg-red-100 rounded-md h-10 pl-3 w-2/4"
+                  required
                 ></input>
                 <input
                   type="text"
@@ -83,6 +91,7 @@ export default function Contact() {
                   placeholder="Nom"
                   className="bg-red-100 rounded-md h-10 pl-3 w-2/4"
                   onChange={handleChange}
+                  required
                 ></input>
               </div>
               <input
@@ -94,6 +103,19 @@ export default function Contact() {
                 className="bg-red-100 rounded-md h-10 pl-3"
                 onChange={handleChange}
               ></input>
+              <label className="flex flex-col">
+                Sujet
+                <input
+                  type="text"
+                  name="subject"
+                  value={formData.subject}
+                  placeholder="Sujet"
+                  className="bg-red-100 rounded-md h-10 pl-3 "
+                  onChange={handleChange}
+                  required
+                ></input>
+              </label>
+
               <textarea
                 type="text"
                 value={formData.message}

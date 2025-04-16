@@ -33,12 +33,16 @@
     --foreground: #ededed;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
 html, body {
   overscroll-behavior: none;
   height: 100%;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  /* overflow: hidden; */
+  overflow-x-hidden: hidden;
+
 }
 
 body {

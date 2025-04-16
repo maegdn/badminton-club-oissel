@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
-
 import Image from "next/image";
 
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Header2 from "./components/Header2";
+
 import SEO from "./components/SEO";
 
 export default function Home() {
@@ -13,24 +14,22 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <>
       <SEO
         title="Badminton Club de Oissel"
         url="https://badminton-club-oissel.vercel.app/"
         description="Le Badminton Club de Oissel vous accueille pour des moments de sport et de bonne humeur. Découvrez le badminton en mixte dans une ambiance conviviale aux gymnases de Oissel."
       />
-      <header className="sticky top-0 z-50 bg-white shadow">
-        <Header />
+      <header className="sticky top-0 z-50 ">
+        <Header2 />
       </header>
-      <main className="flex flex-col flex-grow">
-        <section
-          className="h-screen snap-start flex flex-col items-center justify-center bg-white pt-36 pb-30"
-          style={{ scrollMarginTop: "6rem" }}
-        >
+
+      <main className="flex flex-col">
+        <section className=" flex flex-col items-center justify-center bg-white pt-16 pb-30">
           <h1 className="font-[Gabarito] text-3xl mb-12">
             Bienvenue sur le site de O'Bad !
           </h1>
-          <p className="w-3/5 justify-center mb-10">
+          <p className="w-3/5 mb-10 text-justify">
             Que vous soyez débutant ou joueur confirmé, notre club vous
             accueille dans une ambiance conviviale et dynamique. Depuis
             plusieurs années, nous rassemblons des passionnés de tous âges
@@ -39,62 +38,107 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col md:flex-row gap-12 items-center w-3/5">
-            <div className="flex flex-col gap-6 justify-evenly">
-              <h1 className="text-3xl font-bold mb-6">
+            <div className="h-full flex flex-col gap-6 justify-between">
+              <h2 className="text-3xl font-bold mb-6">
                 Nos horaires et nos activités
-              </h1>
-              <p className="text-justify">
+              </h2>
+              <p className="text-justify ">
                 Nous proposons des créneaux pour tous les niveaux, que ce soit
                 pour le loisir ou la compétition. Entraînements encadrés, matchs
                 libres, tournois internes ou stages pendant les vacances :
                 chacun peut y trouver son rythme et évoluer à son propre niveau.
               </p>
 
-              <button
-                className="bg-red-700 hover:bg-red-500 transition duration-300 ease-in-out text-white font-bold px-6 mt-6 py-3 rounded justify-center"
+              {/* <button
+                className="bg-red-700 hover:bg-red-500 transition duration-300 ease-in-out text-white font-bold px-6 mt-6 py-3 rounded"
                 onClick={() => redirectPage("infos/horairestarifs")}
               >
                 Consulter les horaires et salles
+              </button> */}
+              <button
+                class="relative overflow-hidden text-white bg-gray-900 before:content-[''] transition-colors duration-100 hover:text-white before:absolute before:inset-0 before:bg-slate-500 before:transition-transform before:duration-300 before:origin-left before:scale-x-0 hover:before:scale-x-100 px-6 py-3 rounded w-full mx-auto"
+                onClick={() => redirectPage("news")}
+              >
+                <span class="relative z-10 font-bold  ">
+                  Consulter les horaires et salles
+                </span>
               </button>
             </div>
 
             <Image
               src="/images/imgp1.png"
-              alt="logo"
-              width={1500}
-              height={1200}
-              className=""
+              alt="Image club"
+              width={500}
+              height={400}
+              className="rounded"
             />
           </div>
         </section>
-        <section className="h-screen snap-start flex items-center justify-center bg-gray-100">
-          <h2 className="text-2xl">Partie 2</h2>
+
+        <section className=" min-h-screen flex flex-col md:flex-row items-center justify-center gap-12">
+          <div className="absolute w-full min-h-screen bg-[url('/images/bckgrdob.png')] bg-cover bg-center opacity-20 flex items-center justify-center"></div>
+
+          <div className="relative flex flex-col gap-6 w-3/5 text-black ">
+            <h2 className="text-3xl font-bold text-black text-center pb-16">
+              Un club avec de l'entrain
+            </h2>
+            <p className="text-center text-black pb-16">
+              Que vous soyez débutant, joueur confirmé ou compétiteur chevronné,
+              notre club vous accueille dans une ambiance conviviale et
+              motivante. Nous proposons des créneaux adaptés à tous les niveaux,
+              allant du jeu libre aux entraînements encadrés par des coachs
+              passionnés. En semaine comme le week-end, chacun peut progresser à
+              son rythme tout en prenant du plaisir sur les terrains.
+              <br />
+              <br />
+              En plus des séances classiques, nous organisons régulièrement des
+              événements internes : tournois amicaux, stages pendant les
+              vacances scolaires, soirées thématiques et rencontres interclubs.
+              Notre objectif est de favoriser l’épanouissement de chacun, que
+              vous veniez pour le loisir ou pour repousser vos limites en
+              compétition.
+              <br />
+              <br />
+              Rejoindre notre club, c’est intégrer une véritable communauté
+              soudée par la passion du badminton, où l’entraide, la bonne humeur
+              et la progression sont au cœur de notre projet.
+            </p>
+            <button
+              class="relative overflow-hidden text-white bg-gray-900 before:content-[''] transition-colors duration-100 hover:text-white before:absolute before:inset-0 before:bg-slate-500 before:transition-transform before:duration-300 before:origin-left before:scale-x-0 hover:before:scale-x-100 px-6 py-3 rounded w-2/5 mx-auto"
+              onClick={() => redirectPage("news")}
+            >
+              <span class="relative z-10 font-bold  ">
+                Voir les actualités du club
+              </span>
+            </button>
+          </div>
         </section>
-        <section className="h-screen snap-start flex flex-col items-center justify-center bg-white">
-          <h2 className="text-2xl mb-12">Partie 3</h2>
-          <div className="flex gap-12 items-center w-3/5">
+
+        <section className=" flex flex-col items-center justify-center bg-white  py-20">
+          <h2 className="text-2xl mb-12">Événements et tournois</h2>
+          <div className="flex flex-col md:flex-row gap-12 items-center w-3/5">
             <Image
               src="/images/imgp3.png"
-              alt="logo"
+              alt="Tournoi"
               width={600}
-              height={500}
-              className=""
+              height={400}
+              className="rounded"
             />
-            <p>
+            <p className="text-justify">
               Envie de bouger, de vous amuser et de faire de belles rencontres ?
-              Venez découvrir le badminton en mixte dans une ambiance conviviale
-              aux gymnases de Oissel ! Que vous soyez débutant ou joueur
-              confirmé, notre club vous accueille pour partager des moments de
-              sport et de bonne humeur. C’est l’occasion idéale pour essayer,
-              progresser et pourquoi pas participer à nos tournois tout au long
-              de l’année. Rejoignez-nous sur le terrain ! 🏸
+              Venez découvrir le badminton en mixte ou en simple dans une
+              ambiance conviviale aux gymnases de Oissel ! Que vous soyez
+              débutant ou joueur confirmé, notre club vous accueille pour
+              partager des moments de sport et de bonne humeur. C’est l’occasion
+              idéale pour essayer, progresser et pourquoi pas participer à nos
+              tournois tout au long de l’année. Rejoignez-nous sur le terrain !
+              🏸
             </p>
           </div>
         </section>
       </main>
-      <footer className=" snap-start flex items-center justify-center  text-white">
-        <Footer />
-      </footer>
-    </div>
+
+      <Footer />
+    </>
   );
 }
