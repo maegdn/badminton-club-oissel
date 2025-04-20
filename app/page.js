@@ -5,6 +5,7 @@ import Image from "next/image";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Header2 from "./components/Header2";
+import Partners from "./components/Partners";
 
 import SEO from "./components/SEO";
 
@@ -56,10 +57,10 @@ export default function Home() {
                 Consulter les horaires et salles
               </button> */}
               <button
-                class="relative overflow-hidden text-white bg-gray-900 before:content-[''] transition-colors duration-100 hover:text-white before:absolute before:inset-0 before:bg-slate-500 before:transition-transform before:duration-300 before:origin-left before:scale-x-0 hover:before:scale-x-100 px-6 py-3 rounded w-full mx-auto"
+                className="relative overflow-hidden text-white bg-gray-900 before:content-[''] transition-colors duration-100 hover:text-white before:absolute before:inset-0 before:bg-slate-500 before:transition-transform before:duration-300 before:origin-left before:scale-x-0 hover:before:scale-x-100 px-6 py-3 rounded w-full mx-auto"
                 onClick={() => redirectPage("news")}
               >
-                <span class="relative z-10 font-bold  ">
+                <span className="relative z-10 font-bold  ">
                   Consulter les horaires et salles
                 </span>
               </button>
@@ -104,10 +105,10 @@ export default function Home() {
               et la progression sont au cœur de notre projet.
             </p>
             <button
-              class="relative overflow-hidden text-white bg-gray-900 before:content-[''] transition-colors duration-100 hover:text-white before:absolute before:inset-0 before:bg-slate-500 before:transition-transform before:duration-300 before:origin-left before:scale-x-0 hover:before:scale-x-100 px-6 py-3 rounded w-2/5 mx-auto"
+              className="relative overflow-hidden text-white bg-gray-900 before:content-[''] transition-colors duration-100 hover:text-white before:absolute before:inset-0 before:bg-slate-500 before:transition-transform before:duration-300 before:origin-left before:scale-x-0 hover:before:scale-x-100 px-6 py-3 rounded w-2/5 mx-auto"
               onClick={() => redirectPage("news")}
             >
-              <span class="relative z-10 font-bold  ">
+              <span className="relative z-10 font-bold  ">
                 Voir les actualités du club
               </span>
             </button>
@@ -137,6 +138,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <Partners />
 
       <Footer />
     </>
