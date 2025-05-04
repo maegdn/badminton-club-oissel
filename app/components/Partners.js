@@ -7,7 +7,7 @@ export default function Partners() {
             <div className="text-white"><h2>Partenaires</h2></div>
           </div>
 
-    <div className="animate-slide flex gap-60 whitespace-nowrap py-12">
+    <div className="animate-slide flex gap-60 whitespace-nowrap py-8">
             <Image
               src="/images/partners/lardesportsbw.png"
               alt="Lardesports"

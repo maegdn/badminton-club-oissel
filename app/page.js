@@ -31,11 +31,9 @@ export default function Home() {
             Bienvenue sur le site de O'Bad !
           </h1>
           <p className="w-3/5 mb-10 text-justify">
-            Que vous soyez débutant ou joueur confirmé, notre club vous
-            accueille dans une ambiance conviviale et dynamique. Depuis
-            plusieurs années, nous rassemblons des passionnés de tous âges
-            autour du plaisir de jouer, de progresser, et de partager de bons
-            moments sur le terrain comme en dehors. 🏸
+          L’association sportive Oissel Badminton, nommée également O’BAD, a été créée en octobre 2004. Elle a été affiliée à la fédération française de badminton depuis son ouverture jusqu'à la saison 2013-2014. L’association est donc devenue à la suite un club loisirs. 
+O’bad est avant tout un club familial, avec des valeurs telles que la bienveillance, l’écoute et l’entraide. Le club accueille des joueurs avec différents niveaux ce qui permet une diversité des regards sur la pratique du badminton. 
+ 🏸
           </p>
 
           <div className="flex flex-col md:flex-row gap-12 items-center w-3/5">
