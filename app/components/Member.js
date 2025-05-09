@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-export default function Member({ name, role, imageUrl }) {
+export default function Member({ name, role, imageUrl, imageUrlHovered }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -13,20 +13,27 @@ export default function Member({ name, role, imageUrl }) {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className=" absolute top-24 left-4 bg-white border-2 z-4 px-3">
-        <h3 className="font-bold text-black mb-0">Elise B.</h3>
+        <h3
+          className={`font-bold mb-0 ${
+            isHovered ? "text-blue-700" : "text-black"
+          }`}
+        >
+          {name}
+        </h3>
         <p className=" text-black -mt-2">{role}</p>
       </div>
-      <div className="absolute bottom-12 left-3 w-56 h-56">
+      <div className="absolute bottom-7 left-3 w-56 h-66">
         <Image
-          src={imageUrl}
+          src={`${!isHovered ? imageUrl : imageUrlHovered}`}
           alt={name}
           fill
-          className="object-cover overflow-hidden z-1 "
+          className="top-16 object-contain overflow-hidden z-1 "
         />
       </div>
+
       <div
-        className={`flex absolute bottom-12 left-3 w-56 h-36 ${
-          isHovered ? "bg-amber-300" : "bg-blue-200"
+        className={`flex absolute bottom-12 left-3 w-56 h-46 rounded-t-xl ${
+          isHovered ? "bg-blue-300" : "bg-gray-200"
         } opacity-100 p-3`}
       ></div>
 

@@ -18,16 +18,18 @@ export default function Bureau() {
       />
       <Header2 />
       <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center ">
-        <h1 className="font-bold mt-5 mb-5">LES MEMBRES DU BUREAU</h1>
+        <h1 className="font-bold mt-12 mb-12">LES MEMBRES DU BUREAU</h1>
 
         <div className="flex flex-col justify-center md:flex-row gap-22 items-center w-3/5">
-          <p className="w-3/5 mb-10 text-justify">
+          <p className="w-4/5 mb-10 text-justify">
             Qui dit association dit conseil d’administration : Le président et
             fondateur du club est François H, la trésorière est Sandrine M, la
             secrétaire est Elise B, les autres membres sont Ethan F, Romain L,
-            Aurélia D.B, Christophe N, Maryline D, Ghislaine M, Arnaud D. Pour
-            toutes questions concernant le club et son organisation, n’hésitez
-            pas à solliciter les membres du bureau.
+            Aurélia D.B, Christophe N, Maryline D, Ghislaine M, Arnaud D.
+            <br />
+            <br />
+            Pour toutes questions concernant le club et son organisation,
+            n’hésitez pas à solliciter les membres du bureau.
           </p>
         </div>
         <div className="flex flex-row flex-wrap gap-20 mt-16 mb-16">
@@ -93,15 +95,24 @@ export default function Bureau() {
           </div> */}
 
           <Member
-            name="Elise B."
-            role="Secrétaire"
-            imageUrl="/images/prof2nobg.png"
+            name="François H."
+            role="Président"
+            imageUrl="/images/FH.png"
+            imageUrlHovered="/images/FHCOLOR.png"
           />
 
           <Member
-            name="François H."
-            role="Président"
-            imageUrl="/images/prof1nobg.png"
+            name="Elise B."
+            role="Secrétaire"
+            imageUrl="/images/EB.png"
+            imageUrlHovered="/images/EBCOLOR.png"
+          />
+
+          <Member
+            name="Sandrine M."
+            role="Trésorière"
+            imageUrl="/images/SM.png"
+            imageUrlHovered="/images/SMCOLOR.png"
           />
 
           {/* <div className="relative w-48 h-52">
