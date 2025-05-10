@@ -1,7 +1,7 @@
 "use client";
 
 import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Header3 from "../components/Header3";
 import SEO from "../components/SEO";
 
 import { useEffect, useState } from "react";
@@ -28,7 +28,7 @@ export default function News() {
 
   return (
     <div className="flex flex-col items-center justify-items-center min-h-screen">
-      <Header />
+      <Header3 />
       <SEO
         title="Actualités du club"
         url="https://badminton-club-oissel.vercel.app/news/"

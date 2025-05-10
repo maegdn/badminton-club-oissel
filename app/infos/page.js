@@ -1,10 +1,10 @@
 import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Header3 from "../components/Header3";
 
 export default function InfosPratiques() {
   return (
     <div className="flex flex-col w-full min-h-screen">
-      <Header />
+      <Header3 />
       <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center gap-16">
         <div className="">
           <h1>Infos pratiques</h1>

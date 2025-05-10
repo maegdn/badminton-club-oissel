@@ -1,6 +1,6 @@
 "use client";
 import Footer from "@/app/components/Footer";
-import Header from "../../components/Header";
+import Header3 from "../../components/Header3";
 import Head from "next/head";
 import SEO from "@/app/components/SEO";
 import { useState } from "react";
@@ -60,9 +60,9 @@ export default function Contact() {
         url="https://badminton-club-oissel.vercel.app/infos/contact"
         description="Vous souhaitez contacter le club de badminton de Oissel et obtenir un renseignement? Remplissez un formulaire de contact ici."
       />
-      <Header />
-      <main className="flex flex-col min-h-full flex-grow justify-center items-center px-8 md:px-4 h-screen">
-        <div className="flex flex-col items-center text-justify  md:w-3/5 mb-10">
+      <Header3 />
+      <main className="flex flex-col min-h-full flex-grow justify-center items-center px-8 md:px-4 ">
+        <div className="flex flex-col items-center text-justify  md:w-3/5 mb-22 mt-12">
           <h1 className="font-bold mt-5 mb-5 justify-center">CONTACT</h1>
           <p>
             Pour nous contacter, vous pouvez nous envoyer un email à
@@ -81,7 +81,7 @@ export default function Contact() {
                   value={formData.firstname}
                   placeholder="Prénom"
                   onChange={handleChange}
-                  className="bg-red-100 rounded-md h-10 pl-3 w-2/4"
+                  className="bg-blue-100 rounded-md h-10 pl-3 w-2/4"
                   required
                 ></input>
                 <input
@@ -89,7 +89,7 @@ export default function Contact() {
                   name="name"
                   value={formData.name}
                   placeholder="Nom"
-                  className="bg-red-100 rounded-md h-10 pl-3 w-2/4"
+                  className="bg-blue-100 rounded-md h-10 pl-3 w-2/4"
                   onChange={handleChange}
                   required
                 ></input>
@@ -100,7 +100,7 @@ export default function Contact() {
                 name="email"
                 value={formData.email}
                 placeholder="Adresse e-mail"
-                className="bg-red-100 rounded-md h-10 pl-3"
+                className="bg-blue-100 rounded-md h-10 pl-3 mb-5"
                 onChange={handleChange}
               ></input>
               <label className="flex flex-col">
@@ -110,7 +110,7 @@ export default function Contact() {
                   name="subject"
                   value={formData.subject}
                   placeholder="Sujet"
-                  className="bg-red-100 rounded-md h-10 pl-3 "
+                  className="bg-blue-200 rounded-md h-10 pl-3 mt-3"
                   onChange={handleChange}
                   required
                 ></input>
@@ -138,15 +138,15 @@ export default function Contact() {
                 className={`rounded-md h-12 p-3 font-bold ${
                   submitted
                     ? "bg-green-300 cursor-not-allowed"
-                    : "bg-red-100 hover:bg-red-300"
-                }`}
+                    : "bg-blue-100 hover:bg-blue-300"
+                } mb-22`}
                 disabled={loading || submitted}
               >
                 {loading
                   ? "Envoi en cours..."
                   : submitted
-                    ? "Formulaire envoyé !"
-                    : "Envoyer"}
+                  ? "Formulaire envoyé !"
+                  : "Envoyer"}
               </button>
             </div>
           </form>

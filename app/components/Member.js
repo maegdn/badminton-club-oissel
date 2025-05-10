@@ -33,7 +33,7 @@ export default function Member({ name, role, imageUrl, imageUrlHovered }) {
 
       <div
         className={`flex absolute bottom-12 left-3 w-56 h-46 rounded-t-xl ${
-          isHovered ? "bg-blue-300" : "bg-gray-200"
+          isHovered ? "bg-gray-200" : "bg-gray-300"
         } opacity-100 p-3`}
       ></div>
 
