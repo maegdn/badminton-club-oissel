@@ -109,6 +109,9 @@ export default function Header2() {
                   <div className="absolute top-full bg-white shadow-black min-w-full border text-black border-red">
                     <ul>
                       <li className="py-2 px-4 hover:bg-gray-200 w-full whitespace-nowrap">
+                        <Link href="/infos/fonctionnement">Fonctionnement</Link>
+                      </li>
+                      <li className="py-2 px-4 hover:bg-gray-200 w-full whitespace-nowrap">
                         <Link href="/infos/horairestarifs">
                           Horaires / Tarifs
                         </Link>

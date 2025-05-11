@@ -20,6 +20,41 @@ export default function HorairesTarifs() {
 
         <div className="flex flex-col justify-center items-center w-3/4 gap-8">
           <div className="flex flex-col justify-center items-center w-full">
+            {/* <div> */}
+            <p>
+              Les entraînements sont ouverts de septembre à juillet, sauf
+              indisponibilité de la salle. <br />
+              Les règles principales des entrainements sont les suivantes :
+              <br />
+              <ul className="list-disc">
+                <li>
+                  jouer avec des chaussures de salle non utilisées à l'extérieur
+                </li>
+                <li>aider à monter/démonter les terrains</li>
+                <li>
+                  libérer le terrain à chaque fin de set afin de permettre à
+                  tout le monde de jouer et rencontrer différents joueurs
+                </li>
+              </ul>
+              <p>
+                Il y a 2 tournois internes ouverts à tout adhérent, quelque soit
+                son niveau : un en automne et un en juin pour fêter la fin de
+                saison. Un tournoi open mixte est également organisé au cours de
+                la saison. Il est ouvert à tous les adhérents non licenciés à la
+                fédération française de badminton. Depuis quelques temps, une
+                grande partie des joueurs du club a fait part de son manque
+                d’évolution dans sa pratique sportive. C’est pour cela que le
+                Coach Veasna intervient auprès de notre club depuis la fin de
+                saison 2023-2024. Tous les joueurs du club peuvent bénéficier
+                d'entraînements individuels et/ou collectifs. L'inscription se
+                fait soit par le sondage envoyé sur le groupe Whatsapp soit en
+                envoyant un message à Elise Buteux via Whatsapp. Ces cours ne
+                sont pas obligatoires, ce qui permet aux joueurs qui ne
+                souhaitent pas y participer de continuer à pratiquer le
+                badminton en jeu libre.
+              </p>
+            </p>
+            {/* </div> */}
             <h3 className="text-xl font-bold">Créneaux des séances</h3>
             <table className="table-fixed w-full sm:w-2/3 md:w-full min-w-max border border-gray-300 mt-6">
               <thead>

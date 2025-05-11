@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import Footer from "../../components/Footer";
-import Header2 from "../../components/Header2";
+import Header3 from "../../components/Header3";
 import SEO from "../../components/SEO";
 import Member from "../../components/Member";
 
@@ -16,7 +16,7 @@ export default function Bureau() {
         url="https://badminton-club-oissel.vercel.app/infos/bureau"
         description="Voici les membres du bureau du club de badminton de Oissel. N'hésitez pas à les contacter pour toute question."
       />
-      <Header2 />
+      <Header3 />
       <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center ">
         <h1 className="font-bold mt-12 mb-12">LES MEMBRES DU BUREAU</h1>
 
@@ -32,7 +32,7 @@ export default function Bureau() {
             n’hésitez pas à solliciter les membres du bureau.
           </p>
         </div>
-        <div className="flex flex-row flex-wrap gap-20 mt-16 mb-16">
+        <div className="flex flex-row flex-wrap gap-20 mt-16 mb-16 justify-center">
           {/* <div className="relative w-48 h-52">
             <div className="absolute top-0 left-0 w-46 h-58 bg-blue-200 opacity-70"></div>
             <div className="absolute bottom-12 left-10 w-46 h-46 shadow">

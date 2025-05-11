@@ -99,6 +99,9 @@ export default function Header3() {
                   <div className="absolute top-full bg-white shadow-black min-w-full border text-black border-red">
                     <ul>
                       <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
+                        <Link href="/infos/fonctionnement">Fonctionnement</Link>
+                      </li>
+                      <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
                         <Link href="/infos/horairestarifs">
                           Horaires / Tarifs
                         </Link>
@@ -159,7 +162,7 @@ export default function Header3() {
                   className={`border-b-2 transition-all duration-200 ${
                     dropdownOpen
                       ? "border-white"
-                      : "border-transparent hover:border-red-400"
+                      : "border-transparent hover:border-blue-400"
                   }`}
                 >
                   Infos pratiques
@@ -170,6 +173,7 @@ export default function Header3() {
               {dropdownOpen && (
                 <ul className="ml-4 mt-2 space-y-1 border-l-2 border-white pl-4">
                   {[
+                    { label: "Fonctionnement", slug: "fonctionnement" },
                     { label: "Horaires / Tarifs", slug: "horairestarifs" },
                     { label: "Contact", slug: "contact" },
                     { label: "Bureau", slug: "bureau" }
@@ -193,7 +197,7 @@ export default function Header3() {
             <li>
               <Link
                 href="/news"
-                className="hover:text-red-600"
+                className="hover:text-blue-600"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Actualités
@@ -202,7 +206,7 @@ export default function Header3() {
             <li>
               <Link
                 href="/inscription"
-                className="hover:text-red-600"
+                className="hover:text-blue-600"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Inscription

@@ -62,8 +62,8 @@ export default function Contact() {
       />
       <Header3 />
       <main className="flex flex-col min-h-full flex-grow justify-center items-center px-8 md:px-4 ">
-        <div className="flex flex-col items-center text-justify  md:w-3/5 mb-22 mt-12">
-          <h1 className="font-bold mt-5 mb-5 justify-center">CONTACT</h1>
+        <div className="flex flex-col items-center text-justify  md:w-3/5 mb-12 mt-12">
+          <h1 className="font-bold mt-5 justify-cente mb-12">CONTACT</h1>
           <p>
             Pour nous contacter, vous pouvez nous envoyer un email à
             <span className="font-bold"> obadoissel@gmail.com</span> ou bien
@@ -110,7 +110,7 @@ export default function Contact() {
                   name="subject"
                   value={formData.subject}
                   placeholder="Sujet"
-                  className="bg-blue-200 rounded-md h-10 pl-3 mt-3"
+                  className="bg-blue-100 rounded-md h-10 pl-3 mt-3"
                   onChange={handleChange}
                   required
                 ></input>

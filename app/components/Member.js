@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Member({ name, role, imageUrl, imageUrlHovered }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -15,7 +16,7 @@ export default function Member({ name, role, imageUrl, imageUrlHovered }) {
       <div className=" absolute top-24 left-4 bg-white border-2 z-4 px-3">
         <h3
           className={`font-bold mb-0 ${
-            isHovered ? "text-blue-700" : "text-black"
+            isHovered ? "text-slate-600" : "text-black"
           }`}
         >
           {name}
@@ -29,17 +30,23 @@ export default function Member({ name, role, imageUrl, imageUrlHovered }) {
           fill
           className="top-16 object-contain overflow-hidden z-1 "
         />
+        <div className="relative top-60 left-3">
+          <Link href={`https://wa.me/${process.env.PHONE_NUMBER_MG}`}>
+            <img
+              src="/images/WhatsAppButtonWhiteSmall.png"
+              alt="Chat on WhatsApp"
+              height={20}
+              width={200}
+            />
+          </Link>
+        </div>
       </div>
 
       <div
         className={`flex absolute bottom-12 left-3 w-56 h-46 rounded-t-xl ${
-          isHovered ? "bg-gray-200" : "bg-gray-300"
+          isHovered ? "bg-blue-200" : "bg-gray-100"
         } opacity-100 p-3`}
       ></div>
-
-      {/* <div className="flex border-1 justify-center items-center rounded-full h-8 w-8 ml-6 mt-2">
-              <GoMail size={20} />
-            </div> */}
     </div>
   );
 }
