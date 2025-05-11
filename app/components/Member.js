@@ -31,7 +31,9 @@ export default function Member({ name, role, imageUrl, imageUrlHovered }) {
           className="top-16 object-contain overflow-hidden z-1 "
         />
         <div className="relative top-60 left-3">
-          <Link href={`https://wa.me/${process.env.PHONE_NUMBER_MG}`}>
+          <Link
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER_MG}`}
+          >
             <img
               src="/images/WhatsAppButtonWhiteSmall.png"
               alt="Chat on WhatsApp"
