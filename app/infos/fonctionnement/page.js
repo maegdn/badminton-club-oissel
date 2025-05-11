@@ -1,3 +1,4 @@
+"use client";
 import Header3 from "@/app/components/Header3";
 import React from "react";
 import Image from "next/image";
@@ -27,7 +28,9 @@ export default function fonctionnement() {
             </p>
           </div>
           <div className="flex justify-center w-full">
-            <Link href={`https://wa.me/${process.env.PHONE_NUMBER_MG}`}>
+            <Link
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER_MG}`}
+            >
               <img
                 src="/images/WhatsAppButtonWhiteSmall.png"
                 alt="Chat on WhatsApp"
