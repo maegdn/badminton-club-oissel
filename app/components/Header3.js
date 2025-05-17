@@ -125,6 +125,14 @@ export default function Header3() {
                   Actualités
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/photos"
+                  className="pb-1.5 border-b-2 border-transparent hover:border-b-white"
+                >
+                  Gallerie
+                </Link>
+              </li>
               <li className="flex flex-row">
                 <div>
                   <Link

@@ -27,18 +27,6 @@ export default function fonctionnement() {
               pour annoncer le niveau de l’équipe adverse.
             </p>
           </div>
-          <div className="flex justify-center w-full">
-            <Link
-              href={`https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER_MG}`}
-            >
-              <img
-                src="/images/WhatsAppButtonWhiteSmall.png"
-                alt="Chat on WhatsApp"
-                height={20}
-                width={200}
-              />
-            </Link>
-          </div>
         </div>
       </main>
       <Footer />
