@@ -112,7 +112,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/news"
-                  className="pb-1.5 border-b-2 border-transparent hover:border-b-white"
+                  className="pb-1.5 border-b-2 border-transparent hover:border-b-slate-500"
                 >
                   Actualités
                 </Link>
@@ -121,7 +121,7 @@ export default function Header() {
                 <div>
                   <Link
                     href="/inscription"
-                    className="pb-1.5 border-b-2 border-transparent hover:border-b-white"
+                    className="pb-1.5 border-b-2 border-transparent hover:border-b-red"
                   >
                     Inscription
                   </Link>

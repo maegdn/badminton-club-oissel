@@ -74,7 +74,11 @@ export default function Header2() {
               <li>
                 <Link
                   href="/"
-                  className="pb-1.5 border-b-2 border-transparent hover:border-b-white"
+                  className={`pb-1.5 border-b-2 border-transparent ${
+                    scrolled
+                      ? "hover:border-b-white"
+                      : "hover:border-b-slate-700"
+                  }`}
                 >
                   Le club
                 </Link>
@@ -93,7 +97,7 @@ export default function Header2() {
                 <div className="flex flex-row items-center">
                   <Link
                     href="/infos"
-                    className={`${activeNav ? "text-red-600" : ""}`}
+                    className={`${!scrolled ? "text-slate-700" : ""}`}
                   >
                     Infos pratiques
                   </Link>
@@ -108,19 +112,19 @@ export default function Header2() {
                 {dropdownOpen && (
                   <div className="absolute top-full bg-white shadow-black min-w-full border text-black border-red">
                     <ul>
-                      <li className="py-2 px-4 hover:bg-gray-200 w-full whitespace-nowrap">
+                      <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
                         <Link href="/infos/fonctionnement">Fonctionnement</Link>
                       </li>
-                      <li className="py-2 px-4 hover:bg-gray-200 w-full whitespace-nowrap">
+                      <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
                         <Link href="/infos/horairestarifs">
                           Horaires / Tarifs
                         </Link>
                       </li>
 
-                      <li className="py-2 px-4 hover:bg-gray-200 w-full whitespace-nowrap">
+                      <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
                         <Link href="/infos/bureau">Le bureau</Link>
                       </li>
-                      <li className="py-2 px-4 hover:bg-gray-200 w-full whitespace-nowrap">
+                      <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
                         <Link href="/infos/contact">Contact</Link>
                       </li>
                     </ul>
@@ -130,16 +134,37 @@ export default function Header2() {
               <li>
                 <Link
                   href="/news"
-                  className="pb-1.5 border-b-2 border-transparent hover:border-b-white"
+                  className={`pb-1.5 border-b-2 border-transparent ${
+                    scrolled
+                      ? "hover:border-b-white"
+                      : "hover:border-b-slate-700"
+                  }`}
                 >
                   Actualités
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="/photos"
+                  className={`pb-1.5 border-b-2 border-transparent ${
+                    scrolled
+                      ? "hover:border-b-white"
+                      : "hover:border-b-slate-700"
+                  }`}
+                >
+                  Gallerie
                 </Link>
               </li>
               <li className="flex flex-row">
                 <div>
                   <Link
                     href="/inscription"
-                    className="pb-1.5 border-b-2 border-transparent hover:border-b-white"
+                    className={`pb-1.5 border-b-2 border-transparent ${
+                      scrolled
+                        ? "hover:border-b-white"
+                        : "hover:border-b-slate-700"
+                    }`}
                   >
                     Inscription
                   </Link>
