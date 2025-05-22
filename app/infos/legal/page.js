@@ -1,10 +1,10 @@
 import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import Header3 from "../../components/Header3";
 
 export default function Legal() {
   return (
     <>
-      <Header />
+      <Header3 />
       <main className="flex flex-col w-full min-h-screen grow items-center">
         <div className="flex flex-col justify-start text-justify lg:w-3/4 px-10 py-10">
           <h1 className="flex justify-center">Mentions légales</h1>
@@ -89,7 +89,7 @@ export default function Legal() {
           </section>
         </div>
         <div>
-          <p className="mt-22 justify-center font-bold">
+          <p className="mt-6 justify-center font-bold pb-18">
             Bonne visite sur notre site ! 🏸
           </p>
         </div>

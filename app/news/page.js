@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Footer from "../components/Footer";
 import Header3 from "../components/Header3";
 import SEO from "../components/SEO";
@@ -20,10 +21,14 @@ export default function News() {
         content,
         description,
         "imageUrl": image.asset->url,
+        slug,
         publishedAt,
       }`
       )
-      .then((data) => setPosts(data) && console.log(data));
+      .then((data) =>  {
+        setPosts(data)
+        console.log(data);
+      })
   }, []);
 
   return (
@@ -54,6 +59,7 @@ export default function News() {
               <div className="flex flex-col w-full md:w-1/2 p-4 justify-between text-justify">
                 <h2 className="text-xl font-semibold mb-2">{post.title}</h2>
                 <PortableText value={post.content} />
+               <Link href={`/news/${post.slug.current}`}><button className="border-2-black bg-blue-200 text-black" >Lire davantage.</button></Link>
                 <p className="text-sm text-gray-500 mt-4 text-justify">
                   {new Date(post.publishedAt).toLocaleDateString()}
                 </p>
