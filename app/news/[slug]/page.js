@@ -3,9 +3,9 @@ import { client } from "../../../lib/sanity";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import Link from "next/link";
-
 import Footer from "../../components/Footer";
 import Header3 from "../../components/Header3";
+import { IoArrowBackSharp } from "react-icons/io5";
 
 
 export async function generateStaticParams() {
@@ -18,25 +18,86 @@ export async function generateStaticParams() {
     }))
   }
 
-
-  // export default async function Page({ params }) {
-  //   const slug = params.slug; 
-  export default async function Page({params}) {
-    const slug = params.slug;
-
-    const selectedPost = await client.fetch(
+// async function getPostBySlug(slug) {
+//     return await client.fetch(
+//       `*[_type == "article" && slug.current == $slug][0]{
+//         _id,
+//         title,
+//         content,
+//         publishedAt,
+//         "imageUrl": image.asset->url,
+//         "slug": slug.current
+//       }`,
+//       { slug }
+//     );
+//   }
+  export default async function Page({ params }) {
+    
+    const post = await client.fetch(
       `*[_type == "article" && slug.current == $slug][0]{
-        _id,
         title,
         content,
         publishedAt,
-        "imageUrl": image.asset->url,
-        "slug": slug.current
+        "imageUrl": image.asset->url
       }`,
-      { slug }
+      { slug: params.slug }
     );
     
-    return <h1>My Page</h1>
+    return (
+
+<div className="flex flex-col items-center justify-items-center min-h-screen">
+<Header3 />
+{/* <SEO
+  title="post"
+  url="https://badminton-club-oissel.vercel.app/news/"
+  description="Retrouvez les dernières actualités du club de badminton de Oissel."
+/> */}
+<main className="flex flex-col w-full min-h-full grow justify-center items-center pt-8">
+<nav className="text-sm text-gray-500 mb-4">
+  <Link href="/" className="hover:underline decoration-blue-400">Accueil</Link> <span className="text-blue-400 font-extrabold">&gt;{" "}</span>
+  <Link href="/news" className="hover:underline decoration-blue-400">Actualités</Link> <span className="text-blue-400 font-extrabold">&gt;{" "}</span>
+  <span className="text-gray-700">{post.title}</span>
+</nav>
+
+  <div className="flex items-center md:w-2/4 mb-6">
+  <Link href="/news">
+    <IoArrowBackSharp className="md:mr-10  text-gray-700 hover:text-black" size={32} />
+  </Link>
+  <h1 className="text-center font-bold text-xl"> {post.title} </h1>
+</div>
+  <div className="flex flex-col w-full gap-10 justify-center items-center p-4 text-black">
+      <div
+        className="flex flex-col items-center w-full"
+      >
+        {post.imageUrl && (
+          <div className="w-full md:w-1/2 h-full">
+            <img
+              src={post.imageUrl}
+              alt={post.title}
+              className="w-full  shadow-blue-200 shadow-lg rounded-lg mb-6 "
+            />
+          </div>
+        )}
+        <div className="flex flex-col w-11/12 md:w-1/2 pt-6 pb-6 justify-between text-justify">
+          <PortableText value={post.content} />
+          <div className="flex justify-between items-center pt-6">
+          <p className=" text-gray-500 mt-2 text-justify mb-6">
+            {new Date(post.publishedAt).toLocaleDateString()}
+          </p>
+{/* <div className=" flex justify-center items-center">          <Link href={`/news/`}><button className="  border-2 text-white font-bold bg-slate-400 hover:bg-slate-900 py-3 px-22 mr-4 items-end rounded-lg" >Retour sur les actualités</button></Link>
+</div> */}
+         </div>
+          
+
+        </div>
+      </div>
+  </div>
+</main>
+<Footer />
+</div>
+    )
+    
+   
   }
 //   export default async function Post({ params }) {
 //     const slug = params?.slug;
@@ -51,46 +112,3 @@ export async function generateStaticParams() {
 // }`,{slug });
 // if (!selectedPost) return <div>Article introuvable</div>
 
-
-
-//     return (
-      
-// <div className="flex justify-center align-center">hello</div>
-//   //   <div className="flex flex-col items-center justify-items-center min-h-screen">
-//   //   <Header3 />
-//   //   {/* <SEO
-//   //     title="post"
-//   //     url="https://badminton-club-oissel.vercel.app/news/"
-//   //     description="Retrouvez les dernières actualités du club de badminton de Oissel."
-//   //   /> */}
-//   //   <main className="flex flex-col w-full min-h-full grow justify-center items-center pt-8">
-//   //     <h1 className="font-bold mt-5 mb-9">{selectedPost.slug}</h1>
-//   //     <div className="flex flex-col w-full md:w-4/5 lg:w-3/5 gap-10 justify-center items-center p-4 text-black">
-//   //         <div
-//   //           key={selectedPost._id}
-//   //           className="flex flex-col md:flex-row  shadow-lg overflow-hidden w-full items-stretch"
-//   //         >
-//   //           {selectedPost.imageUrl && (
-//   //             <div className="w-full md:w-1/2 h-full">
-//   //               <img
-//   //                 src={selectedPost.imageUrl}
-//   //                 alt={selectedPost.title}
-//   //                 className="w-full aspect-video object-cover"
-//   //               />
-//   //             </div>
-//   //           )}
-//   //           <div className="flex flex-col w-full md:w-1/2 p-4 justify-between text-justify">
-//   //             <h2 className="text-xl font-semibold mb-2">{selectedPost.title}</h2>
-//   //             <PortableText value={selectedPost.content} />
-//   //             <p className="text-sm text-gray-500 mt-4 text-justify">
-//   //               {new Date(selectedPost.publishedAt).toLocaleDateString()}
-//   //             </p>
-//   //           </div>
-//   //         </div>
-//   //     </div>
-//   //   </main>
-//   //   <Footer />
-//   // </div>
-//     )
-
-//   }
