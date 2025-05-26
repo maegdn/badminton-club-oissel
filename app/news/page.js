@@ -68,7 +68,7 @@ export default function News() {
                 <p className="text-sm text-gray-500 text-justify px-4 ">
                   {new Date(post.publishedAt).toLocaleDateString()}
                 </p>
-                  <Link href={`/news/${post.slug.current}`}><button className=" text-sm border-2 text-white font-bold bg-slate-400 hover:bg-slate-900 py-1 px-12 mr-4 items-end rounded-lg" >Lire</button></Link>
+                  <Link href={`/news/${post.slug.current}`}><button className=" text-sm border-2 text-white font-bold bg-slate-500 hover:bg-slate-900 py-1 px-12 mr-4 items-end rounded-lg" >Lire</button></Link>
                </div>
                
               </div>

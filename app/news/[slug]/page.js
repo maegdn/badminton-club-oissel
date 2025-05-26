@@ -7,6 +7,9 @@ import Footer from "../../components/Footer";
 import Header3 from "../../components/Header3";
 import { IoArrowBackSharp } from "react-icons/io5";
 
+import { notFound } from "next/navigation";
+
+
 
 export async function generateStaticParams() {
     const posts = await client.fetch(
@@ -42,7 +45,9 @@ export async function generateStaticParams() {
       }`,
       { slug: params.slug }
     );
-    
+    if (!post) {
+      return notFound()
+    }
     return (
 
 <div className="flex flex-col items-center justify-items-center min-h-screen">
