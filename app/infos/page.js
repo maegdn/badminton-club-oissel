@@ -6,21 +6,19 @@ export default function InfosPratiques() {
     <div className="flex flex-col w-full min-h-screen">
       <Header3 />
       <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center gap-16">
-        <div className="">
           <h1>Infos pratiques</h1>
-          <p>
-            Le club de badminton O'bad est un club de badminton situé à Oissel,
-            en Normandie.
-          </p>
-          <p>
-            Le club propose des entraînements pour tous les niveaux, du débutant
-            à l'expert.
-          </p>
-          <p>
-            Le club organise également des tournois et des événements tout au
-            long de l'année.
-          </p>
-        </div>
+          <div className=" w-full h-[400px] bg-[url('/images/badmminton-coaching-bw.png')] bg-cover bg-center opacity-30">
+            <div className="flex flex-col p-6"> <p className="text-white">
+              Le club de badminton de Oissel est ouvert à tous les niveaux, du débutant au joueur confirmé. 
+              Nous proposons des entraînements réguliers, des compétitions et des événements sociaux pour 
+              rassembler notre communauté.
+            </p>
+            <p className="text-white">
+              Pour plus d'informations sur les horaires, les tarifs et les lieux de pratique, veuillez consulter 
+              notre page dédiée aux <a href="/infos/horairestarifs">horaires et tarifs</a>.
+            </p></div>
+           
+          </div>
       </main>
       <Footer />
     </div>

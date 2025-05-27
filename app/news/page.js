@@ -43,7 +43,7 @@ export default function News() {
       />
       <main className="flex flex-col w-full min-h-full grow justify-center items-center pt-8">
         <h1 className="font-bold mt-5 mb-9">LES ACTUALITÉS DU CLUB</h1>
-        <div className="flex flex-col w-full md:w-4/5 lg:w-3/5 gap-10 justify-center items-center p-4 text-black">
+        <div className="flex flex-col md:w-4/5 lg:w-3/5 gap-10 justify-center items-center p-4 text-black mb-22">
           
           {posts.map((post) => (
             <div
@@ -64,7 +64,7 @@ export default function News() {
                 <h2 className=" text-xl font-semibold mb-2 px-4 text-center md:text-left">{post.title}</h2>
                 <div className="line-clamp-5 px-4"><PortableText  value={post.content} /></div>
 
-                <div className="flex justify-between items-center pt-6">
+                <div className="flex justify-between items-center pt-6 mb-3">
                 <p className="text-sm text-gray-500 text-justify px-4 ">
                   {new Date(post.publishedAt).toLocaleDateString()}
                 </p>

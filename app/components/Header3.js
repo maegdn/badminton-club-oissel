@@ -99,7 +99,7 @@ export default function Header3() {
                   <div className="absolute top-full bg-white shadow-black min-w-full border text-black border-red">
                     <ul>
                       <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
-                        <Link href="/infos/fonctionnement">Fonctionnement</Link>
+                        <Link href="/infos/evenements">Événements</Link>
                       </li>
                       <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
                         <Link href="/infos/horairestarifs">
@@ -181,7 +181,7 @@ export default function Header3() {
               {dropdownOpen && (
                 <ul className="ml-4 mt-2 space-y-1 border-l-2 border-white pl-4">
                   {[
-                    { label: "Fonctionnement", slug: "fonctionnement" },
+                    { label: "Événements", slug: "evenements" },
                     { label: "Horaires / Tarifs", slug: "horairestarifs" },
                     { label: "Contact", slug: "contact" },
                     { label: "Bureau", slug: "bureau" }

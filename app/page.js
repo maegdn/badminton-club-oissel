@@ -26,6 +26,7 @@ export default function Home() {
       </header>
 
       <main className="flex flex-col">
+        {/* <Image src="/images/bad-shut-blue.png" fill className="object-contain"/> */}
         <section className=" flex flex-col items-center justify-center bg-white pt-16 pb-30">
           <h1 className="font-[Gabarito] text-3xl mb-12">
             Bienvenue sur le site de O'Bad !

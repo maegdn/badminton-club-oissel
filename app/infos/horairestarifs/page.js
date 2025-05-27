@@ -15,19 +15,22 @@ export default function HorairesTarifs() {
           url="https://badminton-club-oissel.vercel.app/infos/horairestarifs"
           description="Découvrez les horaires, tarifs et lieux de pratique du club de badminton de Oissel."
         />
-        <h1 className="font-[Gabarito] text-3xl mb-12">
+
+        
+
+        <div className="flex flex-col justify-center items-center w-full gap-8">
+        
+          <div className="flex flex-col justify-center items-center w-4/5">
+          <h1 className="font-[Gabarito] text-3xl mb-12">
           HORAIRES, TARIFS, LIEUX DE PRATIQUE
         </h1>
-
-        <div className="flex flex-col justify-center items-center w-3/4 gap-8">
-          <div className="flex flex-col justify-center w-3/4">
             {/* <div> */}
             <p>
               Les entraînements sont ouverts de septembre à juillet, sauf
               indisponibilité de la salle. <br />
               Les règles principales des entrainements sont les suivantes :
             </p>
-            <div className="flex flex-wrap justify-evenly align-bottom w-full mb-12">
+            <div className="flex flex-wrap justify-evenly align-bottom w-full mb-22">
               <div className=" flex flex-col justify-center w-60 text-center items-center">
                 <Image
                   src="/images/shoe.png"
@@ -70,14 +73,19 @@ export default function HorairesTarifs() {
                 </div>
               </div>
             </div>
-            <p className="text-justify mb-16">
-              Il y a 2 tournois internes ouverts à tout adhérent, quelque soit
-              son niveau : un en automne et un en juin pour fêter la fin de
-              saison. Un tournoi open mixte est également organisé au cours de
-              la saison. Il est ouvert à tous les adhérents non licenciés à la
-              fédération française de badminton. <br />
-              <br />
-              Depuis quelques temps le Coach Veasna intervient auprès de notre
+            </div>
+
+
+
+            <div className="relative h-[400px] w-full mb-16">
+            <div className="absolute w-full h-[400px] bg-[url('/images/badmminton-coaching-bw.png')] bg-cover bg-center opacity-90"></div>
+
+          <div className="absolute flex gap-6 justify-center items-center h-[400px]">
+           <p className="flex font-[HemiHead] text-4xl md:text-3xl lg:text-9xl xl:text-8xl text-white mb-12 w-[60%]  items-start justify-center text-shawdow-black pb-30
+">COACHING</p>
+            <p className=" items-center justify-center text-justify text-white z-10 p-20 w-[40%]">
+              
+              Depuis quelques temps le <span className="font-bold">Coach Veasna </span>intervient auprès de notre
               club afin de permettre une évolution de la pratique de chacun.
               Tous les joueurs du club peuvent bénéficier d'entraînements
               individuels et/ou collectifs. L'inscription se fait soit par le
@@ -86,28 +94,31 @@ export default function HorairesTarifs() {
               qui permet aux joueurs qui ne souhaitent pas y participer de
               continuer à pratiquer le badminton en jeu libre.
             </p>
-            {/* </div> */}
-            <h3 className="flex text-xl font-bold justify-center">
+            </div>
+            </div>
+            
+            <div className="flex flex-col justify-center w-4/5">
+            <h2 className="flex text-xl font-bold justify-center ">
               Créneaux des séances
-            </h3>
+            </h2>
             <table className="table-fixed w-full sm:w-2/3 md:w-full min-w-max border border-gray-300 mt-12 mb-12">
               <thead>
                 <tr>
                   <th
                     scope="col"
-                    className="w-[30%] border border-slate-700 p-2"
+                    className="w-[30%] border border-black p-2 bg-slate-700 text-white"
                   >
                     Jour
                   </th>
                   <th
                     scope="col"
-                    className="w-[30%]  border border-slate-700 p-2"
+                    className="w-[30%]  border border-black p-2  bg-slate-700 text-white"
                   >
                     Horaire
                   </th>
                   <th
                     scope="col"
-                    className="w-[40%]  border border-slate-700 p-2"
+                    className="w-[40%]  border border-black p-2  bg-slate-700 text-white"
                   >
                     Lieu
                   </th>
@@ -147,8 +158,8 @@ export default function HorairesTarifs() {
             </table>
           </div>
 
-          <div className="w-full flex flex-col items-center">
-            <h3 className="text-xl font-bold">Lieu de pratique</h3>
+          <div className="w-4/5 flex flex-col items-center">
+            <h2 className="text-xl font-bold mb-12">Lieu de pratique</h2>
             <iframe
               width="100%"
               height="400"

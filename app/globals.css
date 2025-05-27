@@ -14,6 +14,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'HemiHead';
+  src: url('/fonts/HemiHead.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 @keyframes slide {
   0% {
     transform: translateX(100%);

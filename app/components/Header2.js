@@ -19,7 +19,7 @@ export default function Header2() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 180) {
+      if (window.scrollY > 140) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -113,7 +113,7 @@ export default function Header2() {
                   <div className="absolute top-full bg-white shadow-black min-w-full border text-black border-red">
                     <ul>
                       <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
-                        <Link href="/infos/fonctionnement">Fonctionnement</Link>
+                        <Link href="/infos/evenements">Événements</Link>
                       </li>
                       <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
                         <Link href="/infos/horairestarifs">
