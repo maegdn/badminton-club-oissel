@@ -42,7 +42,7 @@ export default function News() {
         description="Retrouvez les dernières actualités du club de badminton de Oissel."
       />
       <main className="flex flex-col w-full min-h-full grow justify-center items-center pt-8">
-        <h1 className="font-bold mt-5 mb-9">LES ACTUALITÉS DU CLUB</h1>
+        <h1 className="font-[HemiHead] mt-5 mb-9">LES ACTUALITÉS DU CLUB</h1>
         <div className="flex flex-col md:w-4/5 lg:w-3/5 gap-10 justify-center items-center p-4 text-black mb-22">
           
           {posts.map((post) => (

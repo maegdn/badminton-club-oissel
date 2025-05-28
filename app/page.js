@@ -5,6 +5,8 @@ import Image from "next/image";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Header2 from "./components/Header2";
+import HeaderTest from "./components/HeaderTest";
+
 import Partners from "./components/Partners";
 
 import SEO from "./components/SEO";
@@ -22,64 +24,53 @@ export default function Home() {
         description="Le Badminton Club de Oissel vous accueille pour des moments de sport et de bonne humeur. Découvrez le badminton en mixte dans une ambiance conviviale aux gymnases de Oissel."
       />
       <header className="sticky top-0 z-50 ">
-        <Header2 />
+        <HeaderTest />
       </header>
 
       <main className="flex flex-col">
         {/* <Image src="/images/bad-shut-blue.png" fill className="object-contain"/> */}
-        <section className=" flex flex-col items-center justify-center bg-white pt-16 pb-30">
-          <h1 className="font-[Gabarito] text-3xl mb-12">
-            Bienvenue sur le site de O'Bad !
+        <section className=" flex flex-col  justify-center h-[100dvh]">
+        <div className=" absolute inset-0 -z-10 bg-[url('/images/smash-bad.jpg')] bg-cover bg-center opacity-100"></div>
+        <div className=" w-full justify-start pl-50 "> <h1 className="font-[HemiHead] text-5xl mb-12 text-white">
+            Bienvenue sur O'Bad !
           </h1>
-          <p className="w-3/5 mb-10 text-justify">
+          <p className="w-2/6 text-justify text-white ">
           L’association sportive Oissel Badminton, nommée également O’BAD, a été créée en octobre 2004. Elle a été affiliée à la fédération française de badminton depuis son ouverture jusqu'à la saison 2013-2014. L’association est donc devenue à la suite un club loisirs. 
 O’bad est avant tout un club familial, avec des valeurs telles que la bienveillance, l’écoute et l’entraide. Le club accueille des joueurs avec différents niveaux ce qui permet une diversité des regards sur la pratique du badminton. 
  🏸
           </p>
+          </div>
+         
 
+         
+        </section>
+        <section className="  flex flex-col items-center justify-center bg-white pb-30">
+          <h2 className="text-2xl mb-12 font-[HemiHead]">Événements et tournois</h2>
           <div className="flex flex-col md:flex-row gap-12 items-center w-3/5">
-            <div className="h-full flex flex-col gap-6 justify-between">
-              <h2 className="text-3xl font-bold mb-6">
-                Nos horaires et nos activités
-              </h2>
-              <p className="text-justify ">
-                Nous proposons des créneaux pour tous les niveaux, que ce soit
-                pour le loisir ou la compétition. Entraînements encadrés, matchs
-                libres, tournois internes ou stages pendant les vacances :
-                chacun peut y trouver son rythme et évoluer à son propre niveau.
-              </p>
-
-              {/* <button
-                className="bg-red-700 hover:bg-red-500 transition duration-300 ease-in-out text-white font-bold px-6 mt-6 py-3 rounded"
-                onClick={() => redirectPage("infos/horairestarifs")}
-              >
-                Consulter les horaires et salles
-              </button> */}
-              <button
-                className="relative overflow-hidden text-white bg-gray-900 before:content-[''] transition-colors duration-100 hover:text-white before:absolute before:inset-0 before:bg-slate-500 before:transition-transform before:duration-300 before:origin-left before:scale-x-0 hover:before:scale-x-100 px-6 py-3 rounded w-full mx-auto"
-                onClick={() => redirectPage("news")}
-              >
-                <span className="relative z-10 font-bold  ">
-                  Consulter les horaires et salles
-                </span>
-              </button>
-            </div>
-
             <Image
-              src="/images/imgp1.png"
-              alt="Image club"
-              width={500}
+              src="/images/imgp3.png"
+              alt="Tournoi"
+              width={600}
               height={400}
               className="rounded"
             />
+            <p className="text-justify">
+              Envie de bouger, de vous amuser et de faire de belles rencontres ?
+              Venez découvrir le badminton en mixte ou en simple dans une
+              ambiance conviviale aux gymnases de Oissel ! Que vous soyez
+              débutant ou joueur confirmé, notre club vous accueille pour
+              partager des moments de sport et de bonne humeur. C’est l’occasion
+              idéale pour essayer, progresser et pourquoi pas participer à nos
+              tournois tout au long de l’année. Rejoignez-nous sur le terrain !
+              🏸
+            </p>
           </div>
         </section>
-
-        <section className=" min-h-screen flex flex-col md:flex-row items-center justify-center gap-12">
-          <div className="absolute w-full min-h-screen bg-[url('/images/bckgrdob.png')] bg-cover bg-center opacity-20 flex items-center justify-center"></div>
+        <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-center  gap-12">
+          <div className="absolute inset-0 -z-10 bg-[url('/images/bckgrdob.png')] bg-cover bg-top opacity-20 flex items-center justify-center"></div>
 
           <div className="relative flex flex-col gap-6 w-3/5 text-black ">
-            <h2 className="text-3xl font-bold text-black text-center pb-16">
+            <h2 className=" font-[HemiHead] text-3xl font-bold text-black text-center pb-16">
               Un club avec de l'entrain
             </h2>
             <p className="text-center text-black pb-16">
@@ -114,28 +105,7 @@ O’bad est avant tout un club familial, avec des valeurs telles que la bienveil
           </div>
         </section>
 
-        <section className=" flex flex-col items-center justify-center bg-white  py-20">
-          <h2 className="text-2xl mb-12">Événements et tournois</h2>
-          <div className="flex flex-col md:flex-row gap-12 items-center w-3/5">
-            <Image
-              src="/images/imgp3.png"
-              alt="Tournoi"
-              width={600}
-              height={400}
-              className="rounded"
-            />
-            <p className="text-justify">
-              Envie de bouger, de vous amuser et de faire de belles rencontres ?
-              Venez découvrir le badminton en mixte ou en simple dans une
-              ambiance conviviale aux gymnases de Oissel ! Que vous soyez
-              débutant ou joueur confirmé, notre club vous accueille pour
-              partager des moments de sport et de bonne humeur. C’est l’occasion
-              idéale pour essayer, progresser et pourquoi pas participer à nos
-              tournois tout au long de l’année. Rejoignez-nous sur le terrain !
-              🏸
-            </p>
-          </div>
-        </section>
+        
       </main>
       <Partners />
 

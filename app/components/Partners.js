@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Partners() {
   return (
-    <div className="w-full overflow-hidden bg-white pt-10">
+    <div className="w-full overflow-hidden bg-white ">
       <div className="w-full bg-[#1d1d1d] h-12 flex items-center justify-center">
         <div className="text-white">
           <h2>Partenaires</h2>
