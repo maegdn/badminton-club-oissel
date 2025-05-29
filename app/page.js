@@ -29,16 +29,17 @@ export default function Home() {
 
       <main className="flex flex-col">
         {/* <Image src="/images/bad-shut-blue.png" fill className="object-contain"/> */}
-        <section className=" flex flex-col  justify-center h-[100dvh]">
+        <section className=" flex flex-col justify-center h-[100dvh]">
         <div className=" absolute inset-0 -z-10 bg-[url('/images/smash-bad.jpg')] bg-cover bg-center opacity-100"></div>
-        <div className=" w-full justify-start pl-50 "> <h1 className="font-[HemiHead] text-5xl mb-12 text-white">
-            Bienvenue sur O'Bad !
-          </h1>
-          <p className="w-2/6 text-justify text-white ">
-          L’association sportive Oissel Badminton, nommée également O’BAD, a été créée en octobre 2004. Elle a été affiliée à la fédération française de badminton depuis son ouverture jusqu'à la saison 2013-2014. L’association est donc devenue à la suite un club loisirs. 
+        <div className=" flex flex-col w-full items-left md:items-start md:pl-50"> 
+        <h1 className=" text-left font-[HemiHead] md:text-5xl md:mb-12 mb-6 text-white md:w-full w-4/6 pl-12 md:p-0 justify-start ">Bienvenue sur O'Bad !</h1>
+        <div className="flex justify-center md:justify-start">
+
+          <p className="w-5/6 md:w-2/6 text-justify text-white p-5 md:p-0 justify-center">
+          L’association sportive Oissel Badminton, nommée également O’BAD, a été créée en octobre 2004. Elle a été affiliée à la fédération française de badminton depuis son ouverture jusqu'à la saison 2013-2014. L’association est donc devenue à la suite un club loisirs. <br/><br/>
 O’bad est avant tout un club familial, avec des valeurs telles que la bienveillance, l’écoute et l’entraide. Le club accueille des joueurs avec différents niveaux ce qui permet une diversité des regards sur la pratique du badminton. 
- 🏸
-          </p>
+ 🏸</p>
+ </div>
           </div>
          
 
@@ -46,7 +47,7 @@ O’bad est avant tout un club familial, avec des valeurs telles que la bienveil
         </section>
         <section className="  flex flex-col items-center justify-center bg-white pb-30">
           <h2 className="text-2xl mb-12 font-[HemiHead]">Événements et tournois</h2>
-          <div className="flex flex-col md:flex-row gap-12 items-center w-3/5">
+          <div className="flex flex-col md:flex-row gap-12 items-center w-4/5">
             <Image
               src="/images/imgp3.png"
               alt="Tournoi"
@@ -54,7 +55,7 @@ O’bad est avant tout un club familial, avec des valeurs telles que la bienveil
               height={400}
               className="rounded"
             />
-            <p className="text-justify">
+            <p className="text-justify w-full md:w-2/6 ">
               Envie de bouger, de vous amuser et de faire de belles rencontres ?
               Venez découvrir le badminton en mixte ou en simple dans une
               ambiance conviviale aux gymnases de Oissel ! Que vous soyez
@@ -69,7 +70,7 @@ O’bad est avant tout un club familial, avec des valeurs telles que la bienveil
         <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-center  gap-12">
           <div className="absolute inset-0 -z-10 bg-[url('/images/bckgrdob.png')] bg-cover bg-top opacity-20 flex items-center justify-center"></div>
 
-          <div className="relative flex flex-col gap-6 w-3/5 text-black ">
+          <div className="relative flex flex-col gap-6 w-11/12 md:w-3/5 text-black ">
             <h2 className=" font-[HemiHead] text-3xl font-bold text-black text-center pb-16">
               Un club avec de l'entrain
             </h2>
@@ -82,6 +83,7 @@ O’bad est avant tout un club familial, avec des valeurs telles que la bienveil
               son rythme tout en prenant du plaisir sur les terrains.
               <br />
               <br />
+
               En plus des séances classiques, nous organisons régulièrement des
               événements internes : tournois amicaux, stages pendant les
               vacances scolaires, soirées thématiques et rencontres interclubs.
@@ -89,11 +91,7 @@ O’bad est avant tout un club familial, avec des valeurs telles que la bienveil
               vous veniez pour le loisir ou pour repousser vos limites en
               compétition.
               <br />
-              <br />
-              Rejoindre notre club, c’est intégrer une véritable communauté
-              soudée par la passion du badminton, où l’entraide, la bonne humeur
-              et la progression sont au cœur de notre projet.
-            </p>
+              </p>
             <button
               className="relative overflow-hidden text-white bg-gray-900 before:content-[''] transition-colors duration-100 hover:text-white before:absolute before:inset-0 before:bg-slate-500 before:transition-transform before:duration-300 before:origin-left before:scale-x-0 hover:before:scale-x-100 px-6 py-3 rounded w-2/5 mx-auto"
               onClick={() => redirectPage("news")}

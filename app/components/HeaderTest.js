@@ -58,7 +58,6 @@ export default function Header2() {
         </div>
 
         <div className="md:hidden flex flex-row gap-2 ml-4 items-center justify-center">
-          <h3 className="text-lg font-bold">Menu</h3>
 
           <button
             className="flex justify-center items-center pb-2"

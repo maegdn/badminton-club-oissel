@@ -48,7 +48,6 @@ export default function Header3() {
         </div>
 
         <div className="md:hidden flex flex-row gap-2 ml-4 items-center justify-center">
-          <h3 className="text-lg font-bold">Menu</h3>
 
           <button
             className="flex justify-center items-center pb-2"
@@ -64,7 +63,7 @@ export default function Header3() {
               <li>
                 <Link
                   href="/"
-                  className="pb-1.5 border-b-2 border-transparent hover:border-b-white"
+                  className=" font-[HemiHead] pb-1.5 border-b-2 border-transparent hover:border-b-white"
                 >
                   Le club
                 </Link>
@@ -83,7 +82,7 @@ export default function Header3() {
                 <div className="flex flex-row items-center">
                   <Link
                     href="/infos"
-                    className={`${activeNav ? "text-slate-200" : ""}`}
+                    className={`${activeNav ? "text-slate-200" : ""} font-[HemiHead]`}
                   >
                     Infos pratiques
                   </Link>
@@ -120,7 +119,7 @@ export default function Header3() {
               <li>
                 <Link
                   href="/news"
-                  className="pb-1.5 border-b-2 border-transparent hover:border-b-white"
+                  className="font-[HemiHead] pb-1.5 border-b-2 border-transparent hover:border-b-white"
                 >
                   Actualités
                 </Link>
@@ -128,7 +127,7 @@ export default function Header3() {
               <li>
                 <Link
                   href="/photos"
-                  className="pb-1.5 border-b-2 border-transparent hover:border-b-white"
+                  className="font-[HemiHead] pb-1.5 border-b-2 border-transparent hover:border-b-white"
                 >
                   Gallerie
                 </Link>
@@ -137,7 +136,7 @@ export default function Header3() {
                 <div>
                   <Link
                     href="/inscription"
-                    className="pb-1.5 border-b-2 border-transparent hover:border-b-white"
+                    className="font-[HemiHead] pb-1.5 border-b-2 border-transparent hover:border-b-white"
                   >
                     Inscription
                   </Link>

@@ -19,72 +19,77 @@ export default function Footer() {
           />
         </div>
         <div className="flex flex-col text-center md:text-left">
-          <h4 className="font-extrabold pb-2 font-[Gabarito] border-b mb-4 w-fit text-center md:text-left">
+          <h4 className="font-extrabold pb-2 font-[HemiHead] border-b mb-4 w-fit text-center md:text-left">
             À PROPOS
           </h4>
           <ul className="space-y-1">
-            <li>Notre histoire</li>
+            <li><Link href="/" className=" hover:text-blue-400">
+Notre histoire              </Link></li>
             <li>
-              <Link href="/infos/bureau" className=" hover:text-red-600">
+              <Link href="/infos/bureau" className=" hover:text-blue-400">
                 Le bureau
               </Link>
             </li>
             <li>
               <Link
                 href="/infos/horairestarifs"
-                className=" hover:text-red-600"
+                className=" hover:text-blue-400"
               >
                 Horaires / Tarifs
               </Link>
             </li>
             <li>
-              <Link href="/infos/legal" className=" hover:text-red-600">
+              <Link href="/infos/legal" className=" hover:text-blue-400">
                 Mentions légales
               </Link>
             </li>
           </ul>
         </div>
         <div className="flex flex-col text-center md:text-left">
-          <h4 className="font-extrabold pb-2 font-[Gabarito] border-b mb-4 w-fit text-center md:text-left">
+          <h4 className="font-extrabold pb-2 font-[HemiHead] border-b mb-4 w-fit text-center md:text-left">
             LIENS UTILES
           </h4>
 
           <ul className="space-y-1">
             <li>
-              <Link href="/inscription" className=" hover:text-red-600">
+              <Link href="/inscription" className=" hover:text-blue-400">
                 Inscription{" "}
               </Link>
             </li>
-            <li>Événements</li>
-            <li>Partenaires</li>
+            <li><Link href="/infos/evenements" className=" hover:text-blue-400">
+                Événements{" "}
+              </Link></li>
+            <li><Link href="/not-found" className=" hover:text-blue-400">
+                Partenaires{" "}
+              </Link></li>
           </ul>
         </div>
         <div className="flex flex-col text-center md:text-left">
-          <h4 className="font-extrabold pb-2 border-b mb-4 w-fit text-center md:text-left">
+          <h4 className="font-extrabold font-[HemiHead] pb-2 border-b mb-4 w-fit text-center md:text-left">
             OÙ NOUS TROUVER ?
           </h4>
-          <ul className="space-y-1">
-            <li>
+          <ul className="flex flex-row gap-6">
+            <li> 
               <a
                 href="https://www.facebook.com/profile.php?id=100057404591482&locale=fr_FR"
                 target="_blank"
-                className="flex justify-center md:justify-start items-center gap-2 text-blue-500 font-bold"
+                className="flex justify-center md:justify-start items-center gap-2 text-blue-600 font-bold"
               >
-                <FaFacebook /> Facebook
+                <FaFacebook size={30}/> 
               </a>
             </li>
             <li>
               <a
                 href="https://www.instagram.com/oisselbadminton/"
                 target="_blank"
-                className="flex justify-center md:justify-start items-center gap-2 text-pink-500 font-bold"
+                className="flex justify-center md:justify-start items-center gap-2 text-pink-600 font-bold"
               >
-                <SiInstagram />
-                Instagram
+                <SiInstagram  size={30} />
+                
               </a>
             </li>
-            <li className="">Partenaires</li>
           </ul>
+          
         </div>
       </div>
 

@@ -60,7 +60,6 @@ html, body {
   overscroll-behavior: none;
   height: 100%;
   /* overflow: hidden; */
-  overflow-x-hidden: hidden;
 
 }
 
@@ -71,13 +70,13 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 25px;
   font-weight: bold;
   /* font-family: Gabarito; */
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: bold;
 }
 
