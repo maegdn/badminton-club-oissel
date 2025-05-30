@@ -21,7 +21,7 @@ export default function HorairesTarifs() {
         <div className="flex flex-col justify-center items-center w-full gap-8">
         
           <div className="flex flex-col justify-center items-center w-4/5">
-          <h1 className="font-[Gabarito] text-3xl mb-12">
+          <h1 className="font-[HemiHead] text-3xl mb-12">
           HORAIRES, TARIFS, LIEUX DE PRATIQUE
         </h1>
             {/* <div> */}
@@ -88,7 +88,7 @@ export default function HorairesTarifs() {
               Depuis quelques temps le <span className="font-bold">Coach Veasna </span>intervient auprès de notre
               club afin de permettre une évolution de la pratique de chacun.
               Tous les joueurs du club peuvent bénéficier d'entraînements
-              individuels et/ou collectifs. L'inscription se fait soit par le
+              individuels et/ou collectifs. <br/><br/>L'inscription se fait soit par le
               sondage envoyé sur le groupe Whatsapp soit en envoyant un message
               à Elise B. via Whatsapp. Ces cours ne sont pas obligatoires, ce
               qui permet aux joueurs qui ne souhaitent pas y participer de
@@ -98,7 +98,7 @@ export default function HorairesTarifs() {
             </div>
             
             <div className="flex flex-col justify-center w-4/5">
-            <h2 className="flex text-xl font-bold justify-center ">
+            <h2 className="flex text-xl font-bold justify-center font-[HemiHead]">
               Créneaux des séances
             </h2>
             <table className="table-fixed w-full sm:w-2/3 md:w-full min-w-max border border-gray-300 mt-12 mb-12">
@@ -106,19 +106,19 @@ export default function HorairesTarifs() {
                 <tr>
                   <th
                     scope="col"
-                    className="w-[30%] border border-black p-2 bg-slate-700 text-white"
+                    className="w-[30%] border border-black p-2 bg-slate-700 text-white font-[HemiHead]"
                   >
                     Jour
                   </th>
                   <th
                     scope="col"
-                    className="w-[30%]  border border-black p-2  bg-slate-700 text-white"
+                    className="w-[30%]  border border-black p-2  bg-slate-700 text-white font-[HemiHead]"
                   >
                     Horaire
                   </th>
                   <th
                     scope="col"
-                    className="w-[40%]  border border-black p-2  bg-slate-700 text-white"
+                    className="w-[40%]  border border-black p-2  bg-slate-700 text-white font-[HemiHead]"
                   >
                     Lieu
                   </th>
@@ -159,7 +159,7 @@ export default function HorairesTarifs() {
           </div>
 
           <div className="w-4/5 flex flex-col items-center">
-            <h2 className="text-xl font-bold mb-12">Lieu de pratique</h2>
+            <h2 className="text-xl font-bold mb-12 font-[HemiHead]">Lieu de pratique</h2>
             <iframe
               width="100%"
               height="400"

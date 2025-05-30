@@ -17,7 +17,7 @@ export default function Member({ name, role, imageUrl, imageUrlHovered }) {
         <h3
           className={`font-bold mb-0 ${
             isHovered ? "text-slate-600" : "text-black"
-          }`}
+          } font-[HemiHead]`}
         >
           {name}
         </h3>

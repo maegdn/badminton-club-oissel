@@ -18,8 +18,8 @@ export default function Footer() {
             className=""
           />
         </div>
-        <div className="flex flex-col text-center md:text-left">
-          <h4 className="font-extrabold pb-2 font-[HemiHead] border-b mb-4 w-fit text-center md:text-left">
+        <div className="flex  items-center md:items-start flex-col text-center md:text-left">
+          <h4 className=" font-extrabold pb-2 font-[HemiHead] border-b mb-4 w-fit text-center md:text-left">
             À PROPOS
           </h4>
           <ul className="space-y-1">
@@ -45,7 +45,7 @@ Notre histoire              </Link></li>
             </li>
           </ul>
         </div>
-        <div className="flex flex-col text-center md:text-left">
+        <div className="flex items-center md:items-start flex-col text-center md:text-left">
           <h4 className="font-extrabold pb-2 font-[HemiHead] border-b mb-4 w-fit text-center md:text-left">
             LIENS UTILES
           </h4>
@@ -59,13 +59,13 @@ Notre histoire              </Link></li>
             <li><Link href="/infos/evenements" className=" hover:text-blue-400">
                 Événements{" "}
               </Link></li>
-            <li><Link href="/not-found" className=" hover:text-blue-400">
+            <li><Link href="/infos/partenaires" className=" hover:text-blue-400">
                 Partenaires{" "}
               </Link></li>
           </ul>
         </div>
-        <div className="flex flex-col text-center md:text-left">
-          <h4 className="font-extrabold font-[HemiHead] pb-2 border-b mb-4 w-fit text-center md:text-left">
+        <div className="flex items-center md:items-start flex-col  text-center md:text-left">
+          <h4 className="  font-extrabold font-[HemiHead] pb-2 border-b mb-4 w-fit text-center md:text-left">
             OÙ NOUS TROUVER ?
           </h4>
           <ul className="flex flex-row gap-6">

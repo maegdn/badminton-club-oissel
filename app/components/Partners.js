@@ -18,7 +18,7 @@ export default function Partners() {
           height={100}
           className="h-16 md:h-20 lg:h-24 w-auto object-contain"
         />
-        <Link href="/partenaires" className="items-center justify-center flex"><button className="font-[HemiHead] h-16 flex justify-center items-center bg-slate-900 text-white rounded-2xl p-4 px-6 ">Plus d'informations</button></Link>
+        <Link href="/infos/partenaires" className="items-center justify-center flex"><button className="font-[HemiHead] h-16 flex justify-center items-center bg-slate-900 text-white rounded-2xl p-4 px-6 ">Plus d'informations</button></Link>
         <Image
           src="/images/partners/victorbw.png"
           alt="Victor"

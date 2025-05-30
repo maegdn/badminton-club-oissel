@@ -18,7 +18,7 @@ export default function Bureau() {
       />
       <Header3 />
       <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center ">
-        <h1 className="font-bold mt-12 mb-12">LES MEMBRES DU BUREAU</h1>
+        <h1 className="font-bold mt-12 mb-12 font-[HemiHead]">LES MEMBRES DU BUREAU</h1>
 
         <div className="flex flex-col justify-center md:flex-row gap-22 items-center w-3/5">
           <p className="w-4/5 mb-10 text-justify">
