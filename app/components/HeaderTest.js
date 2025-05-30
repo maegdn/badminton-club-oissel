@@ -38,7 +38,7 @@ export default function Header2() {
       className={
         !scrolled
           ? "relative z-10 w-full text-white flex justify-center items-center h-32 transition-all duration-500"
-          : "relative z-10 w-full text-white flex justify-center items-center h-30 bg-slate-800 transition-all duration-500 ease-in"
+          : "relative z-10 w-full text-white flex justify-center items-center h-30 bg-slate-900 transition-all duration-500 ease-in"
       }
     >
       {!scrolled && (
@@ -155,7 +155,7 @@ export default function Header2() {
                   Gallerie
                 </Link>
               </li>
-              <li className="flex flex-row">
+              {/* <li className="flex flex-row">
                 <div>
                   <Link
                     href="/inscription"
@@ -168,7 +168,7 @@ export default function Header2() {
                     Inscription
                   </Link>
                 </div>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>

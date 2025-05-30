@@ -34,7 +34,7 @@ export default function Header3() {
   //   });
 
   return (
-    <header className="relative z-10 w-full text-white flex justify-center items-center h-30 bg-slate-800 transition-all duration-500 ease-in">
+    <header className="relative z-10 w-full text-white flex justify-center items-center h-30 bg-slate-900 transition-all duration-500 ease-in">
       <div className="relative z-10 flex justify-between items-center w-3/5">
         <div className="z-10 flex items-center">
           <Image
@@ -132,7 +132,7 @@ export default function Header3() {
                   Gallerie
                 </Link>
               </li>
-              <li className="flex flex-row">
+              {/* <li className="flex flex-row">
                 <div>
                   <Link
                     href="/inscription"
@@ -141,7 +141,7 @@ export default function Header3() {
                     Inscription
                   </Link>
                 </div>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
@@ -210,7 +210,7 @@ export default function Header3() {
                 Actualités
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="/inscription"
                 className="hover:text-blue-600"
@@ -218,7 +218,7 @@ export default function Header3() {
               >
                 Inscription
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       )}
