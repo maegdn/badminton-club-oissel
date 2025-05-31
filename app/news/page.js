@@ -48,27 +48,27 @@ export default function News() {
           {posts.map((post) => (
             <div
               key={post._id}
-              className="flex flex-col md:flex-row  shadow-lg overflow-hidden w-full items-stretch"
+              className="flex flex-col md:flex-row  shadow-lg overflow-hidden w-full items-stretch rounded-t-lg rounded-b-lg md:rounded-l-lg md:rounded-r-lg"
             >
               {post.imageUrl && (
                 <div className="w-full md:w-1/2 md:h-auto  overflow-hidden">
                   <img
                     src={post.imageUrl}
                     alt={post.title}
-                    className=" w-full h-full object-cover"
+                    className="  w-full h-full object-cover"
                   />
                 </div>
               )
               }
-              <div className="flex flex-col w-full md:w-1/2 p-4 justify-between text-justify">
-                <h2 className=" text-xl font-semibold mb-2 px-4 text-center md:text-left">{post.title}</h2>
-                <div className="line-clamp-5 px-4"><PortableText  value={post.content} /></div>
+              <div className="flex flex-col w-full md:w-1/2 p-4 justify-between text-justify bg-slate-800 shadow-[inset_0_4px_16px_rgba(0,0,0,0.6)]">
+                <h3 className=" text-xl font-semibold mb-2 px-4  md:text-left font-[HemiHead] text-white pt-2 pb-2">{post.title}</h3>
+                <div className="line-clamp-5 px-4 text-white"><PortableText  value={post.content} /></div>
 
-                <div className="flex justify-between items-center pt-6 mb-3">
-                <p className="text-sm text-gray-500 text-justify px-4 ">
+                <div className="flex justify-between items-center pt-10 mb-3 ">
+                <p className="text-sm text-slate-400 text-justify px-4 ">
                   {new Date(post.publishedAt).toLocaleDateString()}
                 </p>
-                  <Link href={`/news/${post.slug.current}`}><button className=" text-sm border-2 text-white font-bold bg-slate-500 hover:bg-slate-900 py-1 px-12 mr-4 items-end rounded-lg" >Lire</button></Link>
+                  <Link href={`/news/${post.slug.current}`}><button className=" text-sm  text-white font-bold bg-slate-500 hover:bg-slate-900 py-2 px-12 mr-4 items-end rounded-lg" >Lire</button></Link>
                </div>
                
               </div>

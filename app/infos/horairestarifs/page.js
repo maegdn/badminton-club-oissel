@@ -128,18 +128,18 @@ export default function HorairesTarifs() {
                 {[
                   {
                     jour: "Lundi",
-                    horaire: "19h - 21h",
-                    lieu: "Gymnase Pierre de Coubertin"
+                    horaire: "19h00 - 22h30",
+                    lieu: "Complexe sportif Germinal"
                   },
                   {
-                    jour: "Mercredi",
-                    horaire: "19h - 21h",
-                    lieu: "Gymnase Pierre de Coubertin"
+                    jour: "Jeudi",
+                    horaire: "20h30- 22h30",
+                    lieu: "Complexe sportif Germinal"
                   },
                   {
-                    jour: "Vendredi",
-                    horaire: "19h - 21h",
-                    lieu: "Gymnase Pierre de Coubertin"
+                    jour: "Samedi",
+                    horaire: "08h00 - 10h00",
+                    lieu: "Complexe sportif Germinal"
                   }
                 ].map((item, i) => (
                   <tr key={i} className="hover:bg-blue-50">

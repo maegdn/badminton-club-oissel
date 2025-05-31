@@ -48,16 +48,17 @@ O’bad est avant tout un club familial, avec des valeurs telles que la bienveil
         <section className="  flex flex-col items-center justify-center bg-white pb-30">
           <h2 className="text-2xl mb-12 font-[HemiHead] text-slate-900">Événements et tournois</h2>
           <div className="flex flex-col md:flex-row gap-12 items-center w-4/5 h-92">
-          <div className="relative  w-[120px] h-[200px] md:w-[700px] md:h-[300px]">
-            <Image
-              src="/images/obadwp.png"
-              alt="Tournoi"
-              fill
-              className="rounded object-cover "
-              />
-            </div>
+          <div className="w-full md:w-1/2">
+  <Image
+    src="/images/obadwp.png"
+    alt="Tournoi"
+    width={700}
+    height={400}
+    className="rounded object-cover w-full h-auto"
+  />
+</div>
             
-            <p className="text-justify w-full md:w-2/6 text-slate-900">
+            <p className="text-justify w-full md:w-2/6 text-slate-900 pb-12">
               Envie de bouger, de vous amuser et de faire de belles rencontres ?
               Venez découvrir le badminton en mixte ou en simple dans une
               ambiance conviviale aux gymnases de Oissel ! <br/><br/>Que vous soyez
@@ -69,7 +70,7 @@ O’bad est avant tout un club familial, avec des valeurs telles que la bienveil
             </p>
           </div>
         </section>
-        <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-center  gap-12">
+        <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-center mt-12 gap-12">
           <div className="absolute inset-0 -z-10 bg-[url('/images/bckgrdob.png')] bg-cover bg-top opacity-40 flex items-center justify-center"></div>
 
           <div className="relative flex flex-col gap-6 w-9/12 md:w-3/5 text-black items-center">

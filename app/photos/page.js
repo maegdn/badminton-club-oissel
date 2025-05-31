@@ -40,7 +40,7 @@ export default function Photos() {
         url="https://badminton-club-oissel.vercel.app/photos/"
         description="Photos prises au club de badminton de Oissel. Tous droits réservés"
       />
-      <main className="flex-1 flex flex-col items-center justify-center w-full pt-16 pb-12">
+      <main className="flex-1 flex flex-col items-center justify-center w-full pt-16 pb-12 ">
         <h1 className="font-[HemiHead]">GALLERIE DU CLUB</h1>
         <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-8 my-12 text-justify">
           <div className="flex flex-wrap justify-center gap-5 ">
@@ -65,7 +65,7 @@ export default function Photos() {
         </div>
         {
           // sizedUpPhoto
-          photoIndex && (
+          photoIndex  !== null && (
             <div className="fixed inset-0 flex justify-center align-center  z-10">
               <div className="relative w-[100vw] h-[100vh] bg-black/85 border-black ">
                 <Image

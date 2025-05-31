@@ -10,7 +10,7 @@ export default function Partners() {
         </div>
       </div>
 
-      <div className="animate-slide flex gap-60 whitespace-nowrap py-8">
+      <div className="animate-slide flex gap-60 whitespace-nowrap py-8 min-w-[450%]">
         <Image
           src="/images/partners/lardesportsbw.png"
           alt="Lardesports"
@@ -27,7 +27,6 @@ export default function Partners() {
           className="h-16 md:h-20 lg:h-24 w-auto object-contain"
         />
       </div>
-      {/* <div className="w-full bg-[#1d1d1d] h-12"></div> */}
     </div>
   );
 }
