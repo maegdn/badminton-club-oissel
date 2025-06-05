@@ -36,9 +36,9 @@ export default function News() {
   return (
     <div className="flex flex-col items-center justify-items-center min-h-screen">
       <Header3 />
-      <SEO
+        <SEO
         title="Actualités du club"
-        url="https://badminton-club-oissel.vercel.app/news/"
+        url="https://oissel-badminton-club.vercel.app/infos/contact"
         description="Retrouvez les dernières actualités du club de badminton de Oissel."
       />
       <main className="flex flex-col w-full min-h-full grow justify-center items-center pt-8">

@@ -5,6 +5,8 @@ import Head from "next/head";
 import SEO from "@/app/components/SEO";
 import { useState } from "react";
 
+import { AiOutlineLoading } from "react-icons/ai";
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -42,7 +44,7 @@ export default function Contact() {
           email: "",
           message: ""
         });
-        setTimeout(() => setSubmitted(false), 5000);
+        setTimeout(() => setSubmitted(false), 8000);
       } else {
         console.error("Erreur côté serveur :", response.status);
       }
@@ -57,7 +59,7 @@ export default function Contact() {
     <div className="flex flex-col min-h-screen">
       <SEO
         title="Formulaire de contact"
-        url="https://badminton-club-oissel.vercel.app/infos/contact"
+        url="https://oissel-badminton-club.vercel.app/infos/contact"
         description="Vous souhaitez contacter le club de badminton de Oissel et obtenir un renseignement? Remplissez un formulaire de contact ici."
       />
       <Header3 />
@@ -104,7 +106,7 @@ export default function Contact() {
                 onChange={handleChange}
               ></input>
               <label className="flex flex-col" >
-                Sujet
+                Quelle est votre demande ?
                 <input
                   type="text"
                   name="subject"
@@ -133,21 +135,26 @@ export default function Contact() {
                 </p>
               )}
 
-              <button
-                type="submit"
-                className={`rounded-md h-12 p-3 font-bold ${
-                  submitted
-                    ? "bg-green-300 cursor-not-allowed"
-                    : "bg-blue-100 hover:bg-blue-300"
-                } mb-22 font-[HemiHead]`}
-                disabled={loading || submitted}
-              >
-                {loading
-                  ? "Envoi en cours..."
-                  : submitted
-                  ? "Formulaire envoyé !"
-                  : "Envoyer"}
-              </button>
+<button
+  type="submit"
+  className={`rounded-md h-12 px-6 py-3 font-bold flex items-center justify-center ${
+    submitted
+      ? "bg-green-300 cursor-not-allowed"
+      : "bg-blue-100 hover:bg-blue-300"
+  } mb-20 font-[HemiHead]`}
+  disabled={loading || submitted}
+>
+{loading && (
+    <AiOutlineLoading className="mr-2 h-5 w-5 animate-spin text-slate-700" />
+  )}
+  {loading
+    ? "Envoi en cours..."
+    : submitted
+    ? "Formulaire envoyé !"
+    : "Envoyer"}
+</button>
+
+
             </div>
           </form>
         </div>

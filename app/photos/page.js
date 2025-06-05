@@ -35,9 +35,9 @@ export default function Photos() {
   return (
     <div className="flex flex-col w-full min-h-screen">
       <Header3 />
-      <SEO
+<SEO
         title="Gallerie photo du club"
-        url="https://badminton-club-oissel.vercel.app/photos/"
+        url="https://oissel-badminton-club.vercel.app/infos/contact"
         description="Photos prises au club de badminton de Oissel. Tous droits réservés"
       />
       <main className="flex-1 flex flex-col items-center justify-center w-full pt-16 pb-12 ">

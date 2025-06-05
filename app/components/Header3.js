@@ -83,19 +83,19 @@ export default function Header3() {
                   <div className="absolute top-full bg-white shadow-black min-w-full border text-black border-red">
                     <ul>
                       <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
-                        <Link href="/infos/evenements">Événements</Link>
+                        <Link href="/infos/evenements" className="font-[HemiHead]">Événements</Link>
                       </li>
                       <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
-                        <Link href="/infos/horairestarifs">
+                        <Link href="/infos/horairestarifs" className="font-[HemiHead]">
                           Horaires / Tarifs
                         </Link>
                       </li>
 
                       <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
-                        <Link href="/infos/bureau">Le bureau</Link>
+                        <Link href="/infos/bureau" className="font-[HemiHead]">Le bureau</Link>
                       </li>
                       <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
-                        <Link href="/infos/contact">Contact</Link>
+                        <Link href="/infos/contact" className="font-[HemiHead]">Contact</Link>
                       </li>
                     </ul>
                   </div>

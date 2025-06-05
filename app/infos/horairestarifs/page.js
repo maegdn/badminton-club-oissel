@@ -9,16 +9,13 @@ export default function HorairesTarifs() {
   return (
     <div className="flex flex-col w-full min-h-screen">
       <Header3 />
-      <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center pt-16 pb-22">
-        <SEO
+      <SEO
           title="Horaires, tarifs et lieux de pratique"
-          url="https://badminton-club-oissel.vercel.app/infos/horairestarifs"
+          url="https://oissel-badminton-club.vercel.app/infos/contact"
           description="Découvrez les horaires, tarifs et lieux de pratique du club de badminton de Oissel."
-        />
-
-        
-
-        <div className="flex flex-col justify-center items-center w-full gap-8">
+      />
+      <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center pt-16 pb-22">
+     <div className="flex flex-col justify-center items-center w-full gap-8">
         
           <div className="flex flex-col justify-center items-center w-4/5">
           <h1 className="font-[HemiHead] text-3xl mb-12">

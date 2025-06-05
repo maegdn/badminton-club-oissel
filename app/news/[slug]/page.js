@@ -89,8 +89,6 @@ export async function generateStaticParams() {
           <p className=" text-gray-500 mt-2 text-justify mb-6">
             {new Date(post.publishedAt).toLocaleDateString()}
           </p>
-{/* <div className=" flex justify-center items-center">          <Link href={`/news/`}><button className="  border-2 text-white font-bold bg-slate-400 hover:bg-slate-900 py-3 px-22 mr-4 items-end rounded-lg" >Retour sur les actualités</button></Link>
-</div> */}
          </div>
           
 
@@ -104,16 +102,3 @@ export async function generateStaticParams() {
     
    
   }
-//   export default async function Post({ params }) {
-//     const slug = params?.slug;
-
-
-
-// const selectedPost = await client.fetch(`*[_type == "article" && slug.current == $slug]{
-//   title,
-//   content,
-//   publishedAt,
-//   "imageUrl": image.asset->url
-// }`,{slug });
-// if (!selectedPost) return <div>Article introuvable</div>
-
