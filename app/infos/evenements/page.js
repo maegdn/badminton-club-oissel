@@ -14,6 +14,15 @@ export default function evenements() {
         <h1 className="font-[HemiHead]">Événements</h1>
         <div className="flex flex-col md:flex-row flex-wrap justify-center items-center w-3/4 md:w-2/4 gap-8 my-12 text-justify ">
         <div className="flex w-auto flex-col ">
+        <div className="w-20 h-16 relative border-4 border-blue-900 overflow-hidden">
+  <Image 
+    src="/images/badmintonfluo.jpg"
+    fill
+    className="object-cover"
+    alt="Badminton"
+  />
+</div>
+
         <h3 className="font-[HemiHead]">Soirée à thème 🥳</h3>
 
             <p>

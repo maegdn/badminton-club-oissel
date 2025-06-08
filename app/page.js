@@ -71,13 +71,13 @@ Le club accueille des joueurs avec différents niveaux ce qui permet une diversi
           </div>
         </section>
         <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-center mt-12 gap-12">
-          <div className="absolute inset-0 -z-10 bg-[url('/images/bckgrdob.png')] bg-cover bg-top opacity-40 flex items-center justify-center"></div>
+          <div className="absolute inset-0 -z-10 bg-[url('/images/bckgrdob.png')] bg-cover bg-top opacity-90 flex items-center justify-center"></div>
 
-          <div className="relative flex flex-col gap-6 w-9/12 md:w-3/5 text-black items-center">
+          <div className="relative flex flex-col gap-6 w-9/12 md:w-3/5 text-white items-center">
             <h2 className=" font-[HemiHead] text-3xl font-bold text-slate-800 text-center pb-12 pt-5">
               Un club avec de l'entrain
             </h2>
-            <p className="flex text-justify items-center md:w-4/6 text-black pb-6">
+            <p className="flex text-justify items-center md:w-4/6 text-white pb-6">
              
               En plus des séances classiques, nous organisons régulièrement des
               événements internes : tournois amicaux, stages pendant les
