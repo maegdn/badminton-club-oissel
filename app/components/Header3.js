@@ -114,7 +114,7 @@ export default function Header3() {
                   href="/photos"
                   className="font-[HemiHead] pb-1.5 border-b-2 border-transparent hover:border-b-white"
                 >
-                  Gallerie
+                  Galerie
                 </Link>
               </li>
             </ul>

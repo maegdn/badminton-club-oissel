@@ -20,7 +20,7 @@ export default function Bureau() {
       <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center ">
         <h1 className="font-bold mt-12 mb-12 font-[HemiHead]">LES MEMBRES DU BUREAU</h1>
 
-        <div className="flex flex-col justify-center md:flex-row gap-22 items-center w-10/12 md:w-3/5">
+        <div className="flex flex-col justify-center md:flex-row gap-20 items-center w-10/12 md:w-3/5">
           <p className=" mb-10 text-justify">
             Qui dit association dit conseil d’administration : Le président et
             fondateur du club est François H, la trésorière est Sandrine M, la
@@ -32,7 +32,7 @@ export default function Bureau() {
             n’hésitez pas à solliciter les membres du bureau.
           </p>
         </div>
-        <div className="flex flex-row flex-wrap gap-20 mt-16 mb-16 justify-center">
+        <div className="flex flex-row flex-wrap gap-20 mt-16 mb-16 justify-center items-center">
          
 
           <Member

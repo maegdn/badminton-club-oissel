@@ -152,7 +152,7 @@ export default function Header2() {
                       : "hover:border-b-white"
                   } font-[HemiHead]`}
                 >
-                  Gallerie
+                  Galerie
                 </Link>
               </li>
               {/* <li className="flex flex-row">

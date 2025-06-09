@@ -153,7 +153,7 @@ export default function Header2() {
                       : "hover:border-b-slate-700"
                   }`}
                 >
-                  Gallerie
+                  Galerie
                 </Link>
               </li>
               <li className="flex flex-row">

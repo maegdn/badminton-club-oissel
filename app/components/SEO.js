@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function SEO({ description, title, url }) {
+export default function SEO({ description, title, url, noIndex = false  }) {
   const siteTitle = "Oissel Badminton Club";
   const fullTitle = title ? `${title} | ${siteTitle}` : siteTitle;
 
@@ -13,6 +13,8 @@ export default function SEO({ description, title, url }) {
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url} />
       <link rel="canonical" href={url} />
+      {noIndex && <meta name="robots" content="noindex" />}
+
     </Head>
   );
 }
