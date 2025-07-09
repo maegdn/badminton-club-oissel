@@ -12,9 +12,9 @@ export default function evenements() {
       <Header3 />
       <main className="flex-1 flex flex-col items-center justify-center w-full pt-16 pb-12">
         <h1 className="font-[HemiHead]">Événements</h1>
-        <div className="flex flex-col md:flex-row flex-wrap justify-center items-center w-3/4 md:w-2/4 gap-8 my-12 text-justify ">
-        <div className="flex w-full flex-col ">
-        <div className="w-100 h-56 relative border-4 border-black overflow-hidden z-2">
+        <div className="flex flex-col md:flex-row flex-wrap justify-center items-center w-3/4 md:w-4/5 gap-8 my-12 text-justify ">
+        <div className="flex w-full flex-col mb--30">
+        <div className="w-100 h-66 relative border-4 border-black overflow-hidden z-2">
   <Image 
     src="/images/badmintonfluo.jpg"
     fill
@@ -22,7 +22,7 @@ export default function evenements() {
     alt="Badminton"
   />
 </div>
-<div className="relative  bottom-24 left-60 border-3 border-black z-4 bg-white">
+<div className="relative bottom-44 left-80 border-3 border-black z-4 bg-white w-3/5">
 <h3 className="font-[HemiHead] bg-slate-900 px-4 py-2 text-white">Soirée à thème 🥳</h3>
 
 <p className="p-4 bg-white">
@@ -47,7 +47,7 @@ export default function evenements() {
     alt="Badminton"
   />
 </div>
-<div className="relative  bottom-24 left-60 border-3 border-black z-4 bg-white">
+<div className="relative bottom-44 left-80 border-3 border-black z-4 bg-white w-3/5">
 <h3 className="font-[HemiHead] bg-slate-900 px-4 py-2 text-white">Le Critérium 🏆</h3>
 
 <p className="p-4 bg-white">
@@ -72,7 +72,7 @@ export default function evenements() {
     alt="Badminton"
   />
 </div>
-<div className="relative  bottom-24 left-60 border-3 border-black z-4 bg-white">
+<div className="relative bottom-44 left-80 border-3 border-black z-4 bg-white w-3/5">
 <h3 className="font-[HemiHead] bg-slate-900 px-4 py-2 text-white">Tournois internes 🏆</h3>
 
 <p className="p-4 bg-white">

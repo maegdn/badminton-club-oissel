@@ -11,91 +11,94 @@ export default function HorairesTarifs() {
     <div className="flex flex-col w-full min-h-screen">
       <Header3 />
       <SEO
-          title="Horaires, tarifs et lieux de pratique"
-          url="https://oissel-badminton-club.vercel.app/infos/contact"
-          description="Découvrez les horaires, tarifs et lieux de pratique du club de badminton de Oissel."
+        title="Horaires, tarifs et lieux de pratique"
+        url="https://oissel-badminton-club.vercel.app/infos/contact"
+        description="Découvrez les horaires, tarifs et lieux de pratique du club de badminton de Oissel."
       />
       <main className="flex flex-col w-full min-h-full flex-grow justify-center items-center pt-16 pb-22">
-     <div className="flex flex-col justify-center items-center w-full gap-8">
-        
+        <div className="flex flex-col justify-center items-center w-full gap-8">
           <div className="flex flex-col justify-center items-center w-4/5">
-          <h1 className="font-[HemiHead] text-3xl mb-12">
-          HORAIRES, TARIFS, LIEUX DE PRATIQUE
-        </h1>
+            <h1 className="font-[HemiHead] text-3xl mb-12 text-center">
+              HORAIRES, TARIFS, LIEUX DE PRATIQUE
+            </h1>
             {/* <div> */}
-            <p>
+            <p className="text-justify">
               Les entraînements sont ouverts de septembre à juillet, sauf
-              indisponibilité de la salle. <br />
-              Les règles principales des entrainements sont les suivantes :
+              indisponibilité de la salle. Les règles principales des
+              entrainements sont les suivantes :
             </p>
-            <div className="flex flex-wrap justify-evenly align-bottom w-full mb-22">
-              <div className=" flex flex-col justify-center w-60 text-center items-center">
+            <div className="flex flex-wrap justify-evenly align-bottom w-full mb-22 mt-12">
+              <div className=" flex flex-col justify-between w-60 text-center items-center">
                 <Image
-                  src="/images/Untitled_Artwork.png"
+                  src="/images/shoesbad.png"
                   width={150}
                   height={150}
-                  className="pb-12 object-contain"
+                  className="pb-12 object-contain pt-8"
                 />
-                <p>
+                <p className="h-20 items-center text-center">
                   Jouer avec des chaussures de salle{" "}
                   <span className="font-bold">non utilisées à l'extérieur</span>
                 </p>
               </div>
-              <div className=" flex flex-col justify-center w-70 text-center items-center">
+              <div className=" flex flex-col justify-between w-70 text-center items-center">
                 <Image
-                  src="/images/badnet.png"
+                  src="/images/upcourt.png"
                   width={150}
                   height={150}
                   className="pb-12 object-contain"
                 />
-                <p>
+                <p className="h-20 items-center text-center">
                   Aider à{" "}
                   <span className="font-bold">
                     monter/démonter les terrains
                   </span>
                 </p>
               </div>
-              <div className=" flex flex-col justify-center w-70 text-center items-center">
+              <div className=" flex flex-col justify-between w-70 text-center items-center">
                 <Image
-                  src="/images/rotation.png"
+                  src="/images/rotation2.png"
                   width={150}
                   height={150}
-                  className="pt-12 pb-12 object-fit"
+                  className=" pb-12 object-contain"
                 />
-                <div className="items-center">
-                  <p>
-                    <span className="font-bold">Libérer le terrain</span> à
-                    chaque fin de set afin de permettre à tout le monde de jouer
-                    et rencontrer différents joueurs
-                  </p>
-                </div>
+                {/* <div className="items-center align-center"> */}
+                <p className="h-20 items-center text-center">
+                  <span className="font-bold">Libérer le terrain</span> à chaque
+                  fin de set afin de permettre à tout le monde de jouer et
+                  rencontrer différents joueurs
+                </p>
+                {/* </div> */}
               </div>
             </div>
-            </div>
+          </div>
 
-
-
-            <div className="relative h-[400px] w-full mb-16">
+          <div className="relative h-[400px] w-full mb-16">
             <div className="absolute w-full h-[400px] bg-[url('/images/badmminton-coaching-bw.png')] bg-cover bg-left md:bg-center opacity-90"></div>
 
-          <div className="absolute md:flex md:gap-6 items-center w-12/12 md:w-full md:justify-center md:items-center h-[400px] md:h-[400px]">
-           <p className="flex font-[HemiHead] text-3xl md:text-8xl text-white py-5 pt-10 pb-10 md:mb-12 md:w-[60%] w-full items-center justify-center text-shawdow-black md:pb-30
-">COACHING</p>
-            <p className=" items-center justify-center text-justify text-white  text-sm md:text-base z-10 md:p-20  px-5 md:w-[40%]">
-              
-              Depuis quelques temps le <span className="font-bold">Coach Veasna </span>intervient auprès de notre
-              club afin de permettre une évolution de la pratique de chacun.
-              Tous les joueurs du club peuvent bénéficier d'entraînements
-              individuels et/ou collectifs. <br/><br/>L'inscription se fait soit par le
-              sondage envoyé sur le groupe Whatsapp soit en envoyant un message
-              à Elise B. via Whatsapp. Ces cours ne sont pas obligatoires, ce
-              qui permet aux joueurs qui ne souhaitent pas y participer de
-              continuer à pratiquer le badminton en jeu libre.
-            </p>
+            <div className="absolute md:flex md:gap-6 items-center w-12/12 md:w-full md:justify-center md:items-center h-[400px] md:h-[400px]">
+              <p
+                className="flex font-[HemiHead] text-3xl md:text-8xl text-white py-5 pt-10 pb-10 md:mb-12 md:w-[60%] w-full items-center justify-center text-shawdow-black md:pb-30
+"
+              >
+                COACHING
+              </p>
+              <p className=" items-center justify-center text-justify text-white  text-sm md:text-base z-10 md:p-20  px-5 md:w-[40%]">
+                Depuis quelques temps le{" "}
+                <span className="font-bold">Coach Veasna </span>intervient
+                auprès de notre club afin de permettre une évolution de la
+                pratique de chacun. Tous les joueurs du club peuvent bénéficier
+                d'entraînements individuels et/ou collectifs. <br />
+                <br />
+                L'inscription se fait soit par le sondage envoyé sur le groupe
+                Whatsapp soit en envoyant un message à Elise B. via Whatsapp.
+                Ces cours ne sont pas obligatoires, ce qui permet aux joueurs
+                qui ne souhaitent pas y participer de continuer à pratiquer le
+                badminton en jeu libre.
+              </p>
             </div>
-            </div>
-            
-            <div className="flex flex-col justify-center w-4/5">
+          </div>
+
+          <div className="flex flex-col justify-center w-4/5">
             <h2 className="flex text-xl font-bold justify-center font-[HemiHead]">
               Créneaux des séances
             </h2>
@@ -157,7 +160,9 @@ export default function HorairesTarifs() {
           </div>
 
           <div className="w-4/5 flex flex-col items-center">
-            <h2 className="text-xl font-bold mb-12 font-[HemiHead]">Lieu de pratique</h2>
+            <h2 className="text-xl font-bold mb-12 font-[HemiHead]">
+              Lieu de pratique
+            </h2>
             {/* WAZE MAP DISPLAY */}
             {/* <iframe src="https://embed.waze.com/iframe?zoom=16&lat=49.350571&lon=1.092553&ct=livemap" width="600" height="450" allowfullscreen></iframe> */}
             <iframe
@@ -170,40 +175,36 @@ export default function HorairesTarifs() {
               title="Lieu de pratique"
               className="mt-6"
             ></iframe>
-
-
-        
-
           </div>
           <div className="md:flex-row w-8/12 md:flex gap-40 md:flex-wrap items-center justify-center">
-<Link href="https://ul.waze.com/ul?venue_id=721390.7148359.36136893&overview=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location">
-        <button className="bg-[#33CCFF] text-black px-4 py-2 rounded-lg mt-10 w-full flex justify-center">
-        <Image
+            <Link href="https://ul.waze.com/ul?venue_id=721390.7148359.36136893&overview=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location">
+              <button className="bg-[#33CCFF] text-black px-4 py-2 rounded-lg mt-10 w-full flex justify-center">
+                <Image
                   src="/images/waze-icon.svg"
                   width={15}
-    height={15}
-    className="mr-2"/>
-            Ouvrir dans Waze 
-            </button>
+                  height={15}
+                  className="mr-2"
+                />
+                Ouvrir dans Waze
+              </button>
             </Link>
 
-<Link
-  href="https://www.google.com/maps/search/?api=1&query=Badminton+Club+Oissel"
-  target="_blank"
-  rel="noopener noreferrer"
->
-<button className="bg-slate-800 text-white px-4 py-2 rounded-lg mt-10 w-full flex justify-center">
-    <Image
+            <Link
+              href="https://www.google.com/maps/search/?api=1&query=Badminton+Club+Oissel"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-slate-800 text-white px-4 py-2 rounded-lg mt-10 w-full flex justify-center">
+                <Image
                   src="/images/google-map-icon.svg"
                   width={15}
-    height={15}
-    className="mr-2"/>
-      Ouvrir dans Google Maps
-  </button>
-  
-</Link>
-
-</div>
+                  height={15}
+                  className="mr-2"
+                />
+                Ouvrir dans Google Maps
+              </button>
+            </Link>
+          </div>
         </div>
       </main>
       <Footer />
