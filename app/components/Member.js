@@ -7,8 +7,6 @@ import Link from "next/link";
 import { FiMail } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
-
-
 export default function Member({ name, role, imageUrl, imageUrlHovered }) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -35,7 +33,7 @@ export default function Member({ name, role, imageUrl, imageUrlHovered }) {
           fill
           className="top-16 object-contain overflow-hidden z-1 "
         />
-        <div className="relative top-60 w-full justify-center">
+        {/* <div className="relative top-60 w-full justify-center">
           <Link
             href={`https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER_MG}`}
           >
@@ -46,8 +44,8 @@ export default function Member({ name, role, imageUrl, imageUrlHovered }) {
               className="mr-2 items-center justify-center"/> Whatsapp</button>
           
           </Link>
-        </div>
-        <div className="relative top-60 w-full justify-center">
+        </div> */}
+        {/* <div className="relative top-60 w-full justify-center">
           <Link
             href={`https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER_MG}`}
           >
@@ -58,7 +56,7 @@ export default function Member({ name, role, imageUrl, imageUrlHovered }) {
              Mail</button>
           
           </Link>
-        </div>
+        </div> */}
       </div>
 
       <div

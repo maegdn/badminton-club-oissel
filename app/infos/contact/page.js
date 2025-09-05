@@ -64,8 +64,10 @@ export default function Contact() {
       />
       <Header3 />
       <main className="flex flex-col min-h-full flex-grow justify-center items-center px-8 md:px-4 ">
-        <div className="flex flex-col items-center text-justify  md:w-3/5 mb-12 mt-12">
-          <h1 className="font-bold mt-5 justify-cente mb-12 font-[HemiHead]">CONTACT</h1>
+        <div className="flex flex-col items-center text-justify  md:w-3/5 mb-12 mt-10">
+          <h1 className="font-bold  justify-cente mb-10 font-[HemiHead]">
+            CONTACT
+          </h1>
           <p>
             Pour nous contacter, vous pouvez nous envoyer un email à
             <span className="font-bold"> obadoissel@gmail.com</span> ou bien
@@ -105,7 +107,7 @@ export default function Contact() {
                 className="bg-blue-100 rounded-md h-10 pl-3 mb-5"
                 onChange={handleChange}
               ></input>
-              <label className="flex flex-col" >
+              <label className="flex flex-col">
                 Quelle est votre demande ?
                 <input
                   type="text"
@@ -135,26 +137,24 @@ export default function Contact() {
                 </p>
               )}
 
-<button
-  type="submit"
-  className={`rounded-md h-12 px-6 py-3 font-bold flex items-center justify-center ${
-    submitted
-      ? "bg-green-300 cursor-not-allowed"
-      : "bg-blue-100 hover:bg-blue-300"
-  } mb-20 font-[HemiHead]`}
-  disabled={loading || submitted}
->
-{loading && (
-    <AiOutlineLoading className="mr-2 h-5 w-5 animate-spin text-slate-700" />
-  )}
-  {loading
-    ? "Envoi en cours..."
-    : submitted
-    ? "Formulaire envoyé !"
-    : "Envoyer"}
-</button>
-
-
+              <button
+                type="submit"
+                className={`rounded-md h-12 px-6 py-3 font-bold flex items-center justify-center ${
+                  submitted
+                    ? "bg-green-300 cursor-not-allowed"
+                    : "bg-blue-100 hover:bg-blue-300"
+                } mb-20 font-[HemiHead]`}
+                disabled={loading || submitted}
+              >
+                {loading && (
+                  <AiOutlineLoading className="mr-2 h-5 w-5 animate-spin text-slate-700" />
+                )}
+                {loading
+                  ? "Envoi en cours..."
+                  : submitted
+                    ? "Formulaire envoyé !"
+                    : "Envoyer"}
+              </button>
             </div>
           </form>
         </div>

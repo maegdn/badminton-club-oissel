@@ -23,8 +23,11 @@ export default function Footer() {
             À PROPOS
           </h4>
           <ul className="space-y-1">
-            <li><Link href="/" className=" hover:text-blue-400">
-Notre histoire              </Link></li>
+            <li>
+              <Link href="/" className=" hover:text-blue-400">
+                Notre histoire{" "}
+              </Link>
+            </li>
             <li>
               <Link href="/infos/bureau" className=" hover:text-blue-400">
                 Le bureau
@@ -56,12 +59,16 @@ Notre histoire              </Link></li>
                 Inscription{" "}
               </Link>
             </li>
-            <li><Link href="/infos/evenements" className=" hover:text-blue-400">
+            <li>
+              <Link href="/infos/evenements" className=" hover:text-blue-400">
                 Événements{" "}
-              </Link></li>
-            <li><Link href="/infos/partenaires" className=" hover:text-blue-400">
+              </Link>
+            </li>
+            <li>
+              <Link href="/infos/partenaires" className=" hover:text-blue-400">
                 Partenaires{" "}
-              </Link></li>
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="flex items-center md:items-start flex-col  text-center md:text-left">
@@ -69,13 +76,13 @@ Notre histoire              </Link></li>
             OÙ NOUS TROUVER ?
           </h4>
           <ul className="flex flex-row gap-6">
-            <li> 
+            <li>
               <a
                 href="https://www.facebook.com/profile.php?id=100057404591482&locale=fr_FR"
                 target="_blank"
                 className="flex justify-center md:justify-start items-center gap-2 text-blue-600 font-bold"
               >
-                <FaFacebook size={30}/> 
+                <FaFacebook size={30} />
               </a>
             </li>
             <li>
@@ -84,12 +91,10 @@ Notre histoire              </Link></li>
                 target="_blank"
                 className="flex justify-center md:justify-start items-center gap-2 text-pink-600 font-bold"
               >
-                <SiInstagram  size={30} />
-                
+                <SiInstagram size={30} />
               </a>
             </li>
           </ul>
-          
         </div>
       </div>
 
@@ -107,7 +112,13 @@ Notre histoire              </Link></li>
         </div>
 
         <p className="text-sm">
-          Made with 🤍 by <span className="font-bold">maegdn</span>.
+          Made with 🤍 by{" "}
+          <span className="font-bold">
+            <a href="http://www.mguardini.pro" target="_blank">
+              maegdn
+            </a>
+          </span>
+          .
         </p>
       </div>
     </footer>

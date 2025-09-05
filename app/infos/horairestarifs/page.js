@@ -129,17 +129,17 @@ export default function HorairesTarifs() {
                 {[
                   {
                     jour: "Lundi",
-                    horaire: "19h00 - 22h30",
+                    horaire: "18h00 - 21h00",
                     lieu: "Complexe sportif Germinal"
                   },
                   {
                     jour: "Jeudi",
-                    horaire: "20h30- 22h30",
+                    horaire: "20h45- 22h45",
                     lieu: "Complexe sportif Germinal"
                   },
                   {
                     jour: "Samedi",
-                    horaire: "08h00 - 10h00",
+                    horaire: "16h30 - 18h30",
                     lieu: "Complexe sportif Germinal"
                   }
                 ].map((item, i) => (

@@ -10,7 +10,7 @@ export default function Partners() {
         </div>
       </div>
 
-      <div className="animate-slide flex gap-60 whitespace-nowrap py-8 min-w-[450%]">
+      <div className="animate-slide flex gap-60 whitespace-nowrap py-8 md:min-w-[120%] min-w-[400%]">
         <Image
           src="/images/partners/lardesportsbw.png"
           alt="Lardesports"
@@ -18,7 +18,14 @@ export default function Partners() {
           height={100}
           className="h-16 md:h-20 lg:h-24 w-auto object-contain"
         />
-        <Link href="/infos/partenaires" className="items-center justify-center flex"><button className="font-[HemiHead] h-16 flex justify-center items-center bg-slate-900 text-white rounded-2xl p-4 px-6 ">Plus d'informations</button></Link>
+        <Link
+          href="/infos/partenaires"
+          className="items-center justify-center flex"
+        >
+          <button className="font-[HemiHead] h-16 flex justify-center items-center bg-slate-900 text-white rounded-2xl p-4 px-6 ">
+            Plus d'informations
+          </button>
+        </Link>
         <Image
           src="/images/partners/victorbw.png"
           alt="Victor"
