@@ -69,7 +69,7 @@ export default function Bureau() {
                 height={15}
                 width={15}
                 className="mr-2 items-center justify-center"
-              />{" "}
+              />
               Contacter un référent
             </button>
           </Link>
