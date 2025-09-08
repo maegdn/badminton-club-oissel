@@ -40,8 +40,7 @@ export default function Home() {
                 L’association sportive Oissel Badminton, nommée également O’BAD,
                 a été créée en octobre 2004. Elle a été affiliée à la fédération
                 française de badminton (FFBaD) à son ouverture et l'est toujours
-                en 2025. L’association est donc devenue à la suite un club
-                loisirs.
+                en 2025.
               </p>
             </div>
           </div>
