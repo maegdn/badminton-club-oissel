@@ -27,8 +27,8 @@ export default function Partners() {
           </button>
         </Link>
         <Image
-          src="/images/partners/victorbw.png"
-          alt="Victor"
+          src="/images/oissel-logo.png"
+          alt="Ville de Oissel"
           width={300}
           height={100}
           className="h-16 md:h-20 lg:h-24 w-auto object-contain"

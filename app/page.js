@@ -37,10 +37,10 @@ export default function Home() {
             </h1>
             <div className="flex justify-center md:justify-start">
               <p className="w-5/6 md:w-2/6 text-justify text-white p-5 md:p-0 justify-center">
-                L’association sportive Oissel Badminton, nommée également O’BAD,
-                a été créée en octobre 2004. Elle a été affiliée à la fédération
-                française de badminton (FFBaD) à son ouverture et l'est toujours
-                en 2025.
+                L’association sportive Oissel Badminton, nommée également Obad,
+                a été créée en octobre 2004. Depuis septembre 2025, après
+                plusieurs années en loisir, le club s'affilie à la Fédération
+                Française de Badminton (FFBaD)
               </p>
             </div>
           </div>
@@ -109,8 +109,8 @@ export default function Home() {
             </h2>
             <p className="flex text-justify items-center md:w-4/5 text-black pb-6">
               En plus des séances classiques, nous organisons régulièrement des
-              événements internes : tournois amicaux, stages pendant les
-              vacances scolaires, soirées thématiques et rencontres interclubs.
+              événements internes : tournois amicaux, soirées thématiques et
+              rencontres interclubs.
             </p>
             <p className="flex text-justify items-center md:w-4/5 text-black pb-12">
               Notre objectif est de favoriser l’épanouissement de chacun, que
