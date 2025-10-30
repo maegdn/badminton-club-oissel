@@ -27,10 +27,10 @@ export default function Legal() {
             <p>
               📧 Email :{" "}
               <a
-                href="mailto:contact@mguardini.pro"
+                href="mailto:obadoissel@gmail.com"
                 className="text-blue-400 underline"
               >
-                contact@mguardini.pro
+                obadoissel@gmail.com
               </a>
             </p>
             <p>Téléphone : 02.32.91.13.41</p>
@@ -63,7 +63,15 @@ export default function Legal() {
               Le site a été conçu et développé par :<br />
               Maëlys Guardini - Développeuse web indépendante
             </p>
-            <p>📧 Email : contact@mguardini.dev</p>
+            <p>
+              📧 Email :{" "}
+              <a
+                href="mailto:contact@mguardini.dev"
+                className="text-blue-400 underline"
+              >
+                contact@mguardini.dev
+              </a>
+            </p>{" "}
             <p>
               🗒 Portfolio :{" "}
               <a

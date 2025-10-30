@@ -114,8 +114,8 @@ export default function Footer() {
         <p className="text-sm">
           Made with 🤍 by{" "}
           <span className="font-bold">
-            <a href="http://www.mguardini.pro" target="_blank">
-              maegdn
+            <a href="http://www.mguardini.dev" target="_blank">
+              mguardini.dev
             </a>
           </span>
           .
