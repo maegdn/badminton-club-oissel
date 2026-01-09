@@ -138,7 +138,7 @@ export default function HorairesTarifs() {
                     lieu: "Complexe sportif Germinal"
                   },
                   {
-                    jour: "Samedi",
+                    jour: "Dimanche",
                     horaire: "16h30 - 18h30",
                     lieu: "Complexe sportif Germinal"
                   }
