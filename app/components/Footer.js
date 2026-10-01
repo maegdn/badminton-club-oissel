@@ -6,7 +6,14 @@ import { FaFacebook } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-slate-950 text-white">
+    <footer
+    className="
+      w-full
+      bg-slate-950
+      text-white
+      pb-[env(safe-area-inset-bottom)]
+    "
+  >
       {/* CONTENU PRINCIPAL */}
       <div
         className="
