@@ -18,7 +18,7 @@ const members = [
     imageHover: "/images/44.png",
   },
   {
-    name: "Elise B.",
+    name: "Elise P.",
     role: "Présidente",
     image: "/images/11b.png",
     imageHover: "/images/11.png",
