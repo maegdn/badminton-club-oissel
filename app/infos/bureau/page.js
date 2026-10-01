@@ -14,7 +14,7 @@ const members = [
   {
     name: "François H.",
     role: "Président d'honneur",
-    image: "/images/44B.png",
+    image: "/images/44b.png",
     imageHover: "/images/44.png",
   },
   {
@@ -26,19 +26,19 @@ const members = [
   {
     name: "Sandrine M.",
     role: "Trésorière",
-    image: "/images/33B.png",
+    image: "/images/33b.png",
     imageHover: "/images/33.png",
   },
   {
     name: "Kevin L.",
     role: "Secrétaire",
-    image: "/images/22B.png",
+    image: "/images/22b.png",
     imageHover: "/images/22.png",
   },
   {
     name: "Adrien P.",
     role: "Secrétaire adjoint",
-    image: "/images/55B.png",
+    image: "/images/55b.png",
     imageHover: "/images/55.png",
   },
 ];
