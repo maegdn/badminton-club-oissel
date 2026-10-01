@@ -63,10 +63,10 @@ export default function Contact() {
         description="Vous souhaitez contacter le club de badminton de Oissel et obtenir un renseignement? Remplissez un formulaire de contact ici."
       />
       <Header3 />
-      <main className="flex flex-col min-h-full flex-grow justify-center items-center px-8 md:px-4 ">
-        <div className="flex flex-col items-center text-justify  md:w-3/5 mb-12 mt-10">
-          <h1 className="font-bold  justify-cente mb-10 font-[HemiHead]">
-            CONTACT
+      <main className="flex flex-col min-h-full flex-grow w-[90%] max-w-7xl mx-auto items-center">
+                <div className="flex flex-col items-center text-justify  md:w-3/5 mb-12 mt-12">
+          <h1 className="self-start md:self-center font-bold mb-10 font-[SharpGITB] md:!text-6xl !text-3xl ">
+          <span className="text-cyan-400">/</span> CONTACT
           </h1>
           <p>
             Pour nous contacter, vous pouvez nous envoyer un email à
@@ -132,7 +132,7 @@ export default function Contact() {
             </div>
             <div className="flex flex-col justify-center items-center gap-4">
               {submitted && (
-                <p className="text-green-500 font-bold font-[HemiHead]">
+                <p className="text-green-500 font-bold font-[SharpG]">
                   Formulaire envoyé ! Merci ! On revient vers vous très vite !
                 </p>
               )}
@@ -143,7 +143,7 @@ export default function Contact() {
                   submitted
                     ? "bg-green-300 cursor-not-allowed"
                     : "bg-blue-100 hover:bg-blue-300"
-                } mb-20 font-[HemiHead]`}
+                } mb-20 font-[SharpGIT]`}
                 disabled={loading || submitted}
               >
                 {loading && (

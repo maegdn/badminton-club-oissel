@@ -16,11 +16,11 @@ export default function Member({ name, role, imageUrl, imageUrlHovered }) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className=" absolute top-24 left-2 bg-white border-2 z-4 px-3">
+      <div className=" absolute top-28 left-2 bg-white border-2 z-4 px-3">
         <h3
           className={`font-bold mb-0 ${
-            isHovered ? "text-slate-600" : "text-black"
-          } font-[HemiHead]`}
+            isHovered ? "text-green-400" : "text-black"
+          } font-[SharpGITB]`}
         >
           {name}
         </h3>
@@ -59,11 +59,11 @@ export default function Member({ name, role, imageUrl, imageUrlHovered }) {
         </div> */}
       </div>
 
-      <div
+      {/* <div
         className={`flex absolute bottom-12  w-56 h-46 rounded-t-xl ${
           isHovered ? "bg-blue-200" : "bg-gray-100"
         } opacity-100 p-3`}
-      ></div>
+      ></div> */}
     </div>
   );
 }

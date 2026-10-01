@@ -73,13 +73,13 @@ export default function Header2() {
               <li>
                 <Link
                   href="/"
-                  className={`pb-1.5 border-b-2 border-transparent font-[HemiHead] ${
+                  className={`pb-1.5 border-b-2 border-transparent font-[SharpGITB] ${
                     scrolled
                       ? "hover:border-b-white"
                       : "hover:border-b-white"
                   }`}
                 >
-                  Le club
+                  LE CLUB
                 </Link>
               </li>
               <li
@@ -96,10 +96,9 @@ export default function Header2() {
                 <div className="flex flex-row items-center">
                   <Link
                     href="/infos"
-                    className={`${!scrolled ? "text-white-700" : ""} font-[HemiHead]`}
+                    className={`${!scrolled ? "text-white-700" : ""} font-[SharpGITB]`}
                   >
-                    Infos pratiques
-                  </Link>
+INFOS PRATIQUES                  </Link>
                   <span className="flex flex-row items-center pl-1">
                     {dropdownOpen ? (
                       <MdKeyboardArrowUp />
@@ -112,19 +111,19 @@ export default function Header2() {
                   <div className="absolute top-full bg-white shadow-black min-w-full border text-black border-red">
                     <ul>
                       <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
-                        <Link href="/infos/evenements" className="font-[HemiHead]">Événements</Link>
+                        <Link href="/infos/evenements" className="font-[SharpG]">Événements</Link>
                       </li>
                       <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
-                        <Link href="/infos/horairestarifs" className="font-[HemiHead]">
+                        <Link href="/infos/horairestarifs" className="font-[SharpG]">
                           Horaires / Tarifs
                         </Link>
                       </li>
 
                       <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
-                        <Link href="/infos/bureau" className="font-[HemiHead]">Le bureau</Link>
+                        <Link href="/infos/bureau" className="font-[SharpG]">Le bureau</Link>
                       </li>
                       <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
-                        <Link href="/infos/contact" className="font-[HemiHead]">Contact</Link>
+                        <Link href="/infos/contact" className="font-[SharpG]">Contact</Link>
                       </li>
                     </ul>
                   </div>
@@ -137,9 +136,9 @@ export default function Header2() {
                     scrolled
                       ? "hover:border-b-white"
                       : "hover:border-b-white"
-                  } font-[HemiHead]`}
+                  } font-[SharpGITB]`}
                 >
-                  Actualités
+                  ACTUALITÉS
                 </Link>
               </li>
 
@@ -150,9 +149,9 @@ export default function Header2() {
                     scrolled
                       ? "hover:border-b-white"
                       : "hover:border-b-white"
-                  } font-[HemiHead]`}
+                  } font-[SharpGITB]`}
                 >
-                  Galerie
+                  GALERIE
                 </Link>
               </li>
               {/* <li className="flex flex-row">
@@ -163,7 +162,7 @@ export default function Header2() {
                       scrolled
                         ? "hover:border-b-white"
                         : "hover:border-b-white"
-                    } font-[HemiHead]`}
+                    } font-[SharpG]`}
                   >
                     Inscription
                   </Link>
@@ -184,15 +183,14 @@ export default function Header2() {
   <MdClose />
 </button>
 
-          <ul className="flex flex-col gap-8 text-2xl font-[HemiHead]">
+          <ul className="flex flex-col gap-8 text-2xl font-[SharpGITB]">
             <li>
               <Link
                 href="/"
                 onClick={() => setMobileMenuOpen(false)}
                 className="hover:border-b-2 hover:border-white pb-1.5"
               >
-                Le club
-              </Link>
+LE CLUB              </Link>
             </li>
             <li>
               <div
@@ -209,8 +207,7 @@ export default function Header2() {
                     setDropdownOpen(!dropdownOpen);
                   }}
                 >
-                  Infos pratiques
-                </Link>
+INFOS PRATIQUES                </Link>
                 {dropdownOpen ? <MdKeyboardArrowUp className="pb-1.5"/> : <MdKeyboardArrowDown className="pb-1.5"/>}
               </div>
               {dropdownOpen && (
@@ -243,7 +240,7 @@ export default function Header2() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="hover:border-b-2 hover:border-white pb-1.5"
               >
-                Actualités
+                ACTUALITÉS
               </Link>
             </li>
             <li>
@@ -252,7 +249,7 @@ export default function Header2() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="hover:border-b-2 hover:border-white pb-1.5"
               >
-                Galerie
+                GALERIE
               </Link>
             </li>
           </ul>

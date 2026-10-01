@@ -8,6 +8,34 @@
 }
 
 @font-face {
+  font-family: 'SpaceG';
+  src: url('/fonts/SpaceG.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Anton';
+  src: url('/fonts/Anton.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AntonSC';
+  src: url('/fonts/AntonSC.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Gabarito';
   src: url('/fonts/Gabarito.ttf') format('truetype');
   font-weight: 400;
@@ -20,6 +48,26 @@
   font-weight: 800;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'SharpG';
+  src: url('/fonts/SharpG.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SharpGIT';
+  src: url('/fonts/SharpGIT.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SharpGITB';
+  src: url('/fonts/SharpGITB.otf') format('opentype');
+}
+
 
 @keyframes slide {
   0% {
@@ -66,17 +114,17 @@ html, body {
 body {
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  font-family: DMSans;
+  font-family: Inter;
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 56px;
   font-weight: bold;
   /* font-family: Gabarito; */
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 34px;
   font-weight: bold;
 }
 

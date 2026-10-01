@@ -1,173 +1,486 @@
 "use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { useEffect, useState } from "react";
-
 import {
+  MdClose,
+  MdMenu,
   MdKeyboardArrowDown,
   MdKeyboardArrowUp,
-  MdMenu,
-  MdClose
 } from "react-icons/md";
 
 export default function Header3() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [activeNav, setActiveNav] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="relative z-10 w-full text-white flex justify-center items-center h-30 bg-slate-900 transition-all duration-500 ease-in">
-      <div className="relative z-10 flex justify-between items-center w-4/5">
-        <div className="z-10 flex items-center">
+    <header
+      className="
+        relative
+        z-50
+        flex
+        h-28
+        w-full
+        items-center
+        justify-center
+        bg-slate-950
+        text-white
+        transition-all
+        duration-300
+        md:h-30
+      "
+    >
+      <div
+        className="
+          relative
+          z-10
+          flex
+          w-[90%]
+          max-w-7xl
+          items-center
+          justify-between
+        "
+      >
+        {/* LOGO */}
+        <Link
+          href="/"
+          className="z-10 flex items-center"
+          aria-label="Retour à l'accueil"
+        >
           <Image
-            className=" md:block logo "
             src="/images/obadlogo2.png"
-            alt="Logo desktop"
+            alt="Logo Oissel Badminton"
             width={150}
             height={150}
             priority
+            className="
+              h-auto
+              w-28
+              object-contain
+              md:w-36
+            "
           />
-        </div>
+        </Link>
 
-        <div className="md:hidden flex flex-row gap-2 ml-4 items-center justify-center">
+        {/* MOBILE BURGER */}
+        <button
+          type="button"
+          onClick={() => setMobileMenuOpen(true)}
+          className="
+            flex
+            h-11
+            w-11
+            items-center
+            justify-center
+            transition-colors
+            hover:text-orange-400
+            md:hidden
+          "
+          aria-label="Ouvrir le menu"
+        >
+          <MdMenu size={32} />
+        </button>
 
-          <button
-            className="flex justify-center items-center pb-2 pl-15"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        {/* DESKTOP NAV */}
+        <nav className="hidden md:block">
+          <ul
+            className="
+              flex
+              items-center
+              gap-7
+              text-sm
+              lg:gap-10
+            "
           >
-            {mobileMenuOpen ? <MdClose size={30} /> : <MdMenu size={30} />}
-          </button>
-        </div>
+            {/* LE CLUB */}
+            <li>
+              <Link
+                href="/"
+                className="
+                  relative
+                  font-[SharpGITB]
+                  tracking-wide
+                  transition-colors
+                  duration-200
 
+                  after:absolute
+                  after:-bottom-2
+                  after:left-0
+                  after:h-[2px]
+                  after:w-0
+                  after:bg-orange-400
+                  after:transition-all
+                  after:duration-300
 
-
-        <div className="flex flex-row items-center justify-evenly">
-          <nav className="hidden md:flex">
-            <ul className="flex flex-row gap-6">
-              <li>
-                <Link
-                  href="/"
-                  className=" font-[HemiHead] pb-1.5 border-b-2 border-transparent hover:border-b-white"
-                >
-                  Le club
-                </Link>
-              </li>
-              <li
-                className="relative"
-                onMouseEnter={(e) => {
-                  setDropdownOpen(true);
-                  setActiveNav(true);
-                }}
-                onMouseLeave={(e) => {
-                  setDropdownOpen(false);
-                  setActiveNav(false);
-                }}
+                  hover:text-orange-300
+                  hover:after:w-full
+                "
               >
-                <div className="flex flex-row items-center">
-                  <Link
-                    href="/infos"
-                    className={`${activeNav ? "text-slate-200" : ""} font-[HemiHead]`}
+                LE CLUB
+              </Link>
+            </li>
+
+            {/* INFOS PRATIQUES DROPDOWN */}
+            <li
+              className="relative"
+              onMouseEnter={() => {
+                setDropdownOpen(true);
+                setActiveNav(true);
+              }}
+              onMouseLeave={() => {
+                setDropdownOpen(false);
+                setActiveNav(false);
+              }}
+            >
+              <div className="flex items-center">
+                <Link
+                  href="/infos"
+                  className={`
+                    relative
+                    flex
+                    items-center
+                    font-[SharpGITB]
+                    tracking-wide
+                    transition-colors
+                    duration-200
+
+                    after:absolute
+                    after:-bottom-2
+                    after:left-0
+                    after:h-[2px]
+                    after:bg-orange-400
+                    after:transition-all
+                    after:duration-300
+
+                    ${
+                      activeNav
+                        ? "text-orange-300 after:w-full"
+                        : "after:w-0 hover:text-orange-300 hover:after:w-full"
+                    }
+                  `}
+                >
+                  INFOS PRATIQUES
+                </Link>
+
+                <span
+                  className={`
+                    ml-1
+                    flex
+                    items-center
+                    transition-colors
+                    ${
+                      activeNav
+                        ? "text-orange-300"
+                        : "text-white"
+                    }
+                  `}
+                >
+                  {dropdownOpen ? (
+                    <MdKeyboardArrowUp size={20} />
+                  ) : (
+                    <MdKeyboardArrowDown size={20} />
+                  )}
+                </span>
+              </div>
+
+              {/* DROPDOWN */}
+              {dropdownOpen && (
+                <div
+                  className="
+                    absolute
+                    left-0
+                    top-full
+                    min-w-[220px]
+                    pt-5
+                  "
+                >
+                  <div
+                    className="
+                      border
+                      border-slate-200
+                      bg-white
+                      py-2
+                      text-slate-900
+                      shadow-xl
+                    "
                   >
-                    Infos pratiques
-                  </Link>
-                  <span className="flex flex-row items-center pl-1">
-                    {dropdownOpen ? (
-                      <MdKeyboardArrowUp />
-                    ) : (
-                      <MdKeyboardArrowDown />
-                    )}
-                  </span>
-                </div>
-                {dropdownOpen && (
-                  <div className="absolute top-full bg-white shadow-black min-w-full border text-black border-red">
                     <ul>
-                      <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
-                        <Link href="/infos/evenements" className="font-[HemiHead]">Événements</Link>
+                      <li>
+                        <Link
+                          href="/infos/evenements"
+                          className="
+                            block
+                            whitespace-nowrap
+                            px-5
+                            py-3
+                            font-[SharpGITB]
+                            text-sm
+                            transition-colors
+                            hover:bg-slate-100
+                            hover:text-orange-500
+                          "
+                        >
+                          Événements
+                        </Link>
                       </li>
-                      <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
-                        <Link href="/infos/horairestarifs" className="font-[HemiHead]">
+
+                      <li>
+                        <Link
+                          href="/infos/horairestarifs"
+                          className="
+                            block
+                            whitespace-nowrap
+                            px-5
+                            py-3
+                            font-[SharpGITB]
+                            text-sm
+                            transition-colors
+                            hover:bg-slate-100
+                            hover:text-orange-500
+                          "
+                        >
                           Horaires / Tarifs
                         </Link>
                       </li>
 
-                      <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
-                        <Link href="/infos/bureau" className="font-[HemiHead]">Le bureau</Link>
+                      <li>
+                        <Link
+                          href="/infos/bureau"
+                          className="
+                            block
+                            whitespace-nowrap
+                            px-5
+                            py-3
+                            font-[SharpGITB]
+                            text-sm
+                            transition-colors
+                            hover:bg-slate-100
+                            hover:text-orange-500
+                          "
+                        >
+                          Le bureau
+                        </Link>
                       </li>
-                      <li className="py-2 px-4 hover:bg-blue-200 w-full whitespace-nowrap">
-                        <Link href="/infos/contact" className="font-[HemiHead]">Contact</Link>
+
+                      <li>
+                        <Link
+                          href="/infos/contact"
+                          className="
+                            block
+                            whitespace-nowrap
+                            px-5
+                            py-3
+                            font-[SharpGITB]
+                            text-sm
+                            transition-colors
+                            hover:bg-slate-100
+                            hover:text-orange-500
+                          "
+                        >
+                          Contact
+                        </Link>
                       </li>
                     </ul>
                   </div>
-                )}
-              </li>
-              <li>
-                <Link
-                  href="/news"
-                  className="font-[HemiHead] pb-1.5 border-b-2 border-transparent hover:border-b-white"
-                >
-                  Actualités
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/photos"
-                  className="font-[HemiHead] pb-1.5 border-b-2 border-transparent hover:border-b-white"
-                >
-                  Galerie
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
+                </div>
+              )}
+            </li>
+
+            {/* ACTUALITES */}
+            <li>
+              <Link
+                href="/news"
+                className="
+                  relative
+                  font-[SharpGITB]
+                  tracking-wide
+                  transition-colors
+                  duration-200
+
+                  after:absolute
+                  after:-bottom-2
+                  after:left-0
+                  after:h-[2px]
+                  after:w-0
+                  after:bg-orange-400
+                  after:transition-all
+                  after:duration-300
+
+                  hover:text-orange-300
+                  hover:after:w-full
+                "
+              >
+                ACTUALITÉS
+              </Link>
+            </li>
+
+            {/* GALERIE */}
+            <li>
+              <Link
+                href="/photos"
+                className="
+                  relative
+                  font-[SharpGITB]
+                  tracking-wide
+                  transition-colors
+                  duration-200
+
+                  after:absolute
+                  after:-bottom-2
+                  after:left-0
+                  after:h-[2px]
+                  after:w-0
+                  after:bg-orange-400
+                  after:transition-all
+                  after:duration-300
+
+                  hover:text-orange-300
+                  hover:after:w-full
+                "
+              >
+                GALERIE
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </div>
 
+      {/* MOBILE MENU */}
       {mobileMenuOpen && (
-<nav className="fixed top-0 left-0 w-screen h-screen bg-slate-900 px-6 py-10 pt-25 z-50 flex flex-col items-start justify-start overflow-y-auto  transition-transform duration-500 ease-in-out">
+        <nav
+          className="
+            fixed
+            inset-0
+            z-50
+            flex
+            min-h-screen
+            flex-col
+            overflow-y-auto
+            bg-slate-950
+            px-[5%]
+            pb-10
+            pt-24
+            text-white
+          "
+        >
+          {/* CLOSE */}
           <button
-  onClick={() => setMobileMenuOpen(false)}
-  className="absolute top-6 right-6 text-3xl bg-white text-slate-900"
-  aria-label="Close menu"
->
-  <MdClose />
-</button>
+            type="button"
+            onClick={() => setMobileMenuOpen(false)}
+            className="
+              absolute
+              right-[5%]
+              top-7
+              flex
+              h-11
+              w-11
+              items-center
+              justify-center
+              text-white
+              transition-colors
+              hover:text-orange-400
+            "
+            aria-label="Fermer le menu"
+          >
+            <MdClose size={32} />
+          </button>
 
-          <ul className="flex flex-col gap-8 text-2xl font-[HemiHead]">
+          {/* MOBILE LOGO */}
+          <Link
+            href="/"
+            onClick={() => setMobileMenuOpen(false)}
+            className="absolute left-[5%] top-5"
+          >
+            <Image
+              src="/images/obadlogo2.png"
+              alt="Logo Oissel Badminton"
+              width={100}
+              height={100}
+              className="h-auto w-24 object-contain"
+            />
+          </Link>
+
+          <ul
+            className="
+              flex
+              flex-col
+              gap-7
+              font-[SharpGITB]
+              text-2xl
+            "
+          >
+            {/* LE CLUB */}
             <li>
               <Link
                 href="/"
                 onClick={() => setMobileMenuOpen(false)}
-                className="hover:border-b-2 hover:border-white pb-1.5"
+                className="
+                  transition-colors
+                  hover:text-orange-400
+                "
               >
-                Le club
+                LE CLUB
               </Link>
             </li>
+
+            {/* MOBILE INFOS PRATIQUES */}
             <li>
-              <div
-                className="flex items-center gap-4 cursor-pointer"
+              <button
+                type="button"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
+                className="
+                  flex
+                  w-full
+                  items-center
+                  justify-between
+                  text-left
+                  transition-colors
+                  hover:text-orange-400
+                "
               >
-                <Link
-                  href="/infos"
-                  className={` border-b-2 transition-all duration-200 ${
-                    dropdownOpen ? "border-white" : "border-transparent hover:border-blue-400"
-                  }`}
-                  onClick={(e) => {
-                    e.preventDefault(); // prevent Link default on parent click
-                    setDropdownOpen(!dropdownOpen);
-                  }}
-                >
-                  Infos pratiques
-                </Link>
-                {dropdownOpen ? <MdKeyboardArrowUp className="pb-1.5"/> : <MdKeyboardArrowDown className="pb-1.5"/>}
-              </div>
+                <span>INFOS PRATIQUES</span>
+
+                {dropdownOpen ? (
+                  <MdKeyboardArrowUp size={28} />
+                ) : (
+                  <MdKeyboardArrowDown size={28} />
+                )}
+              </button>
+
               {dropdownOpen && (
-                <ul className="pt-4 ml-4 mt-2 space-y-4  pl-4">
+                <ul
+                  className="
+                    mt-5
+                    flex
+                    flex-col
+                    gap-4
+                    border-l
+                    border-slate-700
+                    pl-5
+                    text-lg
+                    text-slate-300
+                  "
+                >
                   {[
-                    { label: "Événements", slug: "evenements" },
-                    { label: "Horaires / Tarifs", slug: "horairestarifs" },
-                    { label: "Le bureau", slug: "bureau" },
-                    { label: "Contact", slug: "contact" }
+                    {
+                      label: "Événements",
+                      slug: "evenements",
+                    },
+                    {
+                      label: "Horaires / Tarifs",
+                      slug: "horairestarifs",
+                    },
+                    {
+                      label: "Le bureau",
+                      slug: "bureau",
+                    },
+                    {
+                      label: "Contact",
+                      slug: "contact",
+                    },
                   ].map(({ label, slug }) => (
                     <li key={slug}>
                       <Link
@@ -176,7 +489,12 @@ export default function Header3() {
                           setDropdownOpen(false);
                           setMobileMenuOpen(false);
                         }}
-                        className="hover:border-b-2 hover:border-white pb-1.5 py-2"
+                        className="
+                          block
+                          py-1
+                          transition-colors
+                          hover:text-orange-400
+                        "
                       >
                         {label}
                       </Link>
@@ -185,30 +503,52 @@ export default function Header3() {
                 </ul>
               )}
             </li>
+
+            {/* ACTUALITES */}
             <li>
               <Link
                 href="/news"
                 onClick={() => setMobileMenuOpen(false)}
-                className="hover:border-b-2 hover:border-white pb-1.5"
+                className="
+                  transition-colors
+                  hover:text-orange-400
+                "
               >
-                Actualités
+                ACTUALITÉS
               </Link>
             </li>
+
+            {/* GALERIE */}
             <li>
               <Link
                 href="/photos"
                 onClick={() => setMobileMenuOpen(false)}
-                className="hover:border-b-2 hover:border-white pb-1.5"
+                className="
+                  transition-colors
+                  hover:text-orange-400
+                "
               >
-                Galerie
+                GALERIE
               </Link>
             </li>
           </ul>
+
+          {/* PETIT FOOT MOBILE */}
+          <div
+            className="
+              mt-auto
+              border-t
+              border-slate-800
+              pt-8
+              text-xs
+              tracking-[0.14em]
+              text-slate-500
+            "
+          >
+            OISSEL BADMINTON CLUB
+          </div>
         </nav>
-      
-      )
-      
-      }
+      )}
     </header>
   );
 }
