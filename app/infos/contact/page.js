@@ -132,7 +132,7 @@ export default function Contact() {
             </div>
             <div className="flex flex-col justify-center items-center gap-4">
               {submitted && (
-                <p className="text-green-500 font-bold font-[SharpG]">
+                <p className="text-green-500 font-bold font-[Sharp]">
                   Formulaire envoyé ! Merci ! On revient vers vous très vite !
                 </p>
               )}
