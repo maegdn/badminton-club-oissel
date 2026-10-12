@@ -344,6 +344,32 @@ export default function Header3() {
                 GALERIE
               </Link>
             </li>
+
+            {/* INSCRIPTION */}
+            <li>
+              <Link
+                href="/inscription"
+                className="
+                  inline-flex
+                  items-center
+                  justify-center
+                  border-white
+                  border-2
+                  bg-orange-400
+                  px-5
+                  py-2.5
+                  font-[SharpGITB]
+                  
+                  text-white
+                  transition-colors
+                  duration-200
+                  hover:bg-orange-400
+                  hover:text-slate-800
+                "
+              >
+                INSCRIPTION
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
@@ -531,6 +557,33 @@ export default function Header3() {
                 GALERIE
               </Link>
             </li>
+
+            {/* INSCRIPTION */}
+            <li className="pt-2">
+              <Link
+                href="/inscription"
+                onClick={() => setMobileMenuOpen(false)}
+                className="
+                  flex
+                  w-full
+                  items-center
+                  justify-center
+                  border-2
+                  border-white
+                  bg-orange-400
+                  px-3
+                  py-4
+                  text-center
+                  font-[SharpGITB]
+                text-white
+                text-lg
+                transition-colors
+                  hover:bg-orange-300
+                "
+              >
+                INSCRIPTION
+              </Link>
+            </li>
           </ul>
 
           {/* PETIT FOOT MOBILE */}
@@ -542,7 +595,7 @@ export default function Header3() {
               pt-8
               text-xs
               tracking-[0.14em]
-              text-slate-500
+              text-white
             "
           >
             OISSEL BADMINTON CLUB

@@ -8,7 +8,7 @@ const events = [
   {
     category: "VIE DU CLUB",
     title: "ENTRAÎNEMENTS",
-    image: "/images/eventspic.jpg",
+    image: "/images/clubpicture.jpg",
     content: (
       <>
         <p>

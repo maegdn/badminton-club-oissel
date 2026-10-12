@@ -7,13 +7,13 @@ import { FaFacebook } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer
-    className="
-      w-full
-      bg-slate-950
-      text-white
-      pb-[env(safe-area-inset-bottom)]
-    "
-  >
+      className="
+        w-full
+        bg-slate-950
+        text-white
+        pb-[env(safe-area-inset-bottom)]
+      "
+    >
       {/* CONTENU PRINCIPAL */}
       <div
         className="
@@ -38,8 +38,6 @@ export default function Footer() {
             height={200}
             className="h-auto w-44 object-contain md:w-52"
           />
-
-         
         </div>
 
         {/* À PROPOS */}
@@ -118,15 +116,6 @@ export default function Footer() {
           <ul className="space-y-2 text-sm text-slate-300">
             <li>
               <Link
-                href="/inscription"
-                className="transition-colors hover:text-orange-400"
-              >
-                Inscription
-              </Link>
-            </li>
-
-            <li>
-              <Link
                 href="/infos/evenements"
                 className="transition-colors hover:text-orange-400"
               >
@@ -134,15 +123,39 @@ export default function Footer() {
               </Link>
             </li>
 
+           
+
             <li>
               <Link
-                href="/infos/partenaires"
+                href="/infos/contact"
                 className="transition-colors hover:text-orange-400"
               >
-                Partenaires
+                Contact
               </Link>
             </li>
           </ul>
+
+          {/* CTA INSCRIPTION */}
+          <Link
+            href="/inscription"
+            className="
+              mt-4
+              inline-flex
+              items-center
+              justify-center
+              bg-orange-400
+              px-4
+              py-2
+              font-[SharpGITB]
+              text-sm
+              !text-white
+              transition-colors
+              duration-200
+              hover:bg-orange-300
+            "
+          >
+            S&apos;INSCRIRE →
+          </Link>
         </div>
 
         {/* RÉSEAUX */}
@@ -176,13 +189,15 @@ export default function Footer() {
                 justify-center
                 border
                 border-slate-600
-                text-slate-100
                 transition-colors
-                hover:border-blue-400
-                hover:text-pink-400
+                hover:border-[#1877F2]
               "
             >
-<FaFacebook size={21} className="text-[#1877F2]" />            </a>
+              <FaFacebook
+                size={21}
+                className="text-[#1877F2]"
+              />
+            </a>
 
             <a
               href="https://www.instagram.com/oisselbadminton/"
@@ -197,13 +212,15 @@ export default function Footer() {
                 justify-center
                 border
                 border-slate-600
-                text-slate-100
                 transition-colors
                 hover:border-[#E4405F]
-                hover:text-[#E4405F]
               "
             >
-<SiInstagram size={20} className="text-[#E4405F]" />            </a>
+              <SiInstagram
+                size={20}
+                className="text-[#E4405F]"
+              />
+            </a>
           </div>
         </div>
       </div>

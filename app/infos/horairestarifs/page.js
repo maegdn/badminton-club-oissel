@@ -41,9 +41,15 @@ const horaires = [
     horaire: "18h00 — 21h00",
     lieu: "Complexe sportif Germinal",
   },
+
+  {
+    jour: "Mercredi",
+    horaire: "21h00 — 23h00",
+    lieu: "Complexe sportif Germinal",
+  },
   {
     jour: "Jeudi",
-    horaire: "20h45 — 22h45",
+    horaire: "20h30 — 22h45",
     lieu: "Complexe sportif Germinal",
   },
   {
