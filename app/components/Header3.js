@@ -354,12 +354,11 @@ export default function Header3() {
                   items-center
                   justify-center
                   border-white
-                  border-2
+                  
                   bg-orange-400
                   px-5
                   py-2.5
                   font-[SharpGITB]
-                  
                   text-white
                   transition-colors
                   duration-200
@@ -367,7 +366,7 @@ export default function Header3() {
                   hover:text-slate-800
                 "
               >
-                INSCRIPTION
+                INSCRIPTION →
               </Link>
             </li>
           </ul>
@@ -568,11 +567,11 @@ export default function Header3() {
                   w-full
                   items-center
                   justify-center
-                  border-2
+                  
                   border-white
                   bg-orange-400
                   px-3
-                  py-4
+                  py-3
                   text-center
                   font-[SharpGITB]
                 text-white
@@ -581,7 +580,7 @@ export default function Header3() {
                   hover:bg-orange-300
                 "
               >
-                INSCRIPTION
+                INSCRIPTION →
               </Link>
             </li>
           </ul>
